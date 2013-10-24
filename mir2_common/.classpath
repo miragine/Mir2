@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/appengine/appengine-api-1.0-sdk-1.8.5.jar"/>
+	<classpathentry kind="lib" path="lib/appengine/appengine-api-labs.jar"/>
+	<classpathentry kind="lib" path="lib/appengine/appengine-endpoints.jar"/>
+	<classpathentry kind="lib" path="lib/appengine/appengine-jsr107cache-1.8.5.jar"/>
+	<classpathentry kind="lib" path="lib/asm/asm-4.0.jar"/>
+	<classpathentry kind="lib" path="lib/datanucleus/datanucleus-api-jdo-3.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/datanucleus/datanucleus-api-jpa-3.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/datanucleus/datanucleus-appengine-2.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/datanucleus/datanucleus-core-3.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/geronimo/geronimo-jpa_2.0_spec-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/j2ee/jsr107cache-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/j2ee/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jdo/jdo-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/webjvm/webjvm-core.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

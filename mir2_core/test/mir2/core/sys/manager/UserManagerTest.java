@@ -7,8 +7,12 @@ import static org.junit.Assert.fail;
 
 import java.util.Date;
 
+import javax.jdo.PersistenceManagerFactory;
+
 import mir2.core.sys.beans.User;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,12 +36,14 @@ public class UserManagerTest {
 			new LocalDatastoreServiceTestConfig());
 
 	@Autowired
-	private UserManager userManager;
+	private PersistenceManagerFactory persistenceManagerFactory;
 
+	@Before
 	public void setUp() throws Exception {
 		helper.setUp();
 	}
 
+	@After
 	public void tearDown() throws Exception {
 		helper.tearDown();
 	}
@@ -53,14 +59,9 @@ public class UserManagerTest {
 		user.setUsername("admin");
 		user.setPassword("112233");
 		user.setCreateDate(new Date());
-		userManager.save(user);
+		persistenceManagerFactory.getPersistenceManager().makePersistent(user);
 	}
-
-	@Test
-	public void testUpdate() {
-		fail("Not yet implemented");
-	}
-
+	
 	@Test
 	public void testRemove() {
 		fail("Not yet implemented");

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="gamerfire-admin" default="war" basedir=".">
+	
+	<property file="build.properties" />
+	
+	<import file="${sdk.dir}/config/user/ant-macros.xml" />
+
+	<path id="compile.classpath">
+		<pathelement path="${classes.dir}" />
+		<fileset dir="${config.dir}">
+			<include name="**/*" />
+		</fileset>
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${sdk.dir}/lib">
+	    	<include name="shared/**/*.jar" />
+	    </fileset>
+	</path>
+
+	<target name="init" description="Prepare for build">
+		<mkdir dir="${target.dir}" />
+		<mkdir dir="${classes.dir}" />
+		<mkdir dir="${apps.dir}" />
+		<mkdir dir="${jar.dir}" />
+		<mkdir dir="${tar.dir}" />
+	</target>
+
+	<target name="clean" description="Clean all build">
+		<delete dir="${classes.dir}" />
+		<delete dir="${apps.dir}" />
+		<delete dir="${jar.dir}" />
+		<delete dir="${tar.dir}" />
+	</target>
+
+	<target name="compile" depends="init">
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="true" deprecation="true" classpathref="compile.classpath" encoding="gbk">
+			<include name="**/*.java" />
+		</javac>
+	</target>
+	
+	<target name="jdo">
+		<java classname="org.datanucleus.enhancer.DataNucleusEnhancer" args="**/User.class">
+			<classpath>
+				<pathelement path="${basedir}/bin" />
+				<fileset dir="${lib.dir}">
+					<include name="**/*.jar" />
+				</fileset>
+				<fileset dir="${sdk.dir}/lib">
+			    	<include name="shared/**/*.jar" />
+			    </fileset>
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<mkdir dir="${jar.dir}" />
+		<buildnumber file="build.number" />
+		<property name="app.jar" value="${app.name}-${build.number}.jar" />
+		<jar jarfile="${jar.dir}/${app.jar}">
+			<fileset dir="${classes.dir}">
+				<include name="com/gamerfire/**/*.class" />
+			</fileset>
+			<fileset dir="${config.dir}">
+				<include name="hbm/*.xml" />
+				<include name="spring/*.xml" />
+				<include name="il8n/*.properties" />
+				<include name="*.xml" />
+			</fileset>
+		</jar>
+	</target>
+
+	<target name="webapp" depends="jar">
+		<mkdir dir="${apps.dir}/${ant.project.name}" />
+		<copy todir="${apps.dir}/${ant.project.name}/WEB-INF/classes">
+			<fileset dir="${config.dir}">
+				<include name="config/config.properties" />
+				<include name="log4j.properties" />
+				<exclude name="spring/*.xml" />
+				<exclude name="il8n/*.properties" />
+				<exclude name="*.xml" />
+				<exclude name="**/.svn/**" />
+			</fileset>
+		</copy>
+		<copy todir="${apps.dir}/${ant.project.name}">
+			<fileset dir="${webapp.dir}">
+				<include name="**" />
+				<exclude name="**/lib/**" />
+				<exclude name="**/.svn/**" />
+				<exclude name="**/classes/**" />
+			</fileset>
+		</copy>
+		<copy todir="${apps.dir}/${ant.project.name}/WEB-INF/lib" flatten="true">
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+				<exclude name="**/jsp-api*.jar" />
+				<exclude name="**/servlet-api*.jar" />
+				<exclude name="**/test/*.jar" />
+				<exclude name="**/checkstyle/*.jar" />
+				<exclude name="**/.svn/**" />
+			</fileset>
+			<fileset dir="${jar.dir}">
+				<include name="${app.name}-${build.number}.jar" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="war" depends="webapp">
+		<mkdir dir="${war.dir}" />
+		<war warfile="${war.dir}/${ant.project.name}.war" 
+			webxml="${apps.dir}/${ant.project.name}/WEB-INF/web.xml">
+			<lib dir="${apps.dir}/${ant.project.name}/WEB-INF/lib" />
+			<classes dir="${apps.dir}/${ant.project.name}/WEB-INF/classes" />
+			<fileset dir="${apps.dir}/${ant.project.name}"/>
+		</war>
+	</target>
+	
+	<target name="tar" depends="webapp">
+		<mkdir dir="${tar.dir}" />
+		<tar destfile="${tar.dir}/${ant.project.name}.tar" basedir="${apps.dir}/${ant.project.name}"/>
+	</target>
+	
+	<target name="test">
+		<javac srcdir="${test.dir}" destdir="${classes.dir}" debug="true" deprecation="true" classpathref="compile.classpath" encoding="utf8">
+			<include name="**/*.java" />
+		</javac>
+		<jar jarfile="${jar.dir}/test.jar">
+			<fileset dir="${classes.dir}">
+				<include name="com/gamerfire/utils/*.class" />
+			</fileset>
+		</jar>
+	</target>
+	
+</project>

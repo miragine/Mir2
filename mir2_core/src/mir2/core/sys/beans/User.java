@@ -4,23 +4,20 @@
  */
 package mir2.core.sys.beans;
 
-import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
+import javax.persistence.Entity;
 
 import mir2.common.db.JdoEntity;
 
 /**
  * 
  */
-@PersistenceCapable
+@Entity
 public class User extends JdoEntity {
 	
 	private static final long serialVersionUID = -4797897545439530376L;
 
-	@Persistent
 	private String username;
 	
-	@Persistent
 	private String password;
 
 	/**

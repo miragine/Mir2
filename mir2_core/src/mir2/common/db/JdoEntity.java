@@ -6,9 +6,9 @@ package mir2.common.db;
 
 import java.util.Date;
 
-import javax.jdo.annotations.IdGeneratorStrategy;
-import javax.jdo.annotations.Persistent;
-import javax.jdo.annotations.PrimaryKey;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.webjvm.core.entity.BaseEntity;
 
@@ -17,11 +17,10 @@ import com.webjvm.core.entity.BaseEntity;
  */
 public abstract class JdoEntity implements BaseEntity {
 
-	@PrimaryKey
-    @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected Long id;
 	
-	@Persistent
 	protected Date createDate;
 
 	public Long getId() {

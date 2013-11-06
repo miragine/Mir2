@@ -34,7 +34,7 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.instrument.tomcat-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.jdbc-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.jms-3.1.0.M2.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.orm-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.orm-3.1.0.M2.jar" sourcepath="D:/source/spring-framework-3.1.0.M2/org.springframework.orm-sources-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.oxm-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.test-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.transaction-3.1.0.M2.jar"/>

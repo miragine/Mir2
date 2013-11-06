@@ -6,8 +6,8 @@
 <struts>
 	<package name="create" namespace="/user" extends="struts-default">
 		<action name="login" class="userAction" method="login">
-			<result name="success" type="redirect">/admin/index.jsp</result>
-			<result name="error" type="redirect">/admin/login.jsp</result>
+			<result name="success" type="redirect">/appserver/index.jsp</result>
+			<result name="error" type="redirect">/appserver/login.jsp</result>
 		</action>
 	</package>
 </struts>

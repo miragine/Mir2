@@ -13,8 +13,22 @@ import com.webjvm.core.manager.BaseManager;
  */
 public interface UserManager extends BaseManager<User> {
 	
+	/**
+	 * 注册用户
+	 * 
+	 * @param username
+	 * @param password
+	 * @return
+	 */
 	public User register(String username, String password);
 	
+	/**
+	 * 检查用户
+	 * 
+	 * @param username
+	 * @param password
+	 * @return
+	 */
 	public User checkUser(String username, String password);
 
 }

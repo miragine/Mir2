@@ -54,6 +54,8 @@ public class UserAction extends ActionSupport implements ServletRequestAware {
 			user = userManager.register(username, password);
 		}
 		
+		request.setAttribute("user", user);
+		
 		return SUCCESS;
 	}
 	

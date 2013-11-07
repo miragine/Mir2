@@ -9,6 +9,7 @@
 	<constant name="struts.custom.i18n.resources" value="il8n/message" />
 	<constant name="struts.action.extension" value="do,action" />
 
-    <include file="action.xml"/>
+    <include file="admin-action.xml"/>
+	<include file="appserver-action.xml"/>
 
 </struts>

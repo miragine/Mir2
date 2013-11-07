@@ -31,5 +31,5 @@
   <static-files> 
 	<exclude path="**"/> 
   </static-files>
-	
+		
 </appengine-web-app>

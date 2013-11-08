@@ -7,7 +7,7 @@ import mir2.core.sys.beans.User;
 import mir2.core.sys.dao.UserDao;
 import mir2.core.sys.manager.UserManager;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

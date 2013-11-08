@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
-<%@ include file="/commons/taglibs.jsp"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 
 <html>
 	<head>

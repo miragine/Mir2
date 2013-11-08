@@ -13,6 +13,10 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
     </context-param>
 	
 	<listener>
+		<listener-class>mir2.common.gae.Struts2ListenerOnGAE</listener-class>
+	</listener>
+	
+	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	

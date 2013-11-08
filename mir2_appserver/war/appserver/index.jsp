@@ -7,9 +7,6 @@
 		<link href="<s:url value="/css/defaultStyle.css" includeParams="none" />" rel="stylesheet" type="text/css" />
 	</head>
 <body>
-username: ${username}
-${user.id}
-${user.username}
-${user.createDate}
+<s:actionmessage />
 </body>
 </html>

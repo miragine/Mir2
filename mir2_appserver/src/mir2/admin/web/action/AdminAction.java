@@ -6,6 +6,9 @@ package mir2.admin.web.action;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.struts2.interceptor.ServletRequestAware;
+import org.datanucleus.util.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -15,41 +18,46 @@ import com.opensymphony.xwork2.ActionSupport;
  * 管理员登录入口
  * 
  * @author mudsong@gmail.com
- *
+ * 
  */
 @Controller
 public class AdminAction extends ActionSupport implements ServletRequestAware {
-	
+
+	private Logger logger = LoggerFactory.getLogger(getClass());
+
 	@Autowired
 	private String defaultUsername;
 
 	@Autowired
 	private String defaultPassword;
-	
+
 	private HttpServletRequest request;
 
 	public void setServletRequest(HttpServletRequest request) {
 		this.request = request;
 	}
-	
+
 	public String login() throws Exception {
-		if (username == null || username.equals("")) {
+		if (StringUtils.isEmpty(username)) {
 			return ERROR;
 		}
-		if (password == null || password.equals("")) {
+		if (StringUtils.isEmpty(password)) {
 			return ERROR;
 		}
-		
+
+		logger.info("request:{}, session:{}", request, request.getSession());
+
 		if (username.equals(defaultUsername)
 				&& password.equals(defaultPassword)) {
-			request.getSession().setAttribute("status", "LOGIN");
-			request.getSession().setAttribute("username", username);
+			//request.getSession().setAttribute("status", "LOGIN");
+			addActionMessage("Welcome," + username);
+			request.setAttribute("username", username);
 			return SUCCESS;
 		} else {
 			return ERROR;
 		}
 	}
-	
+
 	public String logout() throws Exception {
 		request.getSession().removeAttribute("username");
 		return SUCCESS;

@@ -3,16 +3,19 @@
  */
 package mir2.admin.web.action;
 
-import javax.servlet.http.HttpServletRequest;
+import mir2.common.spring.SpringMvcAction;
+import mir2.core.sys.beans.User;
+import mir2.core.sys.manager.UserManager;
 
-import org.apache.struts2.interceptor.ServletRequestAware;
 import org.datanucleus.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
-import com.opensymphony.xwork2.ActionSupport;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * 管理员登录入口
@@ -20,8 +23,8 @@ import com.opensymphony.xwork2.ActionSupport;
  * @author mudsong@gmail.com
  * 
  */
-@Controller
-public class AdminAction extends ActionSupport implements ServletRequestAware {
+@Controller("adminAction")
+public class AdminAction extends SpringMvcAction {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -30,57 +33,30 @@ public class AdminAction extends ActionSupport implements ServletRequestAware {
 
 	@Autowired
 	private String defaultPassword;
+	
+	@Autowired
+	private UserManager userManager;
 
-	private HttpServletRequest request;
-
-	public void setServletRequest(HttpServletRequest request) {
-		this.request = request;
-	}
-
-	public String login() throws Exception {
-		if (StringUtils.isEmpty(username)) {
-			return ERROR;
-		}
-		if (StringUtils.isEmpty(password)) {
+	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
+	public String login(@PathVariable String name, ModelMap model) {
+		if (StringUtils.isEmpty(name)) {
 			return ERROR;
 		}
 
-		logger.info("request:{}, session:{}", request, request.getSession());
+		if (StringUtils.isEmpty(name)) {
+			return ERROR;
+		}
+		
+		User user = userManager.checkUser(name, name);
 
-		if (username.equals(defaultUsername)
-				&& password.equals(defaultPassword)) {
-			//request.getSession().setAttribute("status", "LOGIN");
-			addActionMessage("Welcome," + username);
-			request.setAttribute("username", username);
+		if (name.equals(defaultUsername)
+				&& name.equals(defaultPassword)) {
+			// request.getSession().setAttribute("status", "LOGIN");
+			model.addAttribute("username", name);
 			return SUCCESS;
 		} else {
 			return ERROR;
 		}
-	}
-
-	public String logout() throws Exception {
-		request.getSession().removeAttribute("username");
-		return SUCCESS;
-	}
-
-	private String username;
-
-	private String password;
-
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 }

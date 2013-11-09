@@ -70,12 +70,8 @@ public class Struts2ListenerOnGAE implements ServletContextListener,
 	@Override
 	public void contextDestroyed(ServletContextEvent arg0) {
 		// TODO Auto-generated method stub
-		
 	}
 
-	/* (non-Javadoc)
-	 * @see javax.servlet.ServletContextListener#contextInitialized(javax.servlet.ServletContextEvent)
-	 */
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
 		OgnlRuntime.setSecurityManager(null);

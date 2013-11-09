@@ -28,6 +28,8 @@
     http://code.google.com/appengine/docs/java/config/appconfig.html#Enabling_Sessions
   -->
   
+  <sessions-enabled>true</sessions-enabled>
+  
   <static-files> 
 	<exclude path="**"/> 
   </static-files>

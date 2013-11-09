@@ -4,7 +4,7 @@
 package mir2.core.person.beans;
 
 /**
- * ÖÖ×å
+ * ç§æ—
  * 
  * @author zoday
  *

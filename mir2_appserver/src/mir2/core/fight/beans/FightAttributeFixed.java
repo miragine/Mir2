@@ -10,7 +10,7 @@ package mir2.core.fight.beans;
 public abstract class FightAttributeFixed extends FightAttribute {
 	
 	/**
-	 * ֵ
+	 * 值
 	 */
 	protected int value;
 

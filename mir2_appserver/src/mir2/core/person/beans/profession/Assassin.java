@@ -7,7 +7,7 @@ package mir2.core.person.beans.profession;
 import mir2.core.person.beans.PersonAttribute;
 
 /**
- * ´Ì¿Í
+ * åˆºå®¢
  */
 public class Assassin extends PersonAttribute {
 

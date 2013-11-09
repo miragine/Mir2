@@ -16,7 +16,7 @@ import com.webjvm.core.utils.GenericsUtils;
 import com.webjvm.core.utils.PageBean;
 
 /**
- * 基于JDO实现的DAO
+ * 鍩轰簬JDO瀹炵幇鐨凞AO
  * 
  * @author mudsong@gmail.com
  * 

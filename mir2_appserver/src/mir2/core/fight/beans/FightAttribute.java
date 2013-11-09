@@ -4,7 +4,7 @@
 package mir2.core.fight.beans;
 
 /**
- * ÊôĞÔ
+ * å±æ€§
  * 
  * @author zoday
  *

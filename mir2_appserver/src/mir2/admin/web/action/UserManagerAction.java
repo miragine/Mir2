@@ -3,59 +3,54 @@
  */
 package mir2.admin.web.action;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import mir2.common.spring.SpringMvcAction;
+import mir2.core.sys.beans.User;
 import mir2.core.sys.manager.UserManager;
 
-import org.datanucleus.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * 管理员登录
- * 
  * @author mudsong@gmail.com
- * 
+ *
  */
 @Controller
-@RequestMapping("/admin")
-public class AdminAction extends SpringMvcAction {
-
-	@Autowired
-	private String defaultUsername;
-
-	@Autowired
-	private String defaultPassword;
-
+@RequestMapping("/admin/user")
+public class UserManagerAction extends SpringMvcAction {
+	
 	@Autowired
 	private UserManager userManager;
-
-	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	public String login(HttpServletRequest request,
+	
+	@RequestMapping(value = "/index.do", method = RequestMethod.GET)
+	public String list(HttpServletRequest request,
 			HttpServletResponse response, HttpSession session) {
+		List<User> users = userManager.getAll();
+		request.setAttribute("users", users);
+		return "index";
+	}
+	
+	@RequestMapping(value = "/create.do", method = RequestMethod.GET)
+	public String create(HttpServletRequest request,
+			HttpServletResponse response, HttpSession session) {
+		
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		if (StringUtils.isEmpty(username)) {
-			return ERROR;
+		
+		User user = userManager.getUserByUsername(username);
+		if (user != null) {
+			return "create";
 		}
-
-		if (StringUtils.isEmpty(password)) {
-			return ERROR;
-		}
-
-		if (username.equals(defaultUsername)
-				&& password.equals(defaultPassword)) {
-			session.setAttribute("status", "LOGIN");
-			request.setAttribute("username", username);
-			return "index";
-		} else {
-			return ERROR;
-		}
+		
+		userManager.register(username, password);
+		return "index";
 	}
 
 }

@@ -5,9 +5,6 @@ package mir2.core.sys.dao.impl;
 
 import java.util.Collection;
 
-import javax.jdo.PersistenceManager;
-import javax.jdo.Query;
-
 import mir2.common.db.JdoBaseDaoImpl;
 import mir2.core.sys.beans.User;
 import mir2.core.sys.dao.UserDao;

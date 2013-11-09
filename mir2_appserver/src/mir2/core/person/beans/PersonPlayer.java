@@ -6,7 +6,7 @@ package mir2.core.person.beans;
 import javax.jdo.annotations.PersistenceCapable;
 
 /**
- * 人物对象
+ * 浜虹墿瀵硅薄
  * 
  * @author zoday
  *
@@ -15,22 +15,22 @@ import javax.jdo.annotations.PersistenceCapable;
 public class PersonPlayer {
 	
 	/**
-	 * 人物名称
+	 * 浜虹墿鍚嶇О
 	 */
 	protected String name;
 	
 	/**
-	 * 性别
+	 * 鎬у埆
 	 */
 	protected PersonSex sex;
 	
 	/**
-	 * 种族
+	 * 绉嶆棌
 	 */
 	protected PersonRace race;
 	
 	/**
-	 * 人物属性，随着等级提升发生变化
+	 * 浜虹墿灞炴�э紝闅忕潃绛夌骇鎻愬崌鍙戠敓鍙樺寲
 	 */
 	protected PersonAttribute attribute;
 

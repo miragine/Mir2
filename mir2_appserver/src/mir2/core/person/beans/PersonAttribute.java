@@ -15,22 +15,22 @@ import mir2.core.fight.beans.ShieldPhysical;
 
 
 /**
- * ÈËÎïÊôĞÔ
+ * äººç‰©å±æ€§
  */
 public class PersonAttribute {
 	
 	/**
-	 * µÈ¼¶
+	 * ç­‰çº§
 	 */
 	protected int level;
 	
 	/**
-	 * Îï¹¥
+	 * ç‰©æ”»
 	 */
 	protected AssaultPhysical assaultPhysical;
 	
 	/**
-	 * Ä§¹¥
+	 * é­”æ”»
 	 */
 	protected AssaultMagic assaultMagic;
 	
@@ -40,27 +40,27 @@ public class PersonAttribute {
 	protected Hp hp;
 	
 	/**
-	 * Îï·À
+	 * ç‰©é˜²
 	 */
 	protected ShieldPhysical shieldPhysical;
 	
 	/**
-	 * Ä§·À
+	 * é­”é˜²
 	 */
 	protected ShieldMagic shieldMagic;
 	
 	/**
-	 * ÉúÃü»Ø¸´
+	 * ç”Ÿå‘½å›å¤
 	 */
 	protected HpRecovery hpRecovery;
 	
 	/**
-	 * ÉÁ±Ü
+	 * é—ªé¿
 	 */
 	protected Dodge dodge;
 	
 	/**
-	 * ±©»÷
+	 * æš´å‡»
 	 */
 	protected AssaultCrit assaultCrit;
 

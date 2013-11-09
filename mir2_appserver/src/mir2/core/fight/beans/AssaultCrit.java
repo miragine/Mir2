@@ -5,7 +5,7 @@
 package mir2.core.fight.beans;
 
 /**
- * ±©»÷
+ * æš´å‡»
  */
 public class AssaultCrit extends FightAttributeFixed {
 

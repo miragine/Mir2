@@ -1,8 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@ include file="/commons/taglibs.jsp"%>
 
 <html>
 	<head>
-		<title><s:text name="index.title" /></title>
+		<title>admin</title>
 		<link href="/css/defaultStyle.css" rel="stylesheet" type="text/css" />
 	</head>
 <body>
@@ -20,7 +21,7 @@
     		<td><input type="password" name="password" value="112233"></td>
     	</tr>
     	<tr>
-    		<td colspan="2" align="center"><input type="submit" value="submit"></td>
+    		<td colspan="2" align="center"><input type="submit" value="<spring:message code="user.login"/>"></td>
     	</tr>
     </form>
     </table>

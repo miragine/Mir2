@@ -5,7 +5,7 @@
 package mir2.core.fight.beans;
 
 /**
- * иа╠э
+ * И≈╙И│©
  */
 public class Dodge extends FightAttributeFixed {
 

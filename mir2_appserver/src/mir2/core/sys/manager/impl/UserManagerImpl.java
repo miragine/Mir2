@@ -51,4 +51,9 @@ public class UserManagerImpl extends BaseManagerImpl<User, UserDao> implements
 		return null;
 	}
 
+	@Override
+	public User getUserByUsername(String username) {
+		return userDao.getUserByUsername(username);
+	}
+
 }

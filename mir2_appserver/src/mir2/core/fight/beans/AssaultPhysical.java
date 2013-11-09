@@ -5,7 +5,7 @@
 package mir2.core.fight.beans;
 
 /**
- * ÎïÀí¹¥»÷
+ * ç‰©ç†æ”»å‡»
  */
 public class AssaultPhysical extends FightAttributeScope {
 	

@@ -7,6 +7,6 @@
 		<link href="/css/defaultStyle.css" rel="stylesheet" type="text/css" />
 	</head>
 <body>
-welcom ${username}
+error
 </body>
 </html>

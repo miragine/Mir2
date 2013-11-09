@@ -7,7 +7,7 @@ package mir2.common.db;
 import com.webjvm.core.entity.BaseEntity;
 
 /**
- * JDO实体实现
+ * JDO瀹炰綋瀹炵幇
  */
 public interface JdoEntity extends BaseEntity {
 

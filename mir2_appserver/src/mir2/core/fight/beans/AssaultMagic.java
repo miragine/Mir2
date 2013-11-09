@@ -5,7 +5,7 @@
 package mir2.core.fight.beans;
 
 /**
- * Ä§·¨¹¥»÷
+ * é­”æ³•æ”»å‡»
  */
 public class AssaultMagic extends FightAttributeScope {
 

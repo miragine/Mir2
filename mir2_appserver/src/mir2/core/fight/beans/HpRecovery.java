@@ -5,7 +5,7 @@
 package mir2.core.fight.beans;
 
 /**
- * ÉúÃü»Ø¸´
+ * ç”Ÿå‘½å›å¤
  */
 public class HpRecovery extends FightAttributeFixed {
 

@@ -5,7 +5,7 @@
 package mir2.core.fight.beans;
 
 /**
- * Îï·À
+ * ç‰©é˜²
  */
 public class ShieldPhysical extends FightAttributeFixed {
 

@@ -9,7 +9,7 @@ import mir2.core.sys.beans.User;
 import com.webjvm.core.dao.BaseDao;
 
 /**
- * ÓÃ»§
+ * ç”¨æˆ·
  */
 public interface UserDao extends BaseDao<User> {
 	

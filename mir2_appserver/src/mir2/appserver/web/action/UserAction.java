@@ -4,33 +4,59 @@
 package mir2.appserver.web.action;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import mir2.common.spring.SpringMvcAction;
 import mir2.core.sys.beans.User;
 import mir2.core.sys.manager.UserManager;
 
-import org.apache.struts2.interceptor.ServletRequestAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
-import com.opensymphony.xwork2.ActionSupport;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
+ * 用户登录入口
+ * 
  * @author mudsong@gmail.com
  * 
  */
-@Controller("userAction")
-public class UserAction extends ActionSupport implements ServletRequestAware {
+@Controller
+public class UserAction extends SpringMvcAction {
 
 	@Autowired
 	private UserManager userManager;
 
-	private HttpServletRequest request;
+	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+	public String login(HttpServletRequest request,
+			HttpServletResponse response, HttpSession session) {
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
 
-	public void setServletRequest(HttpServletRequest request) {
-		this.request = request;
+		if (username == null || username.equals("")) {
+			return ERROR;
+		}
+		if (password == null || password.equals("")) {
+			return ERROR;
+		}
+
+		User user = userManager.checkUser(username, password);
+		if (user == null) {
+			return ERROR;
+		}
+
+		session.setAttribute("user", user);
+
+		return "index";
 	}
 
-	public String login() throws Exception {
+	@RequestMapping(value = "/register.do", method = RequestMethod.POST)
+	public String register(HttpServletRequest request,
+			HttpServletResponse response, HttpSession session) {
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+
 		if (username == null || username.equals("")) {
 			return ERROR;
 		}
@@ -41,55 +67,10 @@ public class UserAction extends ActionSupport implements ServletRequestAware {
 		User user = userManager.checkUser(username, password);
 		if (user == null) {
 			user = userManager.register(username, password);
-		}
-
-		request.setAttribute("username", "aaaaaaaaaaa");
-
-		return SUCCESS;
-	}
-
-	public String register() throws Exception {
-		if (username == null || username.equals("")) {
-			return ERROR;
-		}
-		if (password == null || password.equals("")) {
-			return ERROR;
-		}
-
-		User user = userManager.checkUser(username, password);
-		if (user == null) {
-			user = userManager.register(username, password);
-			request.setAttribute("user", user);
-			request.setAttribute("username", "aaaaaaaaaaa");
-			return SUCCESS;
+			return "";
 		} else {
 			return ERROR;
 		}
-	}
-
-	public String logout() throws Exception {
-		request.getSession().removeAttribute("username");
-		return SUCCESS;
-	}
-
-	private String username;
-
-	private String password;
-
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 }

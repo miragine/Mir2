@@ -9,12 +9,12 @@ import mir2.core.sys.beans.User;
 import com.webjvm.core.manager.BaseManager;
 
 /**
- * �û�
+ * 用户
  */
 public interface UserManager extends BaseManager<User> {
 	
 	/**
-	 * ע���û�
+	 * 注册用户
 	 * 
 	 * @param username
 	 * @param password
@@ -23,12 +23,20 @@ public interface UserManager extends BaseManager<User> {
 	public User register(String username, String password);
 	
 	/**
-	 * ����û�
+	 * 检查用户
 	 * 
 	 * @param username
 	 * @param password
 	 * @return
 	 */
 	public User checkUser(String username, String password);
+	
+	/**
+	 * 根据用户名取得用户
+	 * 
+	 * @param username
+	 * @return
+	 */
+	public User getUserByUsername(String username);
 
 }

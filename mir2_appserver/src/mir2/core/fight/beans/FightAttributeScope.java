@@ -10,12 +10,12 @@ package mir2.core.fight.beans;
 public abstract class FightAttributeScope extends FightAttribute {
 	
 	/**
-	 * 下线
+	 * 涓嬬嚎
 	 */
 	protected int minValue;
 	
 	/**
-	 * 上线
+	 * 涓婄嚎
 	 */
 	protected int maxValue;
 

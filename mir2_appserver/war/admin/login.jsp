@@ -21,7 +21,7 @@
     		<td><input type="password" name="password" value="112233"></td>
     	</tr>
     	<tr>
-    		<td colspan="2" align="center"><input type="submit" value="<spring:message code="user.login"/>"></td>
+    		<td colspan="2" align="center"><input type="submit" value="<fmt:message key="user.login"/>"></td>
     	</tr>
     </form>
     </table>

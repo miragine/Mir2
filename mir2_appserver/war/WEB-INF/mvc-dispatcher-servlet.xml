@@ -31,9 +31,8 @@
 		</property>
 	</bean>
 	
-	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-		<property name="basename" value="/WEB-INF/messages" />
-		<property name="defaultEncoding" value="UTF-8"/>
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" lazy-init="false">
+		<property name="basename" value="/WEB-INF/il8n/message"/>
 	</bean>
 	
 	<bean id="handlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">

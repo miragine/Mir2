@@ -12,6 +12,8 @@ import org.slf4j.LoggerFactory;
  */
 public class SpringMvcAction {
 	
+	protected static final String REDIRECT = "redirect:";
+	
 	protected static final String ERROR = "/error";
 	
 	protected Logger logger = LoggerFactory.getLogger(getClass());

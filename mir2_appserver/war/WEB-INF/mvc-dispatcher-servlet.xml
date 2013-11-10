@@ -21,8 +21,7 @@
  
 	<mvc:annotation-driven />
 	
-	<bean
-	   class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/</value>
 		</property>
@@ -31,22 +30,4 @@
 		</property>
 	</bean>
 	
-	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" lazy-init="false">
-		<property name="basename" value="/WEB-INF/il8n/message"/>
-	</bean>
-	
-	<bean id="handlerMapping" class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
-		<property name="interceptors">
-			<ref bean="localeChangeInterceptor" />
-		</property>
-	</bean>
-
-	<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
-		<property name="paramName" value="lang" />
-	</bean>
-	
-	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
-		<property name="defaultLocale" value="zh"/>
-	</bean>
-	 
 </beans>

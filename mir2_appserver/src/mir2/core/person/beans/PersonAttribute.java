@@ -4,6 +4,11 @@
  */
 package mir2.core.person.beans;
 
+import javax.jdo.annotations.Discriminator;
+import javax.jdo.annotations.DiscriminatorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+
+import mir2.common.db.JdoEntityImpl;
 import mir2.core.fight.beans.AssaultCrit;
 import mir2.core.fight.beans.AssaultMagic;
 import mir2.core.fight.beans.AssaultPhysical;
@@ -17,7 +22,9 @@ import mir2.core.fight.beans.ShieldPhysical;
 /**
  * 人物属性
  */
-public class PersonAttribute {
+@PersistenceCapable(detachable = "true")
+@Discriminator(strategy = DiscriminatorStrategy.CLASS_NAME)
+public class PersonAttribute extends JdoEntityImpl {
 	
 	/**
 	 * 等级

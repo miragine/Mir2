@@ -8,5 +8,9 @@ package mir2.core.fight.beans;
  * 暴击
  */
 public class AssaultCrit extends FightAttributeFixed {
+	
+	public AssaultCrit(int value) {
+		super(value);
+	}
 
 }

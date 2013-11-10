@@ -27,5 +27,9 @@ public abstract class FightAttributeFixed extends FightAttribute {
 	public void setValue(int value) {
 		this.value = value;
 	}
+	
+	public FightAttributeFixed(int value) {
+		this.value = value;
+	}
 
 }

@@ -6,7 +6,7 @@ package mir2.core.sys.beans;
 
 import java.util.Date;
 
-import javax.persistence.Entity;
+import javax.jdo.annotations.PersistenceCapable;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -16,7 +16,7 @@ import com.webjvm.core.entity.BaseEntity;
 /**
  * 
  */
-@Entity
+@PersistenceCapable(detachable = "true")
 public class User implements BaseEntity {
 	
 	@Id

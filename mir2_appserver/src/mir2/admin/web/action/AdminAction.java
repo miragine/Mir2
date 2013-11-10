@@ -51,11 +51,16 @@ public class AdminAction extends SpringMvcAction {
 		if (username.equals(defaultUsername)
 				&& password.equals(defaultPassword)) {
 			session.setAttribute("status", "LOGIN");
-			request.setAttribute("username", username);
-			return "index";
+			session.setAttribute("username", username);
+			return "redirect:/admin/index.do";
 		} else {
 			return ERROR;
 		}
+	}
+	
+	@RequestMapping(value = "/index.do", method = RequestMethod.GET)
+	public String list() {
+		return "/admin/index";
 	}
 
 }

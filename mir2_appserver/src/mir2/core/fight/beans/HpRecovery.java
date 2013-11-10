@@ -8,5 +8,9 @@ package mir2.core.fight.beans;
  * 生命回复
  */
 public class HpRecovery extends FightAttributeFixed {
+	
+	public HpRecovery(int value) {
+		super(value);
+	}
 
 }

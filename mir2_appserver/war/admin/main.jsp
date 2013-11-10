@@ -12,7 +12,10 @@
 		<td valign="top">
 		<table border="1" align="left">
 			<tr>
-				<td><a href="/admin/user/index.do"></a></td>
+				<td><a href="/admin/user/index.do">用户</a></td>
+			</tr>
+			<tr>
+				<td><a href="/admin/profession/index.do">职业</a></td>
 			</tr>
 		</table>
 		</td>

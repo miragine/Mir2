@@ -11,7 +11,7 @@
 <table>
 	<tr>
 		<td>
-			<table>
+			<table border="1">
 				<tr>
 					<td colspan="2" align="left">战士</td>
 				</tr>
@@ -24,7 +24,7 @@
 			</table>
 		</td>
 		<td>
-			<table>
+			<table border="1">
 				<tr>
 					<td colspan="2" align="left">道士</td>
 				</tr>
@@ -37,7 +37,7 @@
 			</table>
 		</td>
 		<td>
-			<table>
+			<table border="1">
 				<tr>
 					<td colspan="2" align="left">法师</td>
 				</tr>
@@ -50,7 +50,7 @@
 			</table>
 		</td>
 		<td>
-			<table>
+			<table border="1">
 				<tr>
 					<td colspan="2" align="left">盗贼</td>
 				</tr>

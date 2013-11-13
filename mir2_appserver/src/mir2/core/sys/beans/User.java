@@ -6,28 +6,31 @@ package mir2.core.sys.beans;
 
 import java.util.Date;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
 
-import com.webjvm.core.entity.BaseEntity;
+import mir2.common.db.JdoEntityImpl;
 
 /**
- * 
+ * 用户
  */
-@PersistenceCapable(detachable = "true")
-public class User implements BaseEntity {
+@PersistenceCapable
+public class User extends JdoEntityImpl {
 	
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 	protected Long id;
 	
+	@Persistent
 	protected Date createDate;
 
-	private String username;
+	@Persistent
+	protected String username;
 	
-	private String password;
+	@Persistent
+	protected String password;
 
 	public Long getId() {
 		return id;
@@ -60,6 +63,5 @@ public class User implements BaseEntity {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 
 }

@@ -28,10 +28,7 @@ public class ProfessionManagerImpl extends BaseManagerImpl<PersonAttribute, Pers
 	@Override
 	public <T extends PersonAttribute> List<T> findListByProfession(
 			Class<T> clazz) {
-		
-		
-		
-		return null;
+		return personAttributeDao.findListByProfession(clazz);
 	}
 
 }

@@ -3,15 +3,15 @@
  */
 package mir2.admin.web.action;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import mir2.common.spring.SpringMvcAction;
-import mir2.core.fight.beans.Hp;
 import mir2.core.person.beans.PersonAttribute;
+import mir2.core.person.beans.profession.Assassin;
+import mir2.core.person.beans.profession.Magician;
+import mir2.core.person.beans.profession.Taoist;
 import mir2.core.person.beans.profession.Warrior;
 import mir2.core.person.manager.ProfessionManager;
 
@@ -38,21 +38,50 @@ public class ProfessionManagerAction extends SpringMvcAction {
 	@RequestMapping(value = "/index.do", method = RequestMethod.GET)
 	public String list(HttpServletRequest request,
 			HttpServletResponse response, HttpSession session) {
-		List<Warrior> warriors = professionManager
-				.findListByProfession(Warrior.class);
-		request.setAttribute("warriors", warriors);
+		request.setAttribute("warriors",
+				professionManager.findListByProfession(Warrior.class));
+		request.setAttribute("taoists",
+				professionManager.findListByProfession(Taoist.class));
+		request.setAttribute("magicians",
+				professionManager.findListByProfession(Magician.class));
+		request.setAttribute("assassins",
+				professionManager.findListByProfession(Assassin.class));
+
 		return REQUEST_PATH + "/index";
 	}
 
 	@RequestMapping(value = "/init.do", method = RequestMethod.GET)
 	public String init(HttpServletRequest request,
 			HttpServletResponse response, HttpSession session) {
-		for (int i = 1; i <= 35; i++) {
-			Warrior warrior = new Warrior();
-			warrior.setLevel(i);
-			warrior.setHp(new Hp(10 * i));
-			professionManager.save(warrior);
-			logger.info("Save {}", warrior.getId());
+
+		String type = request.getParameter("type");
+		Class<? extends PersonAttribute> clazz = null;
+		int baseHp = 45;
+		int coefficient = 0;
+		if (type.equals("warrior")) {
+			clazz = Warrior.class;
+			coefficient = 18;
+		} else if (type.equals("taoist")) {
+			clazz = Taoist.class;
+			coefficient = 12;
+		} else if (type.equals("magician")) {
+			clazz = Magician.class;
+			coefficient = 8;
+		} else if (type.equals("assassin")) {
+			clazz = Assassin.class;
+			coefficient = 9;
+		}
+
+		try {
+			for (int i = 1; i <= 35; i++) {
+				PersonAttribute profession = clazz.newInstance();
+				profession.setLevel(i);
+				profession.setHpValue(baseHp + (coefficient * i));
+				professionManager.save(profession);
+				logger.info("Save {}", profession.getId());
+			}
+		} catch (Exception e) {
+			logger.warn("Create class object error.", e);
 		}
 
 		return REDIRECT + REQUEST_PATH + "/index.do";

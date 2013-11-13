@@ -13,7 +13,7 @@ import mir2.core.person.beans.PersonAttribute;
 /**
  * 刺客
  */
-@PersistenceCapable(detachable = "true")
+@PersistenceCapable
 @Discriminator(strategy = DiscriminatorStrategy.CLASS_NAME)
 public class Assassin extends PersonAttribute {
 

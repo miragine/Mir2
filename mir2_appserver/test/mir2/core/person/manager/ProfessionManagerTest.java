@@ -69,7 +69,7 @@ public class ProfessionManagerTest {
 		for(int i = 1; i <= 35; i++) {
 			Warrior warrior = new Warrior();
 			warrior.setLevel(i);
-			warrior.setHp(new Hp(10 * i));
+			warrior.setHpValue(45 + (18 * i));
 			professionManager.save(warrior);
 		}
 	}

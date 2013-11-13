@@ -1,4 +1,29 @@
-<!-- Indices written at Sun, 10 Nov 2013 13:43:01 UTC -->
+<!-- Indices written at Tue, 12 Nov 2013 15:09:50 UTC -->
 
-<datastore-indexes/>
+<datastore-indexes>
 
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Warrior" ancestor="false" source="auto">
+        <property name="DISCRIMINATOR" direction="asc"/>
+        <property name="level" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Taoist" ancestor="false" source="auto">
+        <property name="DISCRIMINATOR" direction="asc"/>
+        <property name="level" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Magician" ancestor="false" source="auto">
+        <property name="DISCRIMINATOR" direction="asc"/>
+        <property name="level" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Assassin" ancestor="false" source="auto">
+        <property name="DISCRIMINATOR" direction="asc"/>
+        <property name="level" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>

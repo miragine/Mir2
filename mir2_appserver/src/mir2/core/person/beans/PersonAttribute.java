@@ -4,197 +4,70 @@
  */
 package mir2.core.person.beans;
 
-import javax.jdo.annotations.Discriminator;
-import javax.jdo.annotations.DiscriminatorStrategy;
+import java.util.Date;
+
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.Inheritance;
+import javax.jdo.annotations.InheritanceStrategy;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
 
 import mir2.common.db.JdoEntityImpl;
-import mir2.core.fight.beans.AssaultCrit;
-import mir2.core.fight.beans.AssaultMagic;
-import mir2.core.fight.beans.AssaultPhysical;
-import mir2.core.fight.beans.Dodge;
-import mir2.core.fight.beans.Hp;
-import mir2.core.fight.beans.HpRecovery;
-import mir2.core.fight.beans.ShieldMagic;
-import mir2.core.fight.beans.ShieldPhysical;
-
 
 /**
  * 人物属性
  */
-@PersistenceCapable(detachable = "true")
-@Discriminator(strategy = DiscriminatorStrategy.CLASS_NAME)
-public class PersonAttribute extends JdoEntityImpl {
-	
+@PersistenceCapable
+@Inheritance(strategy = InheritanceStrategy.SUBCLASS_TABLE)
+public abstract class PersonAttribute extends JdoEntityImpl {
+
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	protected Long id;
+
+	@Persistent
+	protected Date createDate;
+
 	/**
 	 * 等级
 	 */
+	@Persistent
 	protected int level;
-	
-	/**
-	 * 物攻
-	 */
-	protected AssaultPhysical assaultPhysical;
-	
-	/**
-	 * 魔攻
-	 */
-	protected AssaultMagic assaultMagic;
-	
-	/**
-	 * HP
-	 */
-	protected Hp hp;
-	
-	/**
-	 * 物防
-	 */
-	protected ShieldPhysical shieldPhysical;
-	
-	/**
-	 * 魔防
-	 */
-	protected ShieldMagic shieldMagic;
-	
-	/**
-	 * 生命回复
-	 */
-	protected HpRecovery hpRecovery;
-	
-	/**
-	 * 闪避
-	 */
-	protected Dodge dodge;
-	
-	/**
-	 * 暴击
-	 */
-	protected AssaultCrit assaultCrit;
 
-	/**
-	 * @return the level
-	 */
+	@Persistent
+	protected int hpValue;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Date getCreateDate() {
+		return createDate;
+	}
+
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+
 	public int getLevel() {
 		return level;
 	}
 
-	/**
-	 * @param level the level to set
-	 */
 	public void setLevel(int level) {
 		this.level = level;
 	}
 
-	/**
-	 * @return the assaultPhysical
-	 */
-	public AssaultPhysical getAssaultPhysical() {
-		return assaultPhysical;
+	public int getHpValue() {
+		return hpValue;
 	}
 
-	/**
-	 * @param assaultPhysical the assaultPhysical to set
-	 */
-	public void setAssaultPhysical(AssaultPhysical assaultPhysical) {
-		this.assaultPhysical = assaultPhysical;
-	}
-
-	/**
-	 * @return the assaultMagic
-	 */
-	public AssaultMagic getAssaultMagic() {
-		return assaultMagic;
-	}
-
-	/**
-	 * @param assaultMagic the assaultMagic to set
-	 */
-	public void setAssaultMagic(AssaultMagic assaultMagic) {
-		this.assaultMagic = assaultMagic;
-	}
-
-	/**
-	 * @return the hp
-	 */
-	public Hp getHp() {
-		return hp;
-	}
-
-	/**
-	 * @param hp the hp to set
-	 */
-	public void setHp(Hp hp) {
-		this.hp = hp;
-	}
-
-	/**
-	 * @return the shieldPhysical
-	 */
-	public ShieldPhysical getShieldPhysical() {
-		return shieldPhysical;
-	}
-
-	/**
-	 * @param shieldPhysical the shieldPhysical to set
-	 */
-	public void setShieldPhysical(ShieldPhysical shieldPhysical) {
-		this.shieldPhysical = shieldPhysical;
-	}
-
-	/**
-	 * @return the shieldMagic
-	 */
-	public ShieldMagic getShieldMagic() {
-		return shieldMagic;
-	}
-
-	/**
-	 * @param shieldMagic the shieldMagic to set
-	 */
-	public void setShieldMagic(ShieldMagic shieldMagic) {
-		this.shieldMagic = shieldMagic;
-	}
-
-	/**
-	 * @return the hpRecovery
-	 */
-	public HpRecovery getHpRecovery() {
-		return hpRecovery;
-	}
-
-	/**
-	 * @param hpRecovery the hpRecovery to set
-	 */
-	public void setHpRecovery(HpRecovery hpRecovery) {
-		this.hpRecovery = hpRecovery;
-	}
-
-	/**
-	 * @return the dodge
-	 */
-	public Dodge getDodge() {
-		return dodge;
-	}
-
-	/**
-	 * @param dodge the dodge to set
-	 */
-	public void setDodge(Dodge dodge) {
-		this.dodge = dodge;
-	}
-
-	/**
-	 * @return the assaultCrit
-	 */
-	public AssaultCrit getAssaultCrit() {
-		return assaultCrit;
-	}
-
-	/**
-	 * @param assaultCrit the assaultCrit to set
-	 */
-	public void setAssaultCrit(AssaultCrit assaultCrit) {
-		this.assaultCrit = assaultCrit;
+	public void setHpValue(int hpValue) {
+		this.hpValue = hpValue;
 	}
 
 }

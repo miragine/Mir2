@@ -3,6 +3,7 @@
  */
 package mir2.common.db;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.jdo.PersistenceManager;
@@ -22,8 +23,8 @@ import com.webjvm.core.utils.PageBean;
  * 
  */
 @SuppressWarnings("unchecked")
-public abstract class JdoBaseDaoImpl<T extends BaseEntity> extends JdoDaoSupport
-		implements BaseDao<T> {
+public abstract class JdoBaseDaoImpl<T extends BaseEntity> extends
+		JdoDaoSupport implements BaseDao<T> {
 
 	protected Class<T> entityClass;
 
@@ -70,11 +71,15 @@ public abstract class JdoBaseDaoImpl<T extends BaseEntity> extends JdoDaoSupport
 
 	@Override
 	public void save(T entity) {
+		if (entity.getCreateDate() == null) {
+			entity.setCreateDate(new Date());
+		}
 		getJdoTemplate().makePersistent(entity);
 	}
 
 	@Override
 	public void saveOrUpdate(T entity) {
+		entity.setCreateDate(new Date());
 		getJdoTemplate().makePersistent(entity);
 	}
 

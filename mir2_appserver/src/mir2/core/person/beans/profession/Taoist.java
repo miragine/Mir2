@@ -13,7 +13,7 @@ import mir2.core.person.beans.PersonAttribute;
 /**
  * 道士
  */
-@PersistenceCapable(detachable = "true")
+@PersistenceCapable
 @Discriminator(strategy = DiscriminatorStrategy.CLASS_NAME)
 public class Taoist extends PersonAttribute {
 

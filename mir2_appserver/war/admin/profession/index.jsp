@@ -8,20 +8,61 @@
 	</head>
 <body>
 <div class="inscribe">
-<table align="left">
+<table>
 	<tr>
-		<td><a href="/admin/profession/init.do">初始化</a></td>
+		<td>
+			<table>
+				<tr>
+					<td colspan="2" align="left">战士</td>
+				</tr>
+				<c:forEach items="${warriors}" var="warrior" varStatus="status">
+					<tr>
+						<td align="left">${warrior.level} 等级</td>
+						<td align="left">${warrior.hpValue} hp</td>
+					</tr>
+				</c:forEach>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<td colspan="2" align="left">道士</td>
+				</tr>
+				<c:forEach items="${taoists}" var="taoist" varStatus="status">
+					<tr>
+						<td align="left">${taoist.level} 等级</td>
+						<td align="left">${taoist.hpValue} hp</td>
+					</tr>
+				</c:forEach>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<td colspan="2" align="left">法师</td>
+				</tr>
+				<c:forEach items="${magicians}" var="magician" varStatus="status">
+					<tr>
+						<td align="left">${magician.level}  等级</td>
+						<td align="left">${magician.hpValue} hp</td>
+					</tr>
+				</c:forEach>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<td colspan="2" align="left">盗贼</td>
+				</tr>
+				<c:forEach items="${assassins}" var="assassin" varStatus="status">
+					<tr>
+						<td align="left">${assassin.level}  等级</td>
+						<td align="left">${assassin.hpValue} hp</td>
+					</tr>
+				</c:forEach>
+			</table>
+		</td>
 	</tr>
-	<c:forEach items="${warriors}" var="warrior" varStatus="status">
-		<tr>
-			<td>等级</td>
-			<td>HP</td>
-		</tr>
-		<tr>
-			<td align="left">${warrior.level}</td>
-			<td align="left">${warrior.hp.value}</td>
-		</tr>
-	</c:forEach>
 </table>
 </div>
 </body>

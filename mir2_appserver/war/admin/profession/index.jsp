@@ -13,7 +13,7 @@
 		<td>
 			<table border="1">
 				<tr>
-					<td colspan="2" align="left">战士</td>
+					<td colspan="2" align="left"><a href="/admin/profession/init.do?type=Warrior">初始化战士</a></td>
 				</tr>
 				<c:forEach items="${warriors}" var="warrior" varStatus="status">
 					<tr>
@@ -26,7 +26,7 @@
 		<td>
 			<table border="1">
 				<tr>
-					<td colspan="2" align="left">道士</td>
+					<td colspan="2" align="left"><a href="/admin/profession/init.do?type=Taoist">初始化道士</a></td>
 				</tr>
 				<c:forEach items="${taoists}" var="taoist" varStatus="status">
 					<tr>
@@ -39,7 +39,7 @@
 		<td>
 			<table border="1">
 				<tr>
-					<td colspan="2" align="left">法师</td>
+					<td colspan="2" align="left"><a href="/admin/profession/init.do?type=Magician">初始化法师</a></td>
 				</tr>
 				<c:forEach items="${magicians}" var="magician" varStatus="status">
 					<tr>
@@ -52,7 +52,7 @@
 		<td>
 			<table border="1">
 				<tr>
-					<td colspan="2" align="left">盗贼</td>
+					<td colspan="2" align="left"><a href="/admin/profession/init.do?type=Assassin">初始化刺客</a></td>
 				</tr>
 				<c:forEach items="${assassins}" var="assassin" varStatus="status">
 					<tr>

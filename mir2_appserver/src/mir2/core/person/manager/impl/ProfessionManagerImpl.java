@@ -30,5 +30,15 @@ public class ProfessionManagerImpl extends BaseManagerImpl<PersonAttribute, Pers
 			Class<T> clazz) {
 		return personAttributeDao.findListByProfession(clazz);
 	}
+	
+	@Override
+	public <T extends PersonAttribute> void removeAllByProfession(Class<T> clazz) {
+		List<T> list = personAttributeDao.findListByProfession(clazz);
+		if (list != null && !list.isEmpty()) {
+			for(T profession : list) {
+				personAttributeDao.remove(profession);
+			}
+		}
+	}
 
 }

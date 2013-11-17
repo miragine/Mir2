@@ -13,6 +13,7 @@ import mir2.core.person.beans.profession.Assassin;
 import mir2.core.person.beans.profession.Magician;
 import mir2.core.person.beans.profession.Taoist;
 import mir2.core.person.beans.profession.Warrior;
+import mir2.core.person.enums.ProfessionInitData;
 import mir2.core.person.manager.ProfessionManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,30 +54,16 @@ public class ProfessionManagerAction extends SpringMvcAction {
 	@RequestMapping(value = "/init.do", method = RequestMethod.GET)
 	public String init(HttpServletRequest request,
 			HttpServletResponse response, HttpSession session) {
-
 		String type = request.getParameter("type");
-		Class<? extends PersonAttribute> clazz = null;
-		int baseHp = 45;
-		int coefficient = 0;
-		if (type.equals("warrior")) {
-			clazz = Warrior.class;
-			coefficient = 18;
-		} else if (type.equals("taoist")) {
-			clazz = Taoist.class;
-			coefficient = 12;
-		} else if (type.equals("magician")) {
-			clazz = Magician.class;
-			coefficient = 8;
-		} else if (type.equals("assassin")) {
-			clazz = Assassin.class;
-			coefficient = 9;
-		}
+		ProfessionInitData initData = ProfessionInitData.valueOfType(type);
 
 		try {
-			for (int i = 1; i <= 35; i++) {
-				PersonAttribute profession = clazz.newInstance();
-				profession.setLevel(i);
-				profession.setHpValue(baseHp + (coefficient * i));
+			for (int level = 1; level <= 35; level++) {
+				PersonAttribute profession = initData.getClassType()
+						.newInstance();
+				profession.setId(Long.valueOf(level));
+				profession.setLevel(level);
+				profession.setHpValue(initData.getHp(level));
 				professionManager.save(profession);
 				logger.info("Save {}", profession.getId());
 			}

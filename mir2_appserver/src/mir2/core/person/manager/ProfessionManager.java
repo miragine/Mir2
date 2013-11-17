@@ -25,5 +25,12 @@ public interface ProfessionManager extends BaseManager<PersonAttribute> {
 	 */
 	public <T extends PersonAttribute> List<T> findListByProfession(
 			Class<T> clazz);
+	
+	/**
+	 * 
+	 * 
+	 * @param clazz
+	 */
+	public <T extends PersonAttribute> void removeAllByProfession(Class<T> clazz);
 
 }

@@ -29,7 +29,7 @@ public class PersonAttributeDaoImpl extends JdoBaseDaoImpl<PersonAttribute>
 		PersistenceManager persistenceManager = getJdoTemplate()
 				.getPersistenceManagerFactory().getPersistenceManager();
 		Query query = persistenceManager.newQuery(clazz);
-		query.setOrdering("level");
+		query.setOrdering("id");
 		return (List<T>) query.execute();
 	}
 

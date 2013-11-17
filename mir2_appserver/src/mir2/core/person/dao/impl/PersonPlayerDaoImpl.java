@@ -6,25 +6,30 @@ package mir2.core.person.dao.impl;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
+import javax.jdo.PersistenceManager;
+import javax.jdo.Query;
 
+import mir2.common.db.JdoBaseDaoImpl;
 import mir2.core.person.beans.PersonPlayer;
 import mir2.core.person.dao.PersonPlayerDao;
 import mir2.core.sys.beans.User;
 
-import com.webjvm.core.dao.impl.BaseDaoImpl;
+import org.springframework.stereotype.Repository;
 
 /**
  * 
  */
 @Repository
-public class PersonPlayerDaoImpl extends BaseDaoImpl<PersonPlayer> implements
+public class PersonPlayerDaoImpl extends JdoBaseDaoImpl<PersonPlayer> implements
 		PersonPlayerDao {
 
 	@Override
 	public List<PersonPlayer> findListByUser(User user) {
-		// TODO Auto-generated method stub
-		return null;
+
+		PersistenceManager persistenceManager = getJdoTemplate()
+				.getPersistenceManagerFactory().getPersistenceManager();
+		Query query = persistenceManager.newQuery(entityClass);
+		return (List<PersonPlayer>) query.execute();
 	}
-	
+
 }

@@ -29,7 +29,7 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.transaction-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.web-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.web.portlet-3.1.0.M2.jar"/>
-	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.web.servlet-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.web.servlet-3.1.0.M2.jar" sourcepath="D:/source/spring-framework-3.1.0.M2/org.springframework.web.servlet-sources-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.springframework.web.struts-3.1.0.M2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/slf4j-api-1.5.8.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/slf4j-log4j12-1.5.8.jar"/>

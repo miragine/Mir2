@@ -14,6 +14,7 @@ import mir2.common.spring.SpringMvcAction;
 import mir2.core.person.beans.PersonPlayer;
 import mir2.core.person.manager.PersonPlayerManager;
 import mir2.core.person.manager.PersonRaceManager;
+import mir2.core.person.manager.ProfessionManager;
 import mir2.core.sys.beans.User;
 import mir2.core.sys.manager.UserManager;
 
@@ -37,6 +38,9 @@ public class PersonPlayerAction extends SpringMvcAction {
 
 	@Autowired
 	protected PersonRaceManager personRaceManager;
+	
+	@Autowired
+	private ProfessionManager professionManager;
 
 	@RequestMapping(value = "/index.do", method = RequestMethod.GET)
 	public String list(HttpServletRequest request,
@@ -51,7 +55,18 @@ public class PersonPlayerAction extends SpringMvcAction {
 		List<PersonPlayer> players = personPlayerManager.findListByUser(user);
 
 		request.setAttribute("players", players);
-		return "index";
+		return "/player/index";
+	}
+	
+	@RequestMapping(value = "/create.do", method = RequestMethod.GET)
+	public String create(HttpServletRequest request,
+			HttpServletResponse response, HttpSession session) {
+		int level = Integer.valueOf(request.getParameter("level"));
+		String type = request.getParameter("type");
+		
+		
+		
+		return "";
 	}
 
 }

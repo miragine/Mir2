@@ -39,7 +39,7 @@ public class UserManagerAction extends SpringMvcAction {
 		return REQUEST_PATH + "/index";
 	}
 
-	@RequestMapping(value = "/create.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/create.do")
 	public String create(HttpServletRequest request,
 			HttpServletResponse response, HttpSession session) {
 
@@ -52,7 +52,7 @@ public class UserManagerAction extends SpringMvcAction {
 		}
 
 		userManager.register(username, password);
-		return REQUEST_PATH + "/index";
+		return REDIRECT + REQUEST_PATH + "/index.do";
 	}
 
 }

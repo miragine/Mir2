@@ -9,7 +9,7 @@
 <body>
 <table>
     <form action="/admin/user/create.do" method="post">
-    	<tr height="300">
+    	<tr>
     		<td colspan="2"></td>
     	</tr>
     	<tr>
@@ -21,7 +21,7 @@
     		<td><input type="password" name="password" value=""></td>
     	</tr>
     	<tr>
-    		<td colspan="2" align="center"><input type="submit" value="新建"></td>
+    		<td colspan="2" align="right"><input type="submit" value="新建"></td>
     	</tr>
     </form>
 </table>

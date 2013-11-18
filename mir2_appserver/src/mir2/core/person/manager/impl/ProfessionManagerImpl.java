@@ -19,9 +19,10 @@ import com.webjvm.core.manager.impl.BaseManagerImpl;
  * 
  */
 @Service
-public class ProfessionManagerImpl extends BaseManagerImpl<PersonAttribute, PersonAttributeDao>
-		implements ProfessionManager {
-	
+public class ProfessionManagerImpl extends
+		BaseManagerImpl<PersonAttribute, PersonAttributeDao> implements
+		ProfessionManager {
+
 	@Autowired
 	private PersonAttributeDao personAttributeDao;
 
@@ -30,15 +31,20 @@ public class ProfessionManagerImpl extends BaseManagerImpl<PersonAttribute, Pers
 			Class<T> clazz) {
 		return personAttributeDao.findListByProfession(clazz);
 	}
-	
+
 	@Override
 	public <T extends PersonAttribute> void removeAllByProfession(Class<T> clazz) {
 		List<T> list = personAttributeDao.findListByProfession(clazz);
 		if (list != null && !list.isEmpty()) {
-			for(T profession : list) {
+			for (T profession : list) {
 				personAttributeDao.remove(profession);
 			}
 		}
+	}
+
+	@Override
+	public <T extends PersonAttribute> T get(Class<T> clazz, int level) {
+		return personAttributeDao.get(clazz, Long.valueOf(level));
 	}
 
 }

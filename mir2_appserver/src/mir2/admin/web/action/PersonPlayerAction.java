@@ -11,7 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import mir2.common.spring.SpringMvcAction;
+import mir2.core.person.beans.PersonAttribute;
 import mir2.core.person.beans.PersonPlayer;
+import mir2.core.person.beans.PersonSex;
+import mir2.core.person.enums.ProfessionInitData;
 import mir2.core.person.manager.PersonPlayerManager;
 import mir2.core.person.manager.PersonRaceManager;
 import mir2.core.person.manager.ProfessionManager;
@@ -30,6 +33,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/admin/player")
 public class PersonPlayerAction extends SpringMvcAction {
 
+	private static final String REQUEST_PATH = "/admin/player";
+
 	@Autowired
 	protected UserManager userManager;
 
@@ -38,7 +43,7 @@ public class PersonPlayerAction extends SpringMvcAction {
 
 	@Autowired
 	protected PersonRaceManager personRaceManager;
-	
+
 	@Autowired
 	private ProfessionManager professionManager;
 
@@ -57,16 +62,28 @@ public class PersonPlayerAction extends SpringMvcAction {
 		request.setAttribute("players", players);
 		return "/player/index";
 	}
-	
-	@RequestMapping(value = "/create.do", method = RequestMethod.GET)
+
+	@RequestMapping(value = "/create.do")
 	public String create(HttpServletRequest request,
 			HttpServletResponse response, HttpSession session) {
-		int level = Integer.valueOf(request.getParameter("level"));
+		Long userId = Long.valueOf(request.getParameter("userId"));
+		String name = request.getParameter("name");
 		String type = request.getParameter("type");
-		
-		
-		
-		return "";
+		int level = Integer.valueOf(request.getParameter("level"));
+		PersonSex sex = PersonSex.valueOf(request.getParameter("sex"));
+
+		User user = userManager.get(userId);
+		PersonPlayer personPlayer = new PersonPlayer();
+		personPlayer.setName(name);
+		personPlayer.setSex(sex);
+		personPlayer.setUser(user);
+		ProfessionInitData data = ProfessionInitData.valueOfType(type);
+		PersonAttribute attribute = professionManager.get(data.getClassType(),
+				level);
+		personPlayer.setAttribute(attribute);
+		personPlayerManager.save(personPlayer);
+
+		return REDIRECT + REQUEST_PATH + "/index.do";
 	}
 
 }

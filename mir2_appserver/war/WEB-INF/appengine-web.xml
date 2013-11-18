@@ -31,7 +31,9 @@
   <sessions-enabled>true</sessions-enabled>
   
   <static-files> 
-	<exclude path="**"/> 
+	<include path="/css/*"/>
+	<include path="/*.ico"/>
+	<include path="/*.html"/>
   </static-files>
 		
 </appengine-web-app>

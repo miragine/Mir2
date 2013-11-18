@@ -23,5 +23,7 @@ public interface PersonAttributeDao extends BaseDao<PersonAttribute> {
 	 */
 	public <T extends PersonAttribute> List<T> findListByProfession(
 			Class<T> clazz);
+	
+	public <T extends PersonAttribute> T get(Class<T> clazz, Long id);
 
 }

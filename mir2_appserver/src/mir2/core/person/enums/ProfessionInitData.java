@@ -17,12 +17,24 @@ import mir2.core.person.beans.profession.Warrior;
  */
 public enum ProfessionInitData {
 
+	/**
+	 * 刺客
+	 */
 	ASSASSIN(Assassin.class, 45, 9),
 
+	/**
+	 * 魔法师
+	 */
 	MAGICIAN(Magician.class, 45, 8),
 
+	/**
+	 * 道士
+	 */
 	TAOIST(Taoist.class, 45, 12),
 
+	/**
+	 * 战士
+	 */
 	WARRIOR(Warrior.class, 45, 18);
 
 	private int initHp;

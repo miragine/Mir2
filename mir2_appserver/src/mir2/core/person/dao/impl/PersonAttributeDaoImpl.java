@@ -33,4 +33,9 @@ public class PersonAttributeDaoImpl extends JdoBaseDaoImpl<PersonAttribute>
 		return (List<T>) query.execute();
 	}
 
+	@Override
+	public <T extends PersonAttribute> T get(Class<T> clazz, Long id) {
+		return getJdoTemplate().getObjectById(clazz, id);
+	}
+
 }

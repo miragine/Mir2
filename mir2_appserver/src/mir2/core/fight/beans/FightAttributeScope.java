@@ -12,39 +12,44 @@ public abstract class FightAttributeScope extends FightAttribute {
 	/**
 	 * 下线
 	 */
-	protected int minValue;
+	protected int min;
 	
 	/**
 	 * 上线
 	 */
-	protected int maxValue;
+	protected int max;
 
 	/**
-	 * @return the minValue
+	 * @return the min
 	 */
-	public int getMinValue() {
-		return minValue;
+	public int getMin() {
+		return min;
 	}
 
 	/**
-	 * @param minValue the minValue to set
+	 * @param min the min to set
 	 */
-	public void setMinValue(int minValue) {
-		this.minValue = minValue;
+	public void setMin(int min) {
+		this.min = min;
 	}
 
 	/**
-	 * @return the maxValue
+	 * @return the max
 	 */
-	public int getMaxValue() {
-		return maxValue;
+	public int getMax() {
+		return max;
 	}
 
 	/**
-	 * @param maxValue the maxValue to set
+	 * @param max the max to set
 	 */
-	public void setMaxValue(int maxValue) {
-		this.maxValue = maxValue;
+	public void setMax(int max) {
+		this.max = max;
+	}
+	
+	public FightAttributeScope(int min, int max) {
+		this.min = min;
+		this.max = max;
 	}
 
 }

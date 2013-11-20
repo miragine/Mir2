@@ -14,7 +14,9 @@ import javax.jdo.annotations.PersistenceCapable;
 @PersistenceCapable(detachable = "true")
 @Discriminator(strategy = DiscriminatorStrategy.CLASS_NAME)
 public class AssaultPhysical extends FightAttributeScope {
-	
-	
-	
+
+	public AssaultPhysical(int min, int max) {
+		super(min, max);
+	}
+
 }

@@ -4,6 +4,7 @@
  */
 package mir2.core.fight.pool;
 
+import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -19,7 +20,9 @@ import com.webjvm.core.utils.BackgroundHelper;
 @Service
 public class SimpleFighting implements Fighting {
 
-	private static long FIGHT_INTERVAL = 2000;
+	private static long FIGHT_INTERVAL = 2000L;
+
+	private static long FIGHT_START = 1000L;
 
 	/**
 	 * 战斗ID生成器
@@ -42,32 +45,34 @@ public class SimpleFighting implements Fighting {
 
 		BackgroundHelper.scheduleTask(taskA, FIGHT_INTERVAL,
 				TimeUnit.MILLISECONDS);
-		BackgroundHelper.scheduleTaskWithFixedDelay(taskB, 1000,
+		BackgroundHelper.scheduleTaskWithFixedDelay(taskB, FIGHT_START,
 				FIGHT_INTERVAL, TimeUnit.MILLISECONDS);
 
 		return fighterSpider;
 	}
 
+	/**
+	 * 战斗
+	 */
 	private class FightingTask implements Runnable {
 
 		private FighterSpider fighterSpider;
 
-		private FighterUnit active;
+		private FighterUnit activer;
 
-		private FighterUnit passive;
+		private FighterUnit passiver;
 
-		private FightingTask(FighterSpider fighterSpider, FighterUnit active,
-				FighterUnit passive) {
+		private FightingTask(FighterSpider fighterSpider, FighterUnit activer,
+				FighterUnit passiver) {
 			this.fighterSpider = fighterSpider;
-			this.active = active;
-			this.passive = passive;
+			this.activer = activer;
+			this.passiver = passiver;
 		}
 
 		@Override
 		public void run() {
-
-			// TODO
-
+			List<FighterMessage> messages = activer.active(passiver);
+			fighterSpider.offer(messages);
 		}
 
 	}
@@ -83,8 +88,8 @@ public class SimpleFighting implements Fighting {
 			queue = new LinkedBlockingQueue<FighterMessage>();
 		}
 
-		private void add(FighterMessage message) {
-			queue.add(message);
+		public void offer(List<FighterMessage> messages) {
+			queue.addAll(messages);
 		}
 
 		@Override

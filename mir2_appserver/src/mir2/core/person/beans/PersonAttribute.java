@@ -5,6 +5,7 @@
 package mir2.core.person.beans;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Inheritance;
@@ -14,6 +15,8 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 import mir2.common.db.JdoEntityImpl;
+import mir2.core.fight.pool.FighterUnit;
+import mir2.core.props.beans.Equipment;
 
 /**
  * 人物属性
@@ -69,5 +72,13 @@ public abstract class PersonAttribute extends JdoEntityImpl {
 	public void setHpValue(int hpValue) {
 		this.hpValue = hpValue;
 	}
+
+	/**
+	 * 战斗单位
+	 * 
+	 * @param equipments
+	 * @return
+	 */
+	public abstract FighterUnit getFighterUnit(List<Equipment> equipments);
 
 }

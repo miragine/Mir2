@@ -4,13 +4,17 @@
 package mir2.core.person.beans;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.NotPersistent;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 import mir2.common.db.JdoEntityImpl;
+import mir2.core.fight.pool.FighterUnit;
+import mir2.core.props.beans.Equipment;
 import mir2.core.sys.beans.User;
 
 /**
@@ -55,6 +59,9 @@ public class PersonPlayer extends JdoEntityImpl {
 	 */
 	@Persistent
 	protected PersonAttribute attribute;
+	
+	@NotPersistent
+	protected List<Equipment> equipments;
 
 	/**
 	 * @return the name
@@ -152,6 +159,10 @@ public class PersonPlayer extends JdoEntityImpl {
 	 */
 	public void setUser(User user) {
 		this.user = user;
+	}
+	
+	public FighterUnit getFighterUnit() {
+		return attribute.getFighterUnit(equipments);
 	}
 
 }

@@ -19,7 +19,9 @@ import com.webjvm.core.utils.BackgroundHelper;
 @Service
 public class SimpleFighting implements Fighting {
 
-	private static long FIGHT_INTERVAL = 2000;
+	private static long FIGHT_INTERVAL = 2000L;
+
+	private static long FIGHT_START = 1000L;
 
 	/**
 	 * 战斗ID生成器
@@ -42,7 +44,7 @@ public class SimpleFighting implements Fighting {
 
 		BackgroundHelper.scheduleTask(taskA, FIGHT_INTERVAL,
 				TimeUnit.MILLISECONDS);
-		BackgroundHelper.scheduleTaskWithFixedDelay(taskB, 1000,
+		BackgroundHelper.scheduleTaskWithFixedDelay(taskB, FIGHT_START,
 				FIGHT_INTERVAL, TimeUnit.MILLISECONDS);
 
 		return fighterSpider;
@@ -52,22 +54,20 @@ public class SimpleFighting implements Fighting {
 
 		private FighterSpider fighterSpider;
 
-		private FighterUnit active;
+		private FighterUnit activer;
 
-		private FighterUnit passive;
+		private FighterUnit passiver;
 
-		private FightingTask(FighterSpider fighterSpider, FighterUnit active,
-				FighterUnit passive) {
+		private FightingTask(FighterSpider fighterSpider, FighterUnit activer,
+				FighterUnit passiver) {
 			this.fighterSpider = fighterSpider;
-			this.active = active;
-			this.passive = passive;
+			this.activer = activer;
+			this.passiver = passiver;
 		}
 
 		@Override
 		public void run() {
-
-			// TODO
-
+			activer.active(passiver);
 		}
 
 	}

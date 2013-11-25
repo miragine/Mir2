@@ -4,6 +4,10 @@
  */
 package mir2.core.props.beans;
 
+import java.util.List;
+
+import mir2.core.fight.beans.FightAttribute;
+
 /**
  * 装备
  */
@@ -15,14 +19,19 @@ public class Equipment extends Goods {
 	private int level;
 
 	/**
-	 * 等级限制
+	 * 装备该物品的最小等级
 	 */
-	private int levlePlace;
+	private int levelMin;
 	
 	/**
 	 * 持久度
 	 */
 	private long durable;
+	
+	/**
+	 * 装备属性
+	 */
+	private List<FightAttribute> attributes;
 
 	/**
 	 * @return the level
@@ -40,18 +49,17 @@ public class Equipment extends Goods {
 	}
 
 	/**
-	 * @return the levlePlace
+	 * @return the levelMin
 	 */
-	public int getLevlePlace() {
-		return levlePlace;
+	public int getLevelMin() {
+		return levelMin;
 	}
 
 	/**
-	 * @param levlePlace
-	 *            the levlePlace to set
+	 * @param levelMin the levelMin to set
 	 */
-	public void setLevlePlace(int levlePlace) {
-		this.levlePlace = levlePlace;
+	public void setLevelMin(int levelMin) {
+		this.levelMin = levelMin;
 	}
 
 	/**
@@ -66,6 +74,20 @@ public class Equipment extends Goods {
 	 */
 	public void setDurable(long durable) {
 		this.durable = durable;
+	}
+
+	/**
+	 * @return the attributes
+	 */
+	public List<FightAttribute> getAttributes() {
+		return attributes;
+	}
+
+	/**
+	 * @param attributes the attributes to set
+	 */
+	public void setAttributes(List<FightAttribute> attributes) {
+		this.attributes = attributes;
 	}
 
 }

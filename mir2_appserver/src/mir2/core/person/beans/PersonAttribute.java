@@ -79,6 +79,7 @@ public abstract class PersonAttribute extends JdoEntityImpl {
 	 * @param equipments
 	 * @return
 	 */
-	public abstract FighterUnit getFighterUnit(Long id, List<Equipment> equipments);
+	public abstract FighterUnit getFighterUnit(Long id, String name,
+			List<Equipment> equipments);
 
 }

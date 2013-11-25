@@ -9,6 +9,10 @@ package mir2.core.fight.beans;
  */
 public class AssaultMagic extends FightAttributeScope {
 	
+	public AssaultMagic() {
+		super();
+	}
+	
 	public AssaultMagic(int min, int max) {
 		super(min, max);
 	}

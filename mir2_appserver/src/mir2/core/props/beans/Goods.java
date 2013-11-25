@@ -9,7 +9,7 @@ import java.util.Date;
 import mir2.common.db.JdoEntityImpl;
 
 /**
- * 
+ * 物品
  */
 public class Goods extends JdoEntityImpl {
 	
@@ -22,6 +22,11 @@ public class Goods extends JdoEntityImpl {
 	 * 创建日期
 	 */
 	private Date createDate;
+	
+	/**
+	 * 名称
+	 */
+	private String name;
 
 	/**
 	 * @return the id
@@ -49,6 +54,20 @@ public class Goods extends JdoEntityImpl {
 	 */
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

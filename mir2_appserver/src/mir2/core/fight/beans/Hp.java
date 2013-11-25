@@ -15,9 +15,20 @@ import javax.jdo.annotations.PersistenceCapable;
 @PersistenceCapable(detachable = "true")
 @Discriminator(strategy = DiscriminatorStrategy.CLASS_NAME)
 public class Hp extends FightAttributeFixed {
-	
+
+	public Hp() {
+		super();
+	}
+
 	public Hp(int value) {
 		super(value);
+	}
+
+	public synchronized void reduce(int value) {
+		this.value -= value;
+		if (this.value < 0) {
+			this.value = 0;
+		}
 	}
 
 }

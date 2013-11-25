@@ -24,8 +24,12 @@ public abstract class FightAttributeFixed extends FightAttribute {
 	/**
 	 * @param value the value to set
 	 */
-	public void setValue(int value) {
+	public synchronized void addValue(int value) {
 		this.value = value;
+	}
+	
+	public FightAttributeFixed() {
+		this.value = 0;
 	}
 	
 	public FightAttributeFixed(int value) {

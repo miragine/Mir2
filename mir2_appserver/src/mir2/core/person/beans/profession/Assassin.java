@@ -76,9 +76,6 @@ public class Assassin extends PersonAttribute {
 			return 0;
 		}
 
-		/* (non-Javadoc)
-		 * @see mir2.core.fight.pool.FighterUnit#doAssaultMagic(int)
-		 */
 		@Override
 		public int doAssaultMagic(int assault) {
 			// TODO Auto-generated method stub

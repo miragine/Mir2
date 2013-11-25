@@ -9,6 +9,10 @@ package mir2.core.fight.beans;
  */
 public class Dodge extends FightAttributeFixed {
 	
+	public Dodge() {
+		super();
+	}
+	
 	public Dodge(int value) {
 		super(value);
 	}

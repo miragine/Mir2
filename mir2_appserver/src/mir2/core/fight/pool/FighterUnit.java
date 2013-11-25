@@ -10,6 +10,16 @@ import java.util.List;
  * 战斗单位
  */
 public interface FighterUnit {
+	
+	/**
+	 * 物理攻击减免系数
+	 */
+	public static final int ABSOLVE_PHYSICAL_HURT = 50;
+	
+	/**
+	 * 魔法攻击减免系数
+	 */
+	public static final int ABSOLVE_MAGIC_HURT = 5;
 
 	/**
 	 * 战斗单位ID
@@ -17,6 +27,13 @@ public interface FighterUnit {
 	 * @return
 	 */
 	public Long getId();
+	
+	/**
+	 * 名称
+	 * 
+	 * @return
+	 */
+	public String getName();
 
 	/**
 	 * 攻击一次，返回攻击

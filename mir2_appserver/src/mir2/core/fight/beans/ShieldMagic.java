@@ -5,9 +5,13 @@
 package mir2.core.fight.beans;
 
 /**
- * 魔法
+ * 魔防
  */
 public class ShieldMagic extends FightAttributeFixed {
+	
+	public ShieldMagic() {
+		super();
+	}
 	
 	public ShieldMagic(int value) {
 		super(value);

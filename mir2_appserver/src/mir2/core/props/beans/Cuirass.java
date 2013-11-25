@@ -2,15 +2,11 @@
  * miragine.com
  * @author mudsong@gmail.com
  */
-package mir2.core.fight.pool;
+package mir2.core.props.beans;
 
 /**
  * 
  */
-public class FighterMessage {
-	
-	
-	
-	
+public class Cuirass {
 
 }

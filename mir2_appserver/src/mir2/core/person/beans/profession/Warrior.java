@@ -31,17 +31,23 @@ public class Warrior extends PersonAttribute {
 		return new WarriorFighter(this, equipments);
 	}
 
-	class WarriorFighter extends PlayerFighterUnit {
+	class WarriorFighter implements FighterUnit {
+		
+		private Warrior warrior;
+		
+		private List<Equipment> equipments;
 
 		public WarriorFighter(Warrior warrior, List<Equipment> equipments) {
-			this.level = warrior.getLevel();
-			this.hp = new Hp(warrior.getHpValue());
-			this.assaultPhysical = new AssaultPhysical(level * 5, level * 10);
+			this.warrior = warrior;
+			this.equipments = equipments;
+			
+			
+			
 		};
 
 		@Override
 		public List<FighterMessage> active(FighterUnit passive) {
-			int assault = RandomNumberUtils.nextInt(assaultPhysical.getMin(), assaultPhysical.getMax());
+			int assault = RandomNumberUtils.nextInt(warrior.assaultPhysical.getMin(), assaultPhysical.getMax());
 			int shield = passive.getShieldPhysical().getValue();
 			int injure = assault - (shield / 10);
 			
@@ -53,6 +59,21 @@ public class Warrior extends PersonAttribute {
 			}
 			
 			return Collections.singletonList(message);
+		}
+
+		@Override
+		public Long getId() {
+			return warrior.getId();
+		}
+
+		@Override
+		public int doAssaultPhysical(int assault) {
+			return 0;
+		}
+
+		@Override
+		public int doAssaultMagic(int assault) {
+			return 0;
 		}
 
 	}

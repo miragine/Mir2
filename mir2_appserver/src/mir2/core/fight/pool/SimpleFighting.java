@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 import com.webjvm.core.utils.BackgroundHelper;
 
 /**
- * 
+ * 简单战斗实现
  */
 @Service
 public class SimpleFighting implements Fighting {

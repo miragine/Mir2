@@ -43,7 +43,7 @@ public class AdminAction extends SpringMvcAction {
 		if (StringUtils.isEmpty(username)) {
 			return ERROR;
 		}
-
+ 
 		if (StringUtils.isEmpty(password)) {
 			return ERROR;
 		}

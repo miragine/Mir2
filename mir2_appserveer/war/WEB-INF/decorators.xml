@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<decorators defaultdir="/admin">
+	
+	<excludes>
+		<pattern>/admin/login.jsp</pattern>
+	</excludes>
+	<decorator name="main" page="main.jsp">
+		<pattern>/admin/*</pattern>
+	</decorator>
+	
+</decorators>

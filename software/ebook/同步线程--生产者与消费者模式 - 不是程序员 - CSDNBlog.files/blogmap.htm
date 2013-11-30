@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0109)http://api.51ditu.com/iframe/blogmap.html?lng=9108939&lat=2965455&zoom=0&txt=工作场所&msg=2006111606272586300 -->
+<HTML><HEAD><TITLE>分享地图 - 单点地图 - my.51ditu.com - 个人地图应用</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<SCRIPT language=javascript src="blogmap.files/maps.js"></SCRIPT>
+
+<META 
+content=我要地图,开放地图,分享地图,地图互动,地图开发,制作地图,地图开源,源代码,应用程序接口,地图接口,专业地图,地图免费接口,公交地图,驾驶导航,数据转换,地图频道接口,地图调用,地图租用,搜索接口,标注接口,导航接口,经纬度转换,逆地理编码,地理编码,地图数据,城市地图,导航接口,公交接口,公交数据,导航数据,51dituAPI,MapsAPI,BusAPI,NaviAPI,SearchAPI,Ezmarker,MapOne,地图API,公交API,导航API，地图数据API，搜索API，标点API,电子地图,地图桌面版,单点地图,多点地图 
+name=keywords>
+<META content=中国地图,北京地图,天津地图,,上海地图,重庆地图,广州地图,深圳地图,珠海地图,汕头地图,肇庆地图,香港地图,沈阳地图,澳门地图 
+name=keywords>
+<META 
+content=石家庄地图,合肥地图,太原地图,哈尔滨地图,长春地图,大连地图,济南地图,青岛地图,南京地图,苏州地图,无锡地图,杭州地图,宁波地图,温州地图,福州地图,厦门地图 
+name=keywords>
+<META 
+content=南昌地图,郑州地图,洛阳地图,武汉地图,宜昌地图,长沙地图,成都地图,贵阳地图,昆明地图,南宁地图,西安地图,兰州地图,西宁地图,银川地图,乌鲁木齐地图,呼和浩特地图,拉萨地图,海南地图,海口地图,台湾地图,台北地图 
+name=keywords>
+<META content="MSHTML 6.00.2900.3020" name=GENERATOR></HEAD>
+<BODY style="MARGIN: 0px; OVERFLOW: hidden">
+<DIV id=maps style="WIDTH: 100%; POSITION: relative; HEIGHT: 100%"></DIV>
+<SCRIPT language=javascript>
+var lng,lat,zoom,txt,msg;
+var url = location.search.substring(1);
+	url = url.split("&");
+for(var i=0;i<url.length;i++){
+	var tmp = url[i].split("=");
+	eval(tmp[0] + "='" + tmp[1] + "'");
+}
+var maps,p,icon,m,t;
+if(lng && lat){
+	maps = new LTMaps("maps");
+	p = new LTPoint(parseInt(lng),parseInt(lat));
+	zoom = (zoom)?parseInt(zoom):12;
+	maps.centerAndZoom(p,zoom);
+	if(txt){
+		icon = new LTIcon();
+		icon.setImageUrl("http://my.51ditu.com/my/img/blog.gif");
+		m = new LTMarker(p,icon);
+		t = new LTMapText(m);
+		t.setLabel(txt);
+		maps.addOverLay(m);
+		maps.addOverLay(t);
+		
+		function doit(){
+			window.open("http://my.51ditu.com/mm"+msg+".html","");
+		}
+		LTEvent.addListener(m,"click",doit);
+	}
+}
+</SCRIPT>
+</BODY></HTML>

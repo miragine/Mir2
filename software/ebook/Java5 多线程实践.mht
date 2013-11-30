@@ -1,0 +1,5102 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: =?gb2312?B?SmF2YTUgtuDP37PMyrW8+Q==?=
+Date: Tue, 3 Jul 2007 23:50:47 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01C7BDCC.FA933D40";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/developerworks/cn/java/j-zhanghz/
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML lang=3Dzh-CN xml:lang=3D"zh-CN"=20
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><TITLE>Java5 =
+=E5=A4=9A=E7=BA=BF=E7=A8=8B=E5=AE=9E=E8=B7=B5</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3DUTF-8">
+<META http-equiv=3DPICS-Label=20
+content=3D'(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r =
+(cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen =
+true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true =
+r (SS~~000 1))'><LINK=20
+href=3D"http://purl.org/DC/elements/1.0/" rel=3Dschema.DC><LINK=20
+href=3D"http://www.ibm.com/favicon.ico" rel=3D"SHORTCUT ICON">
+<META content=3Ddw@cn.ibm.com name=3DOwner>
+<META scheme=3Drfc1766 content=3Dzh-CN name=3DDC.Language>
+<META content=3Dcn name=3DIBM.Country>
+<META content=3DPublic name=3DSecurity>
+<META=20
+content=3D"Java5=E5=A2=9E=E5=8A=A0=E4=BA=86=E6=96=B0=E7=9A=84=E7=B1=BB=E5=
+=BA=93=E5=B9=B6=E5=8F=91=E9=9B=86java.util.concurrent=EF=BC=8C=E8=AF=A5=E7=
+=B1=BB=E5=BA=93=E4=B8=BA=E5=B9=B6=E5=8F=91=E7=A8=8B=E5=BA=8F=E6=8F=90=E4=BE=
+=9B=E4=BA=86=E4=B8=B0=E5=AF=8C=E7=9A=84API=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=
+=96=E7=A8=8B=E5=9C=A8Java =
+5=E4=B8=AD=E6=9B=B4=E5=8A=A0=E5=AE=B9=E6=98=93=EF=BC=8C=E7=81=B5=E6=B4=BB=
+=E3=80=82=E6=9C=AC=E6=96=87=E9=80=9A=E8=BF=87=E4=B8=80=E4=B8=AA=E7=BD=91=E7=
+=BB=9C=E6=9C=8D=E5=8A=A1=E5=99=A8=E6=A8=A1=E5=9E=8B=EF=BC=8C=E6=9D=A5=E5=AE=
+=9E=E8=B7=B5Java5=E7=9A=84=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=96=E7=A8=8B=EF=
+=BC=8C=E8=AF=A5=E6=A8=A1=E5=9E=8B=E4=B8=AD=E4=BD=BF=E7=94=A8=E4=BA=86Java=
+5=E4=B8=AD=E7=9A=84=E7=BA=BF=E7=A8=8B=E6=B1=A0=EF=BC=8C=E9=98=BB=E5=A1=9E=
+=E9=98=9F=E5=88=97=EF=BC=8C=E5=8F=AF=E9=87=8D=E5=85=A5=E9=94=81=E7=AD=89=EF=
+=BC=8C=E8=BF=98=E5=AE=9E=E8=B7=B5=E4=BA=86Callable=EF=BC=8C =
+Future=E7=AD=89=E6=8E=A5=E5=8F=A3=EF=BC=8C=E5=B9=B6=E4=BD=BF=E7=94=A8=E4=BA=
+=86Java =
+5=E7=9A=84=E5=8F=A6=E5=A4=96=E4=B8=80=E4=B8=AA=E6=96=B0=E7=89=B9=E6=80=A7=
+=E6=B3=9B=E5=9E=8B=E3=80=82"=20
+name=3DAbstract>
+<META=20
+content=3D"Java5=E5=A2=9E=E5=8A=A0=E4=BA=86=E6=96=B0=E7=9A=84=E7=B1=BB=E5=
+=BA=93=E5=B9=B6=E5=8F=91=E9=9B=86java.util.concurrent=EF=BC=8C=E8=AF=A5=E7=
+=B1=BB=E5=BA=93=E4=B8=BA=E5=B9=B6=E5=8F=91=E7=A8=8B=E5=BA=8F=E6=8F=90=E4=BE=
+=9B=E4=BA=86=E4=B8=B0=E5=AF=8C=E7=9A=84API=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=
+=96=E7=A8=8B=E5=9C=A8Java =
+5=E4=B8=AD=E6=9B=B4=E5=8A=A0=E5=AE=B9=E6=98=93=EF=BC=8C=E7=81=B5=E6=B4=BB=
+=E3=80=82=E6=9C=AC=E6=96=87=E9=80=9A=E8=BF=87=E4=B8=80=E4=B8=AA=E7=BD=91=E7=
+=BB=9C=E6=9C=8D=E5=8A=A1=E5=99=A8=E6=A8=A1=E5=9E=8B=EF=BC=8C=E6=9D=A5=E5=AE=
+=9E=E8=B7=B5Java5=E7=9A=84=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=96=E7=A8=8B=EF=
+=BC=8C=E8=AF=A5=E6=A8=A1=E5=9E=8B=E4=B8=AD=E4=BD=BF=E7=94=A8=E4=BA=86Java=
+5=E4=B8=AD=E7=9A=84=E7=BA=BF=E7=A8=8B=E6=B1=A0=EF=BC=8C=E9=98=BB=E5=A1=9E=
+=E9=98=9F=E5=88=97=EF=BC=8C=E5=8F=AF=E9=87=8D=E5=85=A5=E9=94=81=E7=AD=89=EF=
+=BC=8C=E8=BF=98=E5=AE=9E=E8=B7=B5=E4=BA=86Callable=EF=BC=8C =
+Future=E7=AD=89=E6=8E=A5=E5=8F=A3=EF=BC=8C=E5=B9=B6=E4=BD=BF=E7=94=A8=E4=BA=
+=86Java =
+5=E7=9A=84=E5=8F=A6=E5=A4=96=E4=B8=80=E4=B8=AA=E6=96=B0=E7=89=B9=E6=80=A7=
+=E6=B3=9B=E5=9E=8B=E3=80=82"=20
+name=3DDescription>
+<META content=3D"Java 5.0 =E3=80=81=E5=A4=9A=E7=BA=BF=E7=A8=8B, tttjca" =
+name=3DKeywords>
+<META scheme=3Diso8601 content=3D2006-01-18 name=3DDC.Date>
+<META content=3D"Based on v14 Template Generator, Template 14.0" =
+name=3DSource>
+<META content=3D"Copyright (c) 2006 by IBM Corporation" =
+name=3DDC.Rights>
+<META content=3Dindex,follow name=3DRobots>
+<META scheme=3DW3CDTF content=3D2006-01-18 name=3DIBM.Effective>
+<META content=3D17012007zoucl@cn.ibm.com name=3D"Last update"><LINK=20
+media=3Dscreen,print href=3D"http://www.ibm.com/common/v14/table.css" =
+type=3Dtext/css=20
+rel=3Dstylesheet>
+<SCRIPT language=3DJavaScript=20
+src=3D"http://www.ibm.com/developerworks/js/dwcss14.js"=20
+type=3Dtext/javascript></SCRIPT>
+<NOSCRIPT><LINK href=3D"http://www.ibm.com/developerworks/css/r1ss.css"=20
+type=3Dtext/css rel=3Dstylesheet></NOSCRIPT><LINK=20
+href=3D"http://www.ibm.com/common/v14/main.css" type=3Dtext/css =
+rel=3Dstylesheet><LINK=20
+media=3Dall href=3D"http://www.ibm.com/common/v14/cn/zh/screen.css" =
+type=3Dtext/css=20
+rel=3Dstylesheet><LINK media=3Dprint=20
+href=3D"http://www.ibm.com/common/v14/cn/zh/print.css" type=3Dtext/css=20
+rel=3Dstylesheet>
+<SCRIPT language=3DJavaScript=20
+src=3D"http://www.ibm.com/common/v14/cn/zh/detection.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavaScript=20
+src=3D"http://www.ibm.com/developerworks/js/dropdown.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavaScript=20
+src=3D"http://www.ibm.com/developerworks/email/grabtitle.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavaScript=20
+src=3D"http://www.ibm.com/developerworks/email/emailfriend2.js"=20
+type=3Dtext/javascript></SCRIPT>
+<!--START RESERVED FOR FUTURE USE INCLUDE FILES-->
+<SCRIPT language=3Djavascript =
+src=3D"http://www.ibm.com/developerworks/js/ajax1.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3Djavascript=20
+src=3D"http://www.ibm.com/developerworks/js/searchcount.js"=20
+type=3Dtext/javascript></SCRIPT>
+<!--END RESERVED FOR FUTURE USE INCLUDE FILES-->
+<SCRIPT language=3DJavaScript type=3Dtext/javascript>var emailAbstract =
+=3D =
+"Java5=E5=A2=9E=E5=8A=A0=E4=BA=86=E6=96=B0=E7=9A=84=E7=B1=BB=E5=BA=93=E5=B9=
+=B6=E5=8F=91=E9=9B=86java.util.concurrent=EF=BC=8C=E8=AF=A5=E7=B1=BB=E5=BA=
+=93=E4=B8=BA=E5=B9=B6=E5=8F=91=E7=A8=8B=E5=BA=8F=E6=8F=90=E4=BE=9B=E4=BA=86=
+=E4=B8=B0=E5=AF=8C=E7=9A=84API=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=96=E7=A8=8B=
+=E5=9C=A8Java =
+5=E4=B8=AD=E6=9B=B4=E5=8A=A0=E5=AE=B9=E6=98=93=EF=BC=8C=E7=81=B5=E6=B4=BB=
+=E3=80=82=E6=9C=AC=E6=96=87=E9=80=9A=E8=BF=87=E4=B8=80=E4=B8=AA=E7=BD=91=E7=
+=BB=9C=E6=9C=8D=E5=8A=A1=E5=99=A8=E6=A8=A1=E5=9E=8B=EF=BC=8C=E6=9D=A5=E5=AE=
+=9E=E8=B7=B5Java5=E7=9A=84=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=96=E7=A8=8B=EF=
+=BC=8C=E8=AF=A5=E6=A8=A1=E5=9E=8B=E4=B8=AD=E4=BD=BF=E7=94=A8=E4=BA=86Java=
+5=E4=B8=AD=E7=9A=84=E7=BA=BF=E7=A8=8B=E6=B1=A0=EF=BC=8C=E9=98=BB=E5=A1=9E=
+=E9=98=9F=E5=88=97=EF=BC=8C=E5=8F=AF=E9=87=8D=E5=85=A5=E9=94=81=E7=AD=89=EF=
+=BC=8C=E8=BF=98=E5=AE=9E=E8=B7=B5=E4=BA=86Callable=EF=BC=8C =
+Future=E7=AD=89=E6=8E=A5=E5=8F=A3=EF=BC=8C=E5=B9=B6=E4=BD=BF=E7=94=A8=E4=BA=
+=86Java =
+5=E7=9A=84=E5=8F=A6=E5=A4=96=E4=B8=80=E4=B8=AA=E6=96=B0=E7=89=B9=E6=80=A7=
+=E6=B3=9B=E5=9E=8B=E3=80=82"; </SCRIPT>
+
+<META content=3D"MSHTML 6.00.2600.0" name=3DGENERATOR></HEAD>
+<BODY><!--MASTHEAD_BEGIN-->
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+  <TBODY>
+  <TR vAlign=3Dtop>
+    <TD class=3Dbbg width=3D110><A href=3D"http://www.ibm.com/cn/"><IMG =
+height=3D52=20
+      alt=3DIBM=C2=AE src=3D"http://www.ibm.com/i/v14/t/ibm-logo.gif" =
+width=3D110=20
+      border=3D0></A></TD>
+    <TD class=3Dbbg><IMG height=3D1 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+      width=3D1 border=3D0></TD>
+    <TD class=3Dmbbg align=3Dright width=3D650>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 align=3Dright border=3D0>
+        <TBODY>
+        <TR class=3Dcty-tou>
+          <TD class=3Dupper-masthead-corner width=3D17 rowSpan=3D2><A=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#main"><IMG=20
+            height=3D1 =
+alt=3D=E8=B7=B3=E8=BD=AC=E5=88=B0=E4=B8=BB=E8=A6=81=E5=86=85=E5=AE=B9 =
+src=3D"http://www.ibm.com/i/c.gif" width=3D1=20
+            border=3D0></A></TD>
+          <TD align=3Dleft>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 align=3Dleft =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD><SPAN =
+class=3Dspacer>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><B=20
+                  class=3Dcountry>=E4=B8=AD=E5=9B=BD</B><SPAN =
+class=3Dspacer>&nbsp;[</SPAN><A=20
+                  class=3Dur-link=20
+                  =
+href=3D"http://www.ibm.com/developerworks/cn/country/">=E9=80=89=E6=8B=A9=
+</A><SPAN=20
+                  class=3Dspacer>]</SPAN></TD>
+                <TD class=3Dupper-masthead-divider=20
+                width=3D29>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                <TD align=3Dleft><A class=3Dur-link=20
+                  =
+href=3D"http://www.ibm.com/legal/cn/">=E4=BD=BF=E7=94=A8=E6=9D=A1=E6=AC=BE=
+</A></TD></TR></TBODY></TABLE></TD>
+          <TD width=3D40>&nbsp;</TD></TR>
+        <TR>
+          <TD class=3Dcty-tou-border colSpan=3D2 height=3D1><IMG =
+height=3D1 alt=3D""=20
+            src=3D"http://www.ibm.com/i/c.gif" width=3D1></TD></TR>
+        <TR>
+          <TD colSpan=3D3><IMG height=3D8 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+            width=3D1></TD></TR>
+        <TR>
+          <TD>&nbsp;</TD>
+          <TD align=3Dmiddle colSpan=3D2>
+            <FORM id=3Dform1 name=3Dform1=20
+            =
+action=3Dhttp://www-128.ibm.com/developerworks/search/searchResults.jsp=20
+            method=3Dget><INPUT type=3Dhidden value=3D1 =
+name=3DsearchType><INPUT=20
+            type=3Dhidden value=3DdWChina name=3DsearchSite><INPUT =
+type=3Dhidden=20
+            value=3Dzh name=3DpageLang><INPUT type=3Dhidden value=3DUTF8 =
+
+            name=3DlangEncoding>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+              <TBODY>
+              <TR>
+                <TD width=3D1><IMG height=3D1 alt=3D"Select a scope:"=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D1></TD>
+                <TD align=3Dright><LABEL for=3Dsq><SELECT =
+class=3Dinput-scope id=3Dsq=20
+                  name=3DsearchScope><OPTION value=3DdW selected>dW=20
+                    =E5=85=A8=E9=83=A8=E5=86=85=E5=AE=B9</OPTION><OPTION =
+
+                    value=3DdW>-----------------</OPTION><OPTION=20
+                    value=3Daixunix>&nbsp;&nbsp;AIX and =
+UNIX</OPTION><OPTION=20
+                    value=3Ddmdd>&nbsp;&nbsp;Information=20
+                    management</OPTION><OPTION=20
+                    value=3Dlotusdd>&nbsp;&nbsp;Lotus</OPTION><OPTION=20
+                    value=3Drdd>&nbsp;&nbsp;Rational</OPTION><OPTION=20
+                    value=3Dtivolidd>&nbsp;&nbsp;Tivoli</OPTION><OPTION=20
+                    value=3Dwsdd>&nbsp;&nbsp;WebSphere</OPTION><OPTION=20
+                    =
+value=3Dworkplace>&nbsp;&nbsp;Workplace</OPTION><OPTION=20
+                    value=3DdW>-----------------</OPTION><OPTION=20
+                    value=3DgridZ>&nbsp;&nbsp;Grid =
+computing</OPTION><OPTION=20
+                    value=3DjavaZ>&nbsp;&nbsp;Java =
+=E6=8A=80=E6=9C=AF</OPTION><OPTION=20
+                    value=3DlinuxZ>&nbsp;&nbsp;Linux</OPTION><OPTION=20
+                    value=3DopensrcZ>&nbsp;&nbsp;Open =
+source</OPTION><OPTION=20
+                    =
+value=3DsecurityZ>&nbsp;&nbsp;Security</OPTION><OPTION=20
+                    value=3DwebservZ>&nbsp;&nbsp;SOA &amp; Web=20
+                    services</OPTION><OPTION =
+value=3DwebarchZ>&nbsp;&nbsp;Web=20
+                    development</OPTION><OPTION=20
+                    value=3DxmlZ>&nbsp;&nbsp;XML</OPTION><OPTION=20
+                    value=3DdW>-----------------</OPTION><OPTION =
+value=3Dall>IBM=20
+                    =
+=E5=85=A8=E9=83=A8=E5=86=85=E5=AE=B9</OPTION></SELECT></LABEL></TD>
+                <TD align=3Dright width=3D1><IMG height=3D1 =
+alt=3D"Search for:"=20
+                  src=3D"http://www.ibm.com/i/c.gif" =
+width=3D1>&nbsp;&nbsp;</TD>
+                <TD align=3Dright><INPUT class=3Dinput id=3Dq =
+maxLength=3D100 size=3D15=20
+                  name=3Dquery></TD>
+                <TD width=3D7>&nbsp;</TD>
+                <TD><LABEL for=3Dq><INPUT type=3Dimage =
+alt=3D=E6=90=9C=E7=B4=A2=20
+                  src=3D"http://www.ibm.com/i/v14/t/cn/zh/search.gif" =
+value=3D=E6=90=9C=E7=B4=A2=20
+                  name=3DSearch></LABEL></TD>
+                <TD=20
+      =
+width=3D20>&nbsp;</TD></TR></TBODY></TABLE></FORM></TD></TR></TBODY></TAB=
+LE></TD></TR>
+  <TR>
+    <TD class=3Dblbg colSpan=3D3>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+              <TBODY>
+              <TR>
+                <TD><SPAN =
+class=3Dspacer>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></TD>
+                <TD><A class=3Dmasthead-mainlink=20
+                  =
+href=3D"http://www.ibm.com/cn/">=E9=A6=96=E9=A1=B5</A></TD>
+                <TD class=3Dmasthead-divider=20
+width=3D27>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                <TD><A class=3Dmasthead-mainlink=20
+                  =
+href=3D"http://www.ibm.com/products/cn/">=E4=BA=A7=E5=93=81</A></TD>
+                <TD class=3Dmasthead-divider=20
+width=3D27>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                <TD><A class=3Dmasthead-mainlink=20
+                  =
+href=3D"http://www.ibm.com/servicessolutions/cn/">=E6=9C=8D=E5=8A=A1=E4=B8=
+=8E=E8=A7=A3=E5=86=B3=E6=96=B9=E6=A1=88</A></TD>
+                <TD class=3Dmasthead-divider=20
+width=3D27>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                <TD><A class=3Dmasthead-mainlink=20
+                  =
+href=3D"http://www.ibm.com/support/cn/">=E6=94=AF=E6=8C=81=E4=B8=8E=E4=B8=
+=8B=E8=BD=BD</A></TD>
+                <TD class=3Dmasthead-divider=20
+width=3D27>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                <TD><A class=3Dmasthead-mainlink=20
+                  =
+href=3D"http://www.ibm.com/account/cn/">=E4=B8=AA=E6=80=A7=E5=8C=96=E6=9C=
+=8D=E5=8A=A1</A></TD>
+                <TD><SPAN=20
+              =
+class=3Dspacer>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></TD></TR></TBODY></TABLE><=
+/TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!--
+<script src=3D"//www.ibm.com/common/v14/pmh.js" language=3D"JavaScript" =
+type=3D"text/javascript"></script>
+--><!-- end masthead dw liquid --><!--MASTHEAD_END--><!-- CMA ID for =
+this content is: 102389 -->
+<TABLE id=3Dv14-body-table cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%" border=3D0>
+  <TBODY>
+  <TR vAlign=3Dtop><!--LEFTNAV_BEGIN-->
+    <TD id=3Dnavigation width=3D150>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D150 border=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3Dleft-nav-spacer><A class=3Dleft-nav-overview=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/">&nbsp;</A></TD></TR></TBOD=
+Y></TABLE>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D150 border=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3Dleft-nav-overview colSpan=3D2><A =
+class=3Dleft-nav-overview=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/">developerWorks<BR>=E4=B8=AD=
+=E5=9B=BD</A></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D150 border=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3Dleft-nav-highlight colSpan=3D2><A class=3Dleft-nav =
+
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#">=E6=9C=AC=E6=
+=96=87=E5=86=85=E5=AE=B9=E5=8C=85=E6=8B=AC:</A></TD></TR>
+        <TR class=3Dleft-nav-child-highlight>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/cl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Dleft-nav-child=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#N1003E">=E7=AE=
+=80=E4=BB=8B</A></TD></TR>
+        <TR class=3Dleft-nav-child-highlight>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/cl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Dleft-nav-child=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#N1005F">=E5=88=
+=9D=E5=A7=8B=E5=8C=96</A></TD></TR>
+        <TR class=3Dleft-nav-child-highlight>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/cl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Dleft-nav-child=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#N1007D">=E6=9C=
+=8D=E5=8A=A1=E6=96=B0=E8=BF=9E=E6=8E=A5</A></TD></TR>
+        <TR class=3Dleft-nav-child-highlight>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/cl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Dleft-nav-child=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#N10092">=E6=9C=
+=8D=E5=8A=A1=E4=BB=BB=E5=8A=A1</A></TD></TR>
+        <TR class=3Dleft-nav-child-highlight>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/cl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Dleft-nav-child=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#N100BF">=E6=9C=
+=8D=E5=8A=A1=E5=99=A8=E7=AB=AF=E7=9A=84=E5=AE=8C=E6=95=B4=E5=AE=9E=E7=8E=B0=
+</A></TD></TR>
+        <TR class=3Dleft-nav-child-highlight>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/cl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Dleft-nav-child=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#N100D1">=E8=BF=
+=90=E8=A1=8C=E7=A8=8B=E5=BA=8F</A></TD></TR>
+        <TR class=3Dleft-nav-child-highlight>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/cl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Dleft-nav-child=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#author">=E5=85=
+=B3=E4=BA=8E=E4=BD=9C=E8=80=85</A></TD></TR>
+        <TR class=3Dleft-nav-child-highlight>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/cl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Dleft-nav-child=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#rate">=E5=AF=
+=B9=E6=9C=AC=E6=96=87=E7=9A=84=E8=AF=84=E4=BB=B7</A></TD></TR>
+        <TR class=3Dleft-nav-last>
+          <TD width=3D14><IMG class=3Ddisplay-img height=3D1 alt=3D""=20
+            src=3D"http://www.ibm.com/i/c.gif" width=3D14></TD>
+          <TD width=3D136><IMG class=3Ddisplay-img height=3D19 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/left-nav-corner.gif"=20
+        width=3D136></TD></TR></TBODY></TABLE><BR>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D150 border=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3Drelated colSpan=3D2><B =
+class=3Drelated>=E7=9B=B8=E5=85=B3=E9=93=BE=E6=8E=A5:</B></TD></TR>
+        <TR class=3Drlinks>
+          <TD><IMG height=3D8 alt=3D""=20
+            src=3D"http://www.ibm.com/i/v14/t/rl-bullet.gif" =
+width=3D2></TD>
+          <TD><A class=3Drlinks=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/views/java/articles.jsp">Jav=
+a=20
+            technology =
+=E6=8A=80=E6=9C=AF=E6=96=87=E6=A1=A3=E5=BA=93</A></TD></TR><!--START =
+RESERVED FOR FUTURE USE INCLUDE FILES--><!-- No content currently =
+--><!--END RESERVED FOR FUTURE USE INCLUDE FILES-->
+        <TR>
+          <TD width=3D14><IMG class=3Ddisplay-img height=3D1 alt=3D""=20
+            src=3D"http://www.ibm.com/i/c.gif" width=3D14></TD>
+          <TD width=3D136><IMG class=3Ddisplay-img height=3D19 alt=3D""=20
+            src=3D"http://www.ibm.com/i/c.gif" =
+width=3D136></TD></TR></TBODY></TABLE><!--START RESERVED FOR FUTURE USE =
+INCLUDE FILES--><!-- No content currently --><!--END RESERVED FOR FUTURE =
+USE INCLUDE FILES--></TD><!--LEFTNAV_END-->
+    <TD width=3D"100%">
+      <TABLE id=3Dcontent-table cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+        border=3D0><TBODY>
+        <TR vAlign=3Dtop>
+          <TD width=3D"100%">
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD><A name=3Dmain><IMG height=3D1 alt=3D"skip to main =
+content"=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D592=20
+              border=3D0></A></TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR vAlign=3Dtop>
+                <TD width=3D10 height=3D18><IMG height=3D18 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D10></TD>
+                <TD width=3D"100%"><IMG height=3D6 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D1><BR><A =
+class=3Dbctl=20
+                  =
+href=3D"http://www.ibm.com/developerworks/cn/">developerWorks=20
+                  =E4=B8=AD=E5=9B=BD</A><SPAN =
+class=3Dbct>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN><A=20
+                  class=3Dbctl=20
+                  =
+href=3D"http://www.ibm.com/developerworks/cn/java/">Java=20
+                  technology</A><SPAN =
+class=3Dbct>&nbsp;&nbsp;&gt;</SPAN><IMG=20
+                  height=3D1 alt=3D"" src=3D"http://www.ibm.com/i/c.gif" =
+width=3D1><BR>
+                  <H1>Java5 =
+=E5=A4=9A=E7=BA=BF=E7=A8=8B=E5=AE=9E=E8=B7=B5</H1><IMG =
+class=3Ddisplay-img height=3D6 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D1></TD>
+                <TD class=3Dno-print width=3D192><IMG height=3D18 =
+alt=3DdeveloperWorks=20
+                  src=3D"http://www.ibm.com/developerworks/cn/i/dw.gif"=20
+                =
+width=3D192></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD width=3D10><IMG height=3D1 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+            width=3D10></TD>
+          <TD width=3D"100%">
+            <TABLE class=3Dno-print cellSpacing=3D0 cellPadding=3D0 =
+width=3D160=20
+            align=3Dright border=3D0>
+              <TBODY>
+              <TR>
+                <TD width=3D10><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D10></TD>
+                <TD>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D150 =
+border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD =
+class=3Dv14-header-1-small>=E6=96=87=E6=A1=A3=E9=80=89=E9=A1=B9</TD></TR>=
+</TBODY></TABLE>
+                  <TABLE class=3Dv14-gray-table-border cellSpacing=3D0 =
+cellPadding=3D0=20
+                  border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3Dno-padding width=3D150>
+                        <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D143=20
+                          border=3D0><IMG height=3D1 alt=3D""=20
+                          src=3D"http://www.ibm.com/i/c.gif" width=3D8>
+                          <FORM name=3Demail=20
+                          =
+action=3Dhttps://www.ibm.com/developerworks/secure/email-it.jsp><INPUT=20
+                          type=3Dhidden=20
+                          =
+value=3D"Java5=E5=A2=9E=E5=8A=A0=E4=BA=86=E6=96=B0=E7=9A=84=E7=B1=BB=E5=BA=
+=93=E5=B9=B6=E5=8F=91=E9=9B=86java.util.concurrent=EF=BC=8C=E8=AF=A5=E7=B1=
+=BB=E5=BA=93=E4=B8=BA=E5=B9=B6=E5=8F=91=E7=A8=8B=E5=BA=8F=E6=8F=90=E4=BE=9B=
+=E4=BA=86=E4=B8=B0=E5=AF=8C=E7=9A=84API=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=96=
+=E7=A8=8B=E5=9C=A8Java =
+5=E4=B8=AD=E6=9B=B4=E5=8A=A0=E5=AE=B9=E6=98=93=EF=BC=8C=E7=81=B5=E6=B4=BB=
+=E3=80=82=E6=9C=AC=E6=96=87=E9=80=9A=E8=BF=87=E4=B8=80=E4=B8=AA=E7=BD=91=E7=
+=BB=9C=E6=9C=8D=E5=8A=A1=E5=99=A8=E6=A8=A1=E5=9E=8B=EF=BC=8C=E6=9D=A5=E5=AE=
+=9E=E8=B7=B5Java5=E7=9A=84=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=96=E7=A8=8B=EF=
+=BC=8C=E8=AF=A5=E6=A8=A1=E5=9E=8B=E4=B8=AD=E4=BD=BF=E7=94=A8=E4=BA=86Java=
+5=E4=B8=AD=E7=9A=84=E7=BA=BF=E7=A8=8B=E6=B1=A0=EF=BC=8C=E9=98=BB=E5=A1=9E=
+=E9=98=9F=E5=88=97=EF=BC=8C=E5=8F=AF=E9=87=8D=E5=85=A5=E9=94=81=E7=AD=89=EF=
+=BC=8C=E8=BF=98=E5=AE=9E=E8=B7=B5=E4=BA=86Callable=EF=BC=8C =
+Future=E7=AD=89=E6=8E=A5=E5=8F=A3=EF=BC=8C=E5=B9=B6=E4=BD=BF=E7=94=A8=E4=BA=
+=86Java =
+5=E7=9A=84=E5=8F=A6=E5=A4=96=E4=B8=80=E4=B8=AA=E6=96=B0=E7=89=B9=E6=80=A7=
+=E6=B3=9B=E5=9E=8B=E3=80=82"=20
+                          name=3Dbody><INPUT type=3Dhidden =
+value=3D"Java5 =E5=A4=9A=E7=BA=BF=E7=A8=8B=E5=AE=9E=E8=B7=B5"=20
+                          name=3Dsubject><INPUT type=3Dhidden value=3Dcn =
+name=3Dlang>
+                          <SCRIPT language=3DJavaScript =
+type=3Dtext/javascript>=0A=
+<!--=0A=
+document.write('<tr valign=3D"top"><td width=3D"8"><img =
+src=3D"//www.ibm.com/i/c.gif" width=3D"8" height=3D"1" =
+alt=3D""/></td><td width=3D"16"><img =
+src=3D"//www.ibm.com/i/v14/icons/em.gif" height=3D"16" width=3D"16" =
+vspace=3D"3" =
+alt=3D"=E5=B0=86=E6=AD=A4=E9=A1=B5=E4=BD=9C=E4=B8=BA=E7=94=B5=E5=AD=90=E9=
+=82=AE=E4=BB=B6=E5=8F=91=E9=80=81" /></td><td width=3D"122"><p><a =
+class=3D"smallplainlink" =
+href=3D"javascript:document.email.submit();"><b>=E5=B0=86=E6=AD=A4=E9=A1=B5=
+=E4=BD=9C=E4=B8=BA=E7=94=B5=E5=AD=90=E9=82=AE=E4=BB=B6=E5=8F=91=E9=80=81<=
+/b></a></p></td></tr>');=0A=
+//-->=0A=
+</SCRIPT>
+                          <NOSCRIPT>
+                          <TBODY>
+                          <TR vAlign=3Dtop>
+                            <TD width=3D8><IMG height=3D1 alt=3D""=20
+                              src=3D"http://www.ibm.com/i/c.gif" =
+width=3D8></TD>
+                            <TD width=3D16><IMG height=3D16 alt=3D""=20
+                              src=3D"http://www.ibm.com/i/c.gif" =
+width=3D16></TD>
+                            <TD class=3Dsmall width=3D122>
+                              <P><SPAN =
+class=3Dast>=E6=9C=AA=E6=98=BE=E7=A4=BA=E9=9C=80=E8=A6=81 JavaScript=20
+                              =
+=E7=9A=84=E6=96=87=E6=A1=A3=E9=80=89=E9=A1=B9</SPAN></P></TD></TR></NOSCR=
+IPT></FORM></TBODY></TABLE></TD></TR></TBODY></TABLE><!--START RESERVED =
+FOR FUTURE USE INCLUDE FILES--><!-- this content will be automatically =
+generated across all content areas --><BR><!--END RESERVED FOR FUTURE =
+USE INCLUDE FILES--><BR></TD></TR></TBODY></TABLE>
+            <P>=E7=BA=A7=E5=88=AB: =E5=88=9D=E7=BA=A7</P>
+            <P><A=20
+            =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#author">=E7=9E=
+=A9=20
+            =E5=BC=A0=E9=BB=84</A> (<A=20
+            href=3D"mailto:zhanghuangzhu@gmail.com?subject=3DJava5 =
+=E5=A4=9A=E7=BA=BF=E7=A8=8B=E5=AE=9E=E8=B7=B5">mailto:zhanghuangzhu@gmail=
+.com?subject=3DJava5=20
+            =E5=A4=9A=E7=BA=BF=E7=A8=8B=E5=AE=9E=E8=B7=B5</A>), =
+=E8=BD=AF=E4=BB=B6=E5=B7=A5=E7=A8=8B=E5=B8=88<BR></P>
+            <P>2006 =E5=B9=B4 1 =E6=9C=88 18 =E6=97=A5</P>
+            =
+<BLOCKQUOTE>Java5=E5=A2=9E=E5=8A=A0=E4=BA=86=E6=96=B0=E7=9A=84=E7=B1=BB=E5=
+=BA=93=E5=B9=B6=E5=8F=91=E9=9B=86java.util.concurrent=EF=BC=8C=E8=AF=A5=E7=
+=B1=BB=E5=BA=93=E4=B8=BA=E5=B9=B6=E5=8F=91=E7=A8=8B=E5=BA=8F=E6=8F=90=E4=BE=
+=9B=E4=BA=86=E4=B8=B0=E5=AF=8C=E7=9A=84API=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=
+=96=E7=A8=8B=E5=9C=A8Java=20
+              =
+5=E4=B8=AD=E6=9B=B4=E5=8A=A0=E5=AE=B9=E6=98=93=EF=BC=8C=E7=81=B5=E6=B4=BB=
+=E3=80=82=E6=9C=AC=E6=96=87=E9=80=9A=E8=BF=87=E4=B8=80=E4=B8=AA=E7=BD=91=E7=
+=BB=9C=E6=9C=8D=E5=8A=A1=E5=99=A8=E6=A8=A1=E5=9E=8B=EF=BC=8C=E6=9D=A5=E5=AE=
+=9E=E8=B7=B5Java5=E7=9A=84=E5=A4=9A=E7=BA=BF=E7=A8=8B=E7=BC=96=E7=A8=8B=EF=
+=BC=8C=E8=AF=A5=E6=A8=A1=E5=9E=8B=E4=B8=AD=E4=BD=BF=E7=94=A8=E4=BA=86Java=
+5=E4=B8=AD=E7=9A=84=E7=BA=BF=E7=A8=8B=E6=B1=A0=EF=BC=8C=E9=98=BB=E5=A1=9E=
+=E9=98=9F=E5=88=97=EF=BC=8C=E5=8F=AF=E9=87=8D=E5=85=A5=E9=94=81=E7=AD=89=EF=
+=BC=8C=E8=BF=98=E5=AE=9E=E8=B7=B5=E4=BA=86Callable=EF=BC=8C=20
+              =
+Future=E7=AD=89=E6=8E=A5=E5=8F=A3=EF=BC=8C=E5=B9=B6=E4=BD=BF=E7=94=A8=E4=BA=
+=86Java =
+5=E7=9A=84=E5=8F=A6=E5=A4=96=E4=B8=80=E4=B8=AA=E6=96=B0=E7=89=B9=E6=80=A7=
+=E6=B3=9B=E5=9E=8B=E3=80=82</BLOCKQUOTE><!--START RESERVED FOR FUTURE =
+USE INCLUDE FILES--><!-- include java script once we verify teams wants =
+to use this and it will work on dbcs and cyrillic characters --><!--END =
+RESERVED FOR FUTURE USE INCLUDE FILES-->
+            <P><A name=3DN1003E><SPAN =
+class=3Datitle>=E7=AE=80=E4=BB=8B</SPAN></A></P>
+            =
+<P>=E6=9C=AC=E6=96=87=E5=B0=86=E5=AE=9E=E7=8E=B0=E4=B8=80=E4=B8=AA=E7=BD=91=
+=E7=BB=9C=E6=9C=8D=E5=8A=A1=E5=99=A8=E6=A8=A1=E5=9E=8B=EF=BC=8C=E4=B8=80=E6=
+=97=A6=E6=9C=89=E5=AE=A2=E6=88=B7=E7=AB=AF=E8=BF=9E=E6=8E=A5=E5=88=B0=E8=AF=
+=A5=E6=9C=8D=E5=8A=A1=E5=99=A8=EF=BC=8C=E5=88=99=E5=90=AF=E5=8A=A8=E4=B8=80=
+=E4=B8=AA=E6=96=B0=E7=BA=BF=E7=A8=8B=E4=B8=BA=E8=AF=A5=E8=BF=9E=E6=8E=A5=E6=
+=9C=8D=E5=8A=A1=EF=BC=8C=E6=9C=8D=E5=8A=A1=E5=86=85=E5=AE=B9=E4=B8=BA=E5=BE=
+=80=E5=AE=A2=E6=88=B7=E7=AB=AF=E8=BE=93=E9=80=81=E4=B8=80=E4=BA=9B=E5=AD=97=
+=E7=AC=A6=E4=BF=A1=E6=81=AF=E3=80=82=E4=B8=80=E4=B8=AA=E5=85=B8=E5=9E=8B=E7=
+=9A=84=E7=BD=91=E7=BB=9C=E6=9C=8D=E5=8A=A1=E5=99=A8=E6=A8=A1=E5=9E=8B=E5=A6=
+=82=E4=B8=8B=EF=BC=9A</P>
+            <P>1. =
+=E5=BB=BA=E7=AB=8B=E7=9B=91=E5=90=AC=E7=AB=AF=E5=8F=A3=E3=80=82</P>
+            <P>2. =
+=E5=8F=91=E7=8E=B0=E6=9C=89=E6=96=B0=E8=BF=9E=E6=8E=A5=EF=BC=8C=E6=8E=A5=E5=
+=8F=97=E8=BF=9E=E6=8E=A5=EF=BC=8C=E5=90=AF=E5=8A=A8=E7=BA=BF=E7=A8=8B=EF=BC=
+=8C=E6=89=A7=E8=A1=8C=E6=9C=8D=E5=8A=A1=E7=BA=BF=E7=A8=8B=E3=80=82</P>
+            <P>3. =
+=E6=9C=8D=E5=8A=A1=E5=AE=8C=E6=AF=95=EF=BC=8C=E5=85=B3=E9=97=AD=E7=BA=BF=E7=
+=A8=8B=E3=80=82</P>
+            =
+<P>=E8=BF=99=E4=B8=AA=E6=A8=A1=E5=9E=8B=E5=9C=A8=E5=A4=A7=E9=83=A8=E5=88=86=
+=E6=83=85=E5=86=B5=E4=B8=8B=E8=BF=90=E8=A1=8C=E8=89=AF=E5=A5=BD=EF=BC=8C=E4=
+=BD=86=E6=98=AF=E9=9C=80=E8=A6=81=E9=A2=91=E7=B9=81=E7=9A=84=E5=A4=84=E7=90=
+=86=E7=94=A8=E6=88=B7=E8=AF=B7=E6=B1=82=E8=80=8C=E6=AF=8F=E6=AC=A1=E8=AF=B7=
+=E6=B1=82=E9=9C=80=E8=A6=81=E7=9A=84=E6=9C=8D=E5=8A=A1=E5=8F=88=E6=98=AF=E7=
+=AE=80=E7=9F=AD=E7=9A=84=E6=97=B6=E5=80=99=EF=BC=8C=E7=B3=BB=E7=BB=9F=E4=BC=
+=9A=E5=B0=86=E5=A4=A7=E9=87=8F=E7=9A=84=E6=97=B6=E9=97=B4=E8=8A=B1=E8=B4=B9=
+=E5=9C=A8=E7=BA=BF=E7=A8=8B=E7=9A=84=E5=88=9B=E5=BB=BA=E9=94=80=E6=AF=81=E3=
+=80=82Java=20
+            =
+5=E7=9A=84=E7=BA=BF=E7=A8=8B=E6=B1=A0=E5=85=8B=E6=9C=8D=E4=BA=86=E8=BF=99=
+=E4=BA=9B=E7=BC=BA=E7=82=B9=E3=80=82=E9=80=9A=E8=BF=87=E5=AF=B9=E9=87=8D=E7=
+=94=A8=E7=BA=BF=E7=A8=8B=E6=9D=A5=E6=89=A7=E8=A1=8C=E5=A4=9A=E4=B8=AA=E4=BB=
+=BB=E5=8A=A1=EF=BC=8C=E9=81=BF=E5=85=8D=E4=BA=86=E9=A2=91=E7=B9=81=E7=BA=BF=
+=E7=A8=8B=E7=9A=84=E5=88=9B=E5=BB=BA=E4=B8=8E=E9=94=80=E6=AF=81=E5=BC=80=E9=
+=94=80=EF=BC=8C=E4=BD=BF=E5=BE=97=E6=9C=8D=E5=8A=A1=E5=99=A8=E7=9A=84=E6=80=
+=A7=E8=83=BD=E6=96=B9=E9=9D=A2=E5=BE=97=E5=88=B0=E5=BE=88=E5=A4=A7=E6=8F=90=
+=E9=AB=98=E3=80=82=E5=9B=A0=E6=AD=A4=EF=BC=8C=E6=9C=AC=E6=96=87=E7=9A=84=E7=
+=BD=91=E7=BB=9C=E6=9C=8D=E5=8A=A1=E5=99=A8=E6=A8=A1=E5=9E=8B=E5=B0=86=E5=A6=
+=82=E4=B8=8B=EF=BC=9A</P>
+            <P>1. =
+=E5=BB=BA=E7=AB=8B=E7=9B=91=E5=90=AC=E7=AB=AF=E5=8F=A3=EF=BC=8C=E5=88=9B=E5=
+=BB=BA=E7=BA=BF=E7=A8=8B=E6=B1=A0=E3=80=82</P>
+            <P>2. =
+=E5=8F=91=E7=8E=B0=E6=9C=89=E6=96=B0=E8=BF=9E=E6=8E=A5=EF=BC=8C=E4=BD=BF=E7=
+=94=A8=E7=BA=BF=E7=A8=8B=E6=B1=A0=E6=9D=A5=E6=89=A7=E8=A1=8C=E6=9C=8D=E5=8A=
+=A1=E4=BB=BB=E5=8A=A1=E3=80=82</P>
+            <P>3. =
+=E6=9C=8D=E5=8A=A1=E5=AE=8C=E6=AF=95=EF=BC=8C=E9=87=8A=E6=94=BE=E7=BA=BF=E7=
+=A8=8B=E5=88=B0=E7=BA=BF=E7=A8=8B=E6=B1=A0=E3=80=82</P>
+            =
+<P>=E4=B8=8B=E9=9D=A2=E8=AF=A6=E7=BB=86=E4=BB=8B=E7=BB=8D=E5=A6=82=E4=BD=95=
+=E4=BD=BF=E7=94=A8Java =
+5=E7=9A=84concurrent=E5=8C=85=E6=8F=90=E4=BE=9B=E7=9A=84API=E6=9D=A5=E5=AE=
+=9E=E7=8E=B0=E8=AF=A5=E6=9C=8D=E5=8A=A1=E5=99=A8=E3=80=82</P><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/v14/rules/blue_rule.gif"=20
+                  width=3D"100%"><BR><IMG height=3D6 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D8=20
+              border=3D0></TD></TR></TBODY></TABLE>
+            <TABLE class=3Dno-print cellSpacing=3D0 cellPadding=3D0 =
+align=3Dright>
+              <TBODY>
+              <TR align=3Dright>
+                <TD><IMG height=3D4 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+                  width=3D"100%"><BR>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=3Dcenter><IMG height=3D16 alt=3D""=20
+                        =
+src=3D"http://www.ibm.com/i/v14/icons/u_bold.gif" width=3D16=20
+                        border=3D0><BR></TD>
+                      <TD vAlign=3Dtop align=3Dright><A class=3Dfbox=20
+                        =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#main"><B>=E5=
+=9B=9E=E9=A1=B5=E9=A6=96</B></A></TD></TR></TBODY></TABLE></TD></TR></TBO=
+DY></TABLE><BR><BR>
+            <P><A name=3DN1005F><SPAN =
+class=3Datitle>=E5=88=9D=E5=A7=8B=E5=8C=96</SPAN></A></P>
+            =
+<P>=E5=88=9D=E5=A7=8B=E5=8C=96=E5=8C=85=E6=8B=AC=E5=88=9B=E5=BB=BA=E7=BA=BF=
+=E7=A8=8B=E6=B1=A0=E4=BB=A5=E5=8F=8A=E5=88=9D=E5=A7=8B=E5=8C=96=E7=9B=91=E5=
+=90=AC=E7=AB=AF=E5=8F=A3=E3=80=82=E5=88=9B=E5=BB=BA=E7=BA=BF=E7=A8=8B=E6=B1=
+=A0=E5=8F=AF=E4=BB=A5=E9=80=9A=E8=BF=87=E8=B0=83=E7=94=A8java.util.concur=
+rent.Executors=E7=B1=BB=E9=87=8C=E7=9A=84=E9=9D=99=E6=80=81=E6=96=B9=E6=B3=
+=95newChahedThreadPool=E6=88=96=E6=98=AFnewFixedThreadPool=E6=9D=A5=E5=88=
+=9B=E5=BB=BA=EF=BC=8C=E4=B9=9F=E5=8F=AF=E4=BB=A5=E9=80=9A=E8=BF=87=E6=96=B0=
+=E5=BB=BA=E4=B8=80=E4=B8=AAjava.util.concurrent.ThreadPoolExecutor=E5=AE=9E=
+=E4=BE=8B=E6=9D=A5=E6=89=A7=E8=A1=8C=E4=BB=BB=E5=8A=A1=E3=80=82=E8=BF=99=E9=
+=87=8C=E6=88=91=E4=BB=AC=E9=87=87=E7=94=A8newFixedThreadPool=E6=96=B9=E6=B3=
+=95=E6=9D=A5=E5=BB=BA=E7=AB=8B=E7=BA=BF=E7=A8=8B=E6=B1=A0=E3=80=82</P>
+            <P><CODE>ExecutorService pool =3D=20
+            Executors.newFixedThreadPool(10);</CODE>=20
+            =
+<BR>=E8=A1=A8=E7=A4=BA=E6=96=B0=E5=BB=BA=E4=BA=86=E4=B8=80=E4=B8=AA=E7=BA=
+=BF=E7=A8=8B=E6=B1=A0=EF=BC=8C=E7=BA=BF=E7=A8=8B=E6=B1=A0=E9=87=8C=E9=9D=A2=
+=E6=9C=8910=E4=B8=AA=E7=BA=BF=E7=A8=8B=E4=B8=BA=E4=BB=BB=E5=8A=A1=E9=98=9F=
+=E5=88=97=E6=9C=8D=E5=8A=A1=E3=80=82</P>
+            =
+<P>=E4=BD=BF=E7=94=A8ServerSocket=E5=AF=B9=E8=B1=A1=E6=9D=A5=E5=88=9D=E5=A7=
+=8B=E5=8C=96=E7=9B=91=E5=90=AC=E7=AB=AF=E5=8F=A3=E3=80=82</P><BR><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dcode-outline><PRE =
+class=3Ddisplaycode>private static final int PORT =3D 19527;
+serverListenSocket =3D new ServerSocket(PORT);
+serverListenSocket.setReuseAddress(true);
+serverListenSocket.setReuseAddress(true);
+</PRE></TD></TR></TBODY></TABLE><BR><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/v14/rules/blue_rule.gif"=20
+                  width=3D"100%"><BR><IMG height=3D6 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D8=20
+              border=3D0></TD></TR></TBODY></TABLE>
+            <TABLE class=3Dno-print cellSpacing=3D0 cellPadding=3D0 =
+align=3Dright>
+              <TBODY>
+              <TR align=3Dright>
+                <TD><IMG height=3D4 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+                  width=3D"100%"><BR>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=3Dcenter><IMG height=3D16 alt=3D""=20
+                        =
+src=3D"http://www.ibm.com/i/v14/icons/u_bold.gif" width=3D16=20
+                        border=3D0><BR></TD>
+                      <TD vAlign=3Dtop align=3Dright><A class=3Dfbox=20
+                        =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#main"><B>=E5=
+=9B=9E=E9=A1=B5=E9=A6=96</B></A></TD></TR></TBODY></TABLE></TD></TR></TBO=
+DY></TABLE><BR><BR>
+            <P><A name=3DN1007D><SPAN =
+class=3Datitle>=E6=9C=8D=E5=8A=A1=E6=96=B0=E8=BF=9E=E6=8E=A5</SPAN></A></=
+P>
+            =
+<P>=E5=BD=93=E6=9C=89=E6=96=B0=E8=BF=9E=E6=8E=A5=E5=BB=BA=E7=AB=8B=E6=97=B6=
+=EF=BC=8Caccept=E8=BF=94=E5=9B=9E=E6=97=B6=EF=BC=8C=E5=B0=86=E6=9C=8D=E5=8A=
+=A1=E4=BB=BB=E5=8A=A1=E6=8F=90=E4=BA=A4=E7=BB=99=E7=BA=BF=E7=A8=8B=E6=B1=A0=
+=E6=89=A7=E8=A1=8C=E3=80=82</P><BR><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dcode-outline><PRE =
+class=3Ddisplaycode>while(true){
+Socket socket =3D serverListenSocket.accept();
+pool.execute(new ServiceThread(socket));
+}
+</PRE></TD></TR></TBODY></TABLE><BR>
+            =
+<P>=E8=BF=99=E9=87=8C=E4=BD=BF=E7=94=A8=E7=BA=BF=E7=A8=8B=E6=B1=A0=E5=AF=B9=
+=E8=B1=A1=E6=9D=A5=E6=89=A7=E8=A1=8C=E7=BA=BF=E7=A8=8B=EF=BC=8C=E5=87=8F=E5=
+=B0=91=E4=BA=86=E6=AF=8F=E6=AC=A1=E7=BA=BF=E7=A8=8B=E5=88=9B=E5=BB=BA=E5=92=
+=8C=E9=94=80=E6=AF=81=E7=9A=84=E5=BC=80=E9=94=80=E3=80=82=E4=BB=BB=E5=8A=A1=
+=E6=89=A7=E8=A1=8C=E5=AE=8C=E6=AF=95=EF=BC=8C=E7=BA=BF=E7=A8=8B=E9=87=8A=E6=
+=94=BE=E5=88=B0=E7=BA=BF=E7=A8=8B=E6=B1=A0=E3=80=82</P><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/v14/rules/blue_rule.gif"=20
+                  width=3D"100%"><BR><IMG height=3D6 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D8=20
+              border=3D0></TD></TR></TBODY></TABLE>
+            <TABLE class=3Dno-print cellSpacing=3D0 cellPadding=3D0 =
+align=3Dright>
+              <TBODY>
+              <TR align=3Dright>
+                <TD><IMG height=3D4 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+                  width=3D"100%"><BR>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=3Dcenter><IMG height=3D16 alt=3D""=20
+                        =
+src=3D"http://www.ibm.com/i/v14/icons/u_bold.gif" width=3D16=20
+                        border=3D0><BR></TD>
+                      <TD vAlign=3Dtop align=3Dright><A class=3Dfbox=20
+                        =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#main"><B>=E5=
+=9B=9E=E9=A1=B5=E9=A6=96</B></A></TD></TR></TBODY></TABLE></TD></TR></TBO=
+DY></TABLE><BR><BR>
+            <P><A name=3DN10092><SPAN =
+class=3Datitle>=E6=9C=8D=E5=8A=A1=E4=BB=BB=E5=8A=A1</SPAN></A></P>
+            =
+<P>=E6=9C=8D=E5=8A=A1=E7=BA=BF=E7=A8=8BServiceThread=E7=BB=B4=E6=8A=A4=E4=
+=B8=80=E4=B8=AAcount=E6=9D=A5=E8=AE=B0=E5=BD=95=E6=9C=8D=E5=8A=A1=E7=BA=BF=
+=E7=A8=8B=E8=A2=AB=E8=B0=83=E7=94=A8=E7=9A=84=E6=AC=A1=E6=95=B0=E3=80=82=E6=
+=AF=8F=E5=BD=93=E6=9C=8D=E5=8A=A1=E4=BB=BB=E5=8A=A1=E8=A2=AB=E8=B0=83=E7=94=
+=A8=E4=B8=80=E6=AC=A1=E6=97=B6=EF=BC=8Ccount=E7=9A=84=E5=80=BC=E8=87=AA=E5=
+=A2=9E1=EF=BC=8C=E5=9B=A0=E6=AD=A4ServiceThread=E6=8F=90=E4=BE=9B=E4=B8=80=
+=E4=B8=AAincreaseCount=E5=92=8CgetCount=E7=9A=84=E6=96=B9=E6=B3=95=EF=BC=8C=
+=E5=88=86=E5=88=AB=E5=B0=86count=E5=80=BC=E8=87=AA=E5=A2=9E1=E5=92=8C=E5=8F=
+=96=E5=BE=97=E8=AF=A5count=E5=80=BC=E3=80=82=E7=94=B1=E4=BA=8E=E5=8F=AF=E8=
+=83=BD=E5=A4=9A=E4=B8=AA=E7=BA=BF=E7=A8=8B=E5=AD=98=E5=9C=A8=E7=AB=9E=E4=BA=
+=89=EF=BC=8C=E5=90=8C=E6=97=B6=E8=AE=BF=E9=97=AEcount=EF=BC=8C=E5=9B=A0=E6=
+=AD=A4=E9=9C=80=E8=A6=81=E5=8A=A0=E9=94=81=E6=9C=BA=E5=88=B6=EF=BC=8C=E5=9C=
+=A8Java=20
+            =
+5=E4=B9=8B=E5=89=8D=EF=BC=8C=E6=88=91=E4=BB=AC=E5=8F=AA=E8=83=BD=E4=BD=BF=
+=E7=94=A8synchronized=E6=9D=A5=E9=94=81=E5=AE=9A=E3=80=82Java=20
+            =
+5=E4=B8=AD=E5=BC=95=E5=85=A5=E4=BA=86=E6=80=A7=E8=83=BD=E6=9B=B4=E5=8A=A0=
+=E7=B2=92=E5=BA=A6=E6=9B=B4=E7=BB=86=E7=9A=84=E9=87=8D=E5=85=A5=E9=94=81R=
+eentrantLock=E3=80=82=E6=88=91=E4=BB=AC=E4=BD=BF=E7=94=A8ReentrantLock=E4=
+=BF=9D=E8=AF=81=E4=BB=A3=E7=A0=81=E7=BA=BF=E7=A8=8B=E5=AE=89=E5=85=A8=E3=80=
+=82=E4=B8=8B=E9=9D=A2=E6=98=AF=E5=85=B7=E4=BD=93=E4=BB=A3=E7=A0=81=EF=BC=9A=
+</P><BR><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dcode-outline><PRE =
+class=3Ddisplaycode>private static ReentrantLock lock =3D new =
+ReentrantLock ();
+private static int count =3D 0;
+private int getCount(){
+	int ret =3D 0;
+	try{
+		lock.lock();
+		ret =3D count;
+	}finally{
+		lock.unlock();
+	}
+	return ret;
+}=09
+private void increaseCount(){
+	try{
+		lock.lock();
+		++count;
+	}finally{
+		lock.unlock();
+	}
+}
+</PRE></TD></TR></TBODY></TABLE><BR>
+            =
+<P>=E6=9C=8D=E5=8A=A1=E7=BA=BF=E7=A8=8B=E5=9C=A8=E5=BC=80=E5=A7=8B=E7=BB=99=
+=E5=AE=A2=E6=88=B7=E7=AB=AF=E6=89=93=E5=8D=B0=E4=B8=80=E4=B8=AA=E6=AC=A2=E8=
+=BF=8E=E4=BF=A1=E6=81=AF=EF=BC=8C</P><BR><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dcode-outline><PRE =
+class=3Ddisplaycode>increaseCount();
+int curCount =3D getCount();
+helloString =3D "hello, id =3D " + curCount+"\r\n";
+dos =3D new DataOutputStream(connectedSocket.getOutputStream());
+dos.write(helloString.getBytes());
+</PRE></TD></TR></TBODY></TABLE><BR>
+            =
+<P>=E7=84=B6=E5=90=8E=E4=BD=BF=E7=94=A8ExecutorService=E7=9A=84submit=E6=96=
+=B9=E6=B3=95=E6=8F=90=E4=BA=A4=E4=B8=80=E4=B8=AACallable=E7=9A=84=E4=BB=BB=
+=E5=8A=A1=EF=BC=8C=E8=BF=94=E5=9B=9E=E4=B8=80=E4=B8=AAFuture=E6=8E=A5=E5=8F=
+=A3=E7=9A=84=E5=BC=95=E7=94=A8=E3=80=82=E8=BF=99=E7=A7=8D=E5=81=9A=E6=B3=95=
+=E5=AF=B9=E8=B4=B9=E6=97=B6=E7=9A=84=E4=BB=BB=E5=8A=A1=E9=9D=9E=E5=B8=B8=E6=
+=9C=89=E6=95=88=EF=BC=8Csubmit=E4=BB=BB=E5=8A=A1=E4=B9=8B=E5=90=8E=E5=8F=AF=
+=E4=BB=A5=E7=BB=A7=E7=BB=AD=E6=89=A7=E8=A1=8C=E4=B8=8B=E9=9D=A2=E7=9A=84=E4=
+=BB=A3=E7=A0=81=EF=BC=8C=E7=84=B6=E5=90=8E=E5=9C=A8=E9=80=82=E5=BD=93=E7=9A=
+=84=E4=BD=8D=E7=BD=AE=E5=8F=AF=E4=BB=A5=E4=BD=BF=E7=94=A8Future=E7=9A=84g=
+et=E6=96=B9=E6=B3=95=E6=9D=A5=E8=8E=B7=E5=8F=96=E7=BB=93=E6=9E=9C=EF=BC=8C=
+=E5=A6=82=E6=9E=9C=E8=BF=99=E6=97=B6=E5=80=99=E8=AF=A5=E6=96=B9=E6=B3=95=E5=
+=B7=B2=E7=BB=8F=E6=89=A7=E8=A1=8C=E5=AE=8C=E6=AF=95=EF=BC=8C=E5=88=99=E6=97=
+=A0=E9=9C=80=E7=AD=89=E5=BE=85=E5=8D=B3=E5=8F=AF=E8=8E=B7=E5=BE=97=E7=BB=93=
+=E6=9E=9C=EF=BC=8C=E5=A6=82=E6=9E=9C=E8=BF=98=E5=9C=A8=E6=89=A7=E8=A1=8C=EF=
+=BC=8C=E5=88=99=E7=AD=89=E5=BE=85=E5=88=B0=E8=BF=90=E8=A1=8C=E5=AE=8C=E6=AF=
+=95=E3=80=82</P><BR><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dcode-outline><PRE =
+class=3Ddisplaycode>ExecutorService executor =3D =
+Executors.newSingleThreadExecutor();
+Future &lt;String&gt; future =3D executor.submit(new =
+TimeConsumingTask());
+dos.write("let's do soemthing other".getBytes());
+String result =3D future.get();
+dos.write(result.getBytes());
+=E5=85=B6=E4=B8=ADTimeConsumingTask=E5=AE=9E=E7=8E=B0=E4=BA=86Callable=E6=
+=8E=A5=E5=8F=A3
+class TimeConsumingTask implements Callable &lt;String&gt;{
+	public String call() throws Exception {
+		System.out.println
+		("It's a time-consuming task,=20
+		you'd better retrieve your result in the furture");
+		return "ok, here's the result: It takes me lots of time to produce =
+this result";
+	}
+}
+</PRE></TD></TR></TBODY></TABLE><BR>
+            <P>=E8=BF=99=E9=87=8C=E4=BD=BF=E7=94=A8=E4=BA=86Java=20
+            =
+5=E7=9A=84=E5=8F=A6=E5=A4=96=E4=B8=80=E4=B8=AA=E6=96=B0=E7=89=B9=E6=80=A7=
+=E6=B3=9B=E5=9E=8B=EF=BC=8C=E5=A3=B0=E6=98=8ETimeConsumingTask=E7=9A=84=E6=
+=97=B6=E5=80=99=E4=BD=BF=E7=94=A8=E4=BA=86String=E5=81=9A=E4=B8=BA=E7=B1=BB=
+=E5=9E=8B=E5=8F=82=E6=95=B0=E3=80=82=E5=BF=85=E9=A1=BB=E5=AE=9E=E7=8E=B0C=
+allable=E6=8E=A5=E5=8F=A3=E7=9A=84call=E5=87=BD=E6=95=B0=EF=BC=8C=E5=85=B6=
+=E4=BD=9C=E7=94=A8=E7=B1=BB=E4=BC=BC=E4=B8=8ERunnable=E4=B8=AD=E7=9A=84ru=
+n=E5=87=BD=E6=95=B0=EF=BC=8C=E5=9C=A8call=E5=87=BD=E6=95=B0=E9=87=8C=E5=86=
+=99=E5=85=A5=E8=A6=81=E6=89=A7=E8=A1=8C=E7=9A=84=E4=BB=A3=E7=A0=81=EF=BC=8C=
+=E5=85=B6=E8=BF=94=E5=9B=9E=E5=80=BC=E7=B1=BB=E5=9E=8B=E7=AD=89=E5=90=8C=E4=
+=BA=8E=E5=9C=A8=E7=B1=BB=E5=A3=B0=E6=98=8E=E4=B8=AD=E4=BC=A0=E5=85=A5=E7=9A=
+=84=E7=B1=BB=E5=9E=8B=E5=80=BC=E3=80=82=E5=9C=A8=E8=BF=99=E6=AE=B5=E7=A8=8B=
+=E5=BA=8F=E4=B8=AD=EF=BC=8C=E6=88=91=E4=BB=AC=E6=8F=90=E4=BA=A4=E4=BA=86=E4=
+=B8=80=E4=B8=AACallable=E7=9A=84=E4=BB=BB=E5=8A=A1=EF=BC=8C=E7=84=B6=E5=90=
+=8E=E7=A8=8B=E5=BA=8F=E4=B8=8D=E4=BC=9A=E5=A0=B5=E5=A1=9E=EF=BC=8C=E8=80=8C=
+=E6=98=AF=E7=BB=A7=E7=BB=AD=E6=89=A7=E8=A1=8Cdos.write("let's=20
+            do soemthing =
+other".getBytes());=E5=BD=93=E7=A8=8B=E5=BA=8F=E6=89=A7=E8=A1=8C=E5=88=B0=
+String result =3D=20
+            =
+future.get()=E6=97=B6=E5=A6=82=E6=9E=9Ccall=E5=87=BD=E6=95=B0=E5=B7=B2=E7=
+=BB=8F=E6=89=A7=E8=A1=8C=E5=AE=8C=E6=AF=95=EF=BC=8C=E5=88=99=E5=8F=96=E5=BE=
+=97=E8=BF=94=E5=9B=9E=E5=80=BC=EF=BC=8C=E5=A6=82=E6=9E=9C=E8=BF=98=E5=9C=A8=
+=E6=89=A7=E8=A1=8C=EF=BC=8C=E5=88=99=E7=AD=89=E5=BE=85=E5=85=B6=E6=89=A7=E8=
+=A1=8C=E5=AE=8C=E6=AF=95=E3=80=82 </P><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/v14/rules/blue_rule.gif"=20
+                  width=3D"100%"><BR><IMG height=3D6 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D8=20
+              border=3D0></TD></TR></TBODY></TABLE>
+            <TABLE class=3Dno-print cellSpacing=3D0 cellPadding=3D0 =
+align=3Dright>
+              <TBODY>
+              <TR align=3Dright>
+                <TD><IMG height=3D4 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+                  width=3D"100%"><BR>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=3Dcenter><IMG height=3D16 alt=3D""=20
+                        =
+src=3D"http://www.ibm.com/i/v14/icons/u_bold.gif" width=3D16=20
+                        border=3D0><BR></TD>
+                      <TD vAlign=3Dtop align=3Dright><A class=3Dfbox=20
+                        =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#main"><B>=E5=
+=9B=9E=E9=A1=B5=E9=A6=96</B></A></TD></TR></TBODY></TABLE></TD></TR></TBO=
+DY></TABLE><BR><BR>
+            <P><A name=3DN100BF><SPAN =
+class=3Datitle>=E6=9C=8D=E5=8A=A1=E5=99=A8=E7=AB=AF=E7=9A=84=E5=AE=8C=E6=95=
+=B4=E5=AE=9E=E7=8E=B0</SPAN></A></P>
+            =
+<P>=E6=9C=8D=E5=8A=A1=E5=99=A8=E7=AB=AF=E7=9A=84=E5=AE=8C=E6=95=B4=E5=AE=9E=
+=E7=8E=B0=E4=BB=A3=E7=A0=81=E5=A6=82=E4=B8=8B=EF=BC=9A</P><BR><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dcode-outline><PRE =
+class=3Ddisplaycode>package com.andrew;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.Serializable;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.RejectedExecutionHandler;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
+public class Server {
+	private static int produceTaskSleepTime =3D 100;
+	private static int consumeTaskSleepTime =3D 1200;
+	private static int produceTaskMaxNumber =3D 100;
+	private static final int CORE_POOL_SIZE =3D 2;
+	private static final int MAX_POOL_SIZE =3D 100;
+	private static final int KEEPALIVE_TIME =3D 3;
+	private static final int QUEUE_CAPACITY =3D (CORE_POOL_SIZE + =
+MAX_POOL_SIZE) / 2;
+	private static final TimeUnit TIME_UNIT =3D TimeUnit.SECONDS;
+	private static final String HOST =3D "127.0.0.1";
+	private static final int PORT =3D 19527;
+	private BlockingQueue&lt;Runnable&gt; workQueue =3D new =
+ArrayBlockingQueue&lt;Runnable&gt;(
+			QUEUE_CAPACITY);
+	//private ThreadPoolExecutor serverThreadPool =3D null;
+=09
+	private ExecutorService pool =3D null;
+	private RejectedExecutionHandler rejectedExecutionHandler =3D new
+	ThreadPoolExecutor.DiscardOldestPolicy();
+	private ServerSocket serverListenSocket =3D null;
+	private int times =3D 5;
+	public void start() {
+		// You can also init thread pool in this way.
+		/*serverThreadPool =3D new ThreadPoolExecutor(CORE_POOL_SIZE,
+				MAX_POOL_SIZE, KEEPALIVE_TIME, TIME_UNIT, workQueue,
+				rejectedExecutionHandler);*/
+		pool =3D Executors.newFixedThreadPool(10);
+		try {
+			serverListenSocket =3D new ServerSocket(PORT);
+			serverListenSocket.setReuseAddress(true);
+			System.out.println("I'm listening");
+			while (times-- &gt; 0) {
+				Socket socket =3D serverListenSocket.accept();
+				String welcomeString =3D "hello";
+	//serverThreadPool.execute(new ServiceThread(socket, welcomeString));
+				pool.execute(new ServiceThread(socket));
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		cleanup();
+	}
+	public void cleanup() {
+		if (null !=3D serverListenSocket) {
+			try {
+				serverListenSocket.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		//serverThreadPool.shutdown();
+		pool.shutdown();
+	}
+	public static void main(String args[]) {
+		Server server =3D new Server();
+		server.start();
+	}
+}
+class ServiceThread implements Runnable, Serializable {
+	private static final long serialVersionUID =3D 0;
+	private Socket connectedSocket =3D null;
+	private String helloString =3D null;
+	private static int count =3D 0;
+	private static ReentrantLock lock =3D new ReentrantLock();
+	ServiceThread(Socket socket) {
+		connectedSocket =3D socket;
+	}
+	public void run() {
+		increaseCount();
+		int curCount =3D getCount();
+		helloString =3D "hello, id =3D " + curCount + "\r\n";
+		ExecutorService executor =3D Executors.newSingleThreadExecutor();
+		Future&lt;String&gt; future =3D executor.submit(new =
+TimeConsumingTask());
+		DataOutputStream dos =3D null;
+		try {
+			dos =3D new DataOutputStream(connectedSocket.getOutputStream());
+			dos.write(helloString.getBytes());
+			try {
+				dos.write("let's do soemthing other.\r\n".getBytes());
+				String result =3D future.get();
+				dos.write(result.getBytes());
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} catch (ExecutionException e) {
+				e.printStackTrace();
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			if (null !=3D connectedSocket) {
+				try {
+					connectedSocket.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			if (null !=3D dos) {
+				try {
+					dos.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			executor.shutdown();
+		}
+	}
+	private int getCount() {
+		int ret =3D 0;
+		try {
+			lock.lock();
+			ret =3D count;
+		} finally {
+			lock.unlock();
+		}
+		return ret;
+	}
+	private void increaseCount() {
+		try {
+			lock.lock();
+			++count;
+		} finally {
+			lock.unlock();
+		}
+	}
+}
+class TimeConsumingTask implements Callable&lt;String&gt; {
+	public String call() throws Exception {
+		System.out
+				.println("It's a 	time-consuming task,=20
+				you'd better retrieve your result in the furture");
+		return "ok, here's the result: It takes me lots of time to produce =
+this result";
+	}
+}
+</PRE></TD></TR></TBODY></TABLE><BR><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD><IMG height=3D1 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/v14/rules/blue_rule.gif"=20
+                  width=3D"100%"><BR><IMG height=3D6 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D8=20
+              border=3D0></TD></TR></TBODY></TABLE>
+            <TABLE class=3Dno-print cellSpacing=3D0 cellPadding=3D0 =
+align=3Dright>
+              <TBODY>
+              <TR align=3Dright>
+                <TD><IMG height=3D4 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+                  width=3D"100%"><BR>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=3Dcenter><IMG height=3D16 alt=3D""=20
+                        =
+src=3D"http://www.ibm.com/i/v14/icons/u_bold.gif" width=3D16=20
+                        border=3D0><BR></TD>
+                      <TD vAlign=3Dtop align=3Dright><A class=3Dfbox=20
+                        =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#main"><B>=E5=
+=9B=9E=E9=A1=B5=E9=A6=96</B></A></TD></TR></TBODY></TABLE></TD></TR></TBO=
+DY></TABLE><BR><BR>
+            <P><A name=3DN100D1><SPAN =
+class=3Datitle>=E8=BF=90=E8=A1=8C=E7=A8=8B=E5=BA=8F</SPAN></A></P>
+            =
+<P>=E8=BF=90=E8=A1=8C=E6=9C=8D=E5=8A=A1=E7=AB=AF=EF=BC=8C=E5=AE=A2=E6=88=B7=
+=E7=AB=AF=E5=8F=AA=E9=9C=80=E4=BD=BF=E7=94=A8telnet 127.0.0.1 19527 =
+=E5=8D=B3=E5=8F=AF=E7=9C=8B=E5=88=B0=E4=BF=A1=E6=81=AF=E5=A6=82=E4=B8=8B=EF=
+=BC=9A</P><BR><BR>
+            <P><A name=3Dauthor><SPAN =
+class=3Datitle>=E5=85=B3=E4=BA=8E=E4=BD=9C=E8=80=85</SPAN></A></P>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD colSpan=3D3><IMG height=3D5 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" =
+width=3D"100%"></TD></TR>
+              <TR vAlign=3Dtop align=3Dleft>
+                <TD>
+                  <P></P></TD>
+                <TD><IMG height=3D5 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+                  width=3D4></TD>
+                <TD width=3D"100%">
+                  <P>=E5=BC=A0=E9=BB=84=E7=9E=A9 =
+=E8=81=94=E7=B3=BB=E6=96=B9=E5=BC=8F<A=20
+                  =
+href=3D"mailto:zhanghuangzhu@gmail.com?cc=3D">mailto:zhanghuangzhu@gmail.=
+com?cc=3D</A>=EF=BC=8C=E7=86=9F=E6=82=89=20
+                  WBI Server Foundation, WPS =
+6.0=EF=BC=8C=E5=AF=B9Java=EF=BC=8CC/C++=E7=BC=96=E7=A8=8B=E6=9C=89=E6=B5=93=
+=E5=8E=9A=E7=9A=84=E5=85=B4=E8=B6=A3=E3=80=82=20
+              </P></TD></TR></TBODY></TABLE><BR><BR><BR>
+            <P class=3Dno-print><SPAN class=3Datitle><A=20
+            =
+name=3Drate>=E5=AF=B9=E6=9C=AC=E6=96=87=E7=9A=84=E8=AF=84=E4=BB=B7</A></S=
+PAN></P><SPAN class=3Dno-print>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR vAlign=3Dtop>
+                <TD>
+                  <FORM=20
+                  =
+action=3Dhttps://www.ibm.com/developerworks/secure/cnratings.jsp=20
+                  method=3Dget><INPUT type=3Dhidden value=3D"Java5 =
+=E5=A4=9A=E7=BA=BF=E7=A8=8B=E5=AE=9E=E8=B7=B5"=20
+                  name=3DArticleTitle><INPUT type=3Dhidden value=3D"Java =
+technology"=20
+                  name=3DZone><INPUT type=3Dhidden=20
+                  value=3Dhttp://www.ibm.com/developerworks/cn/thankyou/ =
+
+                  name=3DRedirectURL><INPUT type=3Dhidden value=3Dchina=20
+name=3Dlocalsite>
+                  <SCRIPT language=3Djavascript>document.write('<input =
+type=3D"hidden" name=3D"url" value=3D"'+location.href+'">');</SCRIPT>
+
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD><IMG height=3D8 alt=3D""=20
+                        src=3D"http://www.ibm.com/i/c.gif" width=3D100=20
+                    border=3D0></TD></TR>
+                    <TR vAlign=3Dtop>
+                      <TD><INPUT type=3Dradio value=3D1 =
+name=3DRating>=E5=A4=AA=E5=B7=AE=EF=BC=81 (1)</TD></TR>
+                    <TR vAlign=3Dtop>
+                      <TD><INPUT type=3Dradio value=3D2 =
+name=3DRating>=E9=9C=80=E6=8F=90=E9=AB=98 (2)</TD></TR>
+                    <TR vAlign=3Dtop>
+                      <TD><INPUT type=3Dradio value=3D3 =
+name=3DRating>=E4=B8=80=E8=88=AC=EF=BC=9B=E5=B0=9A=E5=8F=AF=20
+(3)</TD></TR>
+                    <TR vAlign=3Dtop>
+                      <TD><INPUT type=3Dradio value=3D4 =
+name=3DRating>=E5=A5=BD=E6=96=87=E7=AB=A0 (4)</TD></TR>
+                    <TR vAlign=3Dtop>
+                      <TD><INPUT type=3Dradio value=3D5=20
+                    =
+name=3DRating>=E7=9C=9F=E6=A3=92=EF=BC=81(5)</TD></TR></TBODY></TABLE><BR=
+><B>=E5=BB=BA=E8=AE=AE=EF=BC=9F</B><BR><TEXTAREA id=3DComments =
+name=3DComments rows=3D5 wrap=3Dvirtual =
+cols=3D60>&nbsp;</TEXTAREA><BR><BR><INPUT type=3Dsubmit =
+value=3D=E5=8F=8D=E9=A6=88=E6=84=8F=E8=A7=81></FORM></TD></TR>
+              <TR vAlign=3Dtop>
+                <TD bgColor=3D#ffffff><IMG height=3D8 alt=3D""=20
+                  src=3D"http://www.ibm.com/i/c.gif" width=3D100=20
+              border=3D0></TD></TR></TBODY></TABLE></SPAN><SPAN =
+class=3Dno-print>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 align=3Dright>
+              <TBODY>
+              <TR align=3Dright>
+                <TD><IMG height=3D8 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+                  width=3D"100%"><BR>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=3Dcenter><IMG height=3D16 alt=3D""=20
+                        =
+src=3D"http://www.ibm.com/i/v14/icons/u_bold.gif" width=3D16=20
+                        border=3D0><BR></TD>
+                      <TD vAlign=3Dtop align=3Dright><A class=3Dfbox=20
+                        =
+href=3D"http://www.ibm.com/developerworks/cn/java/j-zhanghz/#main"><B>=E5=
+=9B=9E=E9=A1=B5=E9=A6=96</B></A></TD></TR></TBODY></TABLE></TD></TR></TBO=
+DY></TABLE><BR><BR></SPAN></TD>
+          <TD width=3D10><IMG height=3D1 alt=3D"" =
+src=3D"http://www.ibm.com/i/c.gif"=20
+            width=3D10></TD></TR></TBODY></TABLE><SPAN class=3Dsmall>IBM =
+=E5=85=AC=E5=8F=B8=E4=BF=9D=E7=95=99=E5=9C=A8=20
+      developerWorks =
+=E7=BD=91=E7=AB=99=E4=B8=8A=E5=8F=91=E8=A1=A8=E7=9A=84=E5=86=85=E5=AE=B9=E7=
+=9A=84=E8=91=97=E4=BD=9C=E6=9D=83=E3=80=82=E6=9C=AA=E7=BB=8FIBM=E5=85=AC=E5=
+=8F=B8=E6=88=96=E5=8E=9F=E5=A7=8B=E4=BD=9C=E8=80=85=E7=9A=84=E4=B9=A6=E9=9D=
+=A2=E6=98=8E=E7=A1=AE=E8=AE=B8=E5=8F=AF=EF=BC=8C=E8=AF=B7=E5=8B=BF=E8=BD=AC=
+=E8=BD=BD=E3=80=82=E5=A6=82=E6=9E=9C=E6=82=A8=E5=B8=8C=E6=9C=9B=E8=BD=AC=E8=
+=BD=BD=EF=BC=8C=E8=AF=B7=E9=80=9A=E8=BF=87 <A=20
+      =
+href=3D"https://www.ibm.com/developerworks/secure/reprintreq.jsp?domain=3D=
+dwchina">=E6=8F=90=E4=BA=A4=E8=BD=AC=E8=BD=BD=E8=AF=B7=E6=B1=82=E8=A1=A8=E5=
+=8D=95</A>=20
+      =
+=E8=81=94=E7=B3=BB=E6=88=91=E4=BB=AC=E7=9A=84=E7=BC=96=E8=BE=91=E5=9B=A2=E9=
+=98=9F=E3=80=82</SPAN></TD></TR></TBODY></TABLE><!--FOOTER_BEGIN--><BR>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3Dbbg height=3D19>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+        <TBODY>
+        <TR>
+          <TD><SPAN class=3Dspacer>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><A=20
+            class=3Dmainlink =
+href=3D"http://www.ibm.com/cn/ibm/index.shtml">=E5=85=B3=E4=BA=8E=20
+            IBM</A></TD>
+          <TD class=3Dfooter-divider =
+width=3D27>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+          <TD><A class=3Dmainlink=20
+            =
+href=3D"http://www.ibm.com/cn/ibm/privacy/index.shtml">=E9=9A=90=E7=A7=81=
+=E6=9D=A1=E7=BA=A6</A></TD>
+          <TD class=3Dfooter-divider =
+width=3D27>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+          <TD><A class=3Dmainlink =
+href=3D"http://www.ibm.com/contact/">=E8=81=94=E7=B3=BB=20
+          IBM</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<SCRIPT language=3DJavaScript1.2 =
+src=3D"http://www.ibm.com/common/stats/stats.js"=20
+type=3Dtext/javascript></SCRIPT>
+<NOSCRIPT><IMG height=3D1 alt=3D""=20
+src=3D"http://stats.www.ibm.com/rc/images/uc.GIF?R=3Dnoscript" width=3D1 =
+
+border=3D0></NOSCRIPT><!--FOOTER_END--><!--XSLT stylesheet used to =
+transform this file:  dw-document-html-5.5.1.xsl-->=20
+</BODY></HTML>
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/i/v14/t/ibm-logo.gif
+
+R0lGODlhbgA0ALMAAAAAAP///zxZdxMaIbi4uLe3t1paWnNzc3JyckBAQAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAAAAAAALAAAAABuADQAAAT/UMhJq7046827r0MojmRpnmiqrmxLAnAsz3Rt33iu73zv
+/8CgcEgsGo/IpHLJbDqf0Kh0Sq1ar9is9lcIeL9gcAHQDZvDhMOMcAaraYe2GMqWgwmAuv38hunb
+eDRldoFbhoeIiT9/dmODe2djeZB9MHGQhU2McmObkF+BnmGSMY9ymYqpqquJZziMM6YBCDN2fZdt
+pFauN6ZrZjSEMaJeqKzHyMlSvDbEzDJ7eLKjWc+Cn8U1fG5huKDK4OHiR9a/2LoxZtKAAGboVOUy
+zsDB1O286uP6+/w38aVhzIGpd8cPmnQHsfyD4UuGrEr3CgLwFqCPu34YMy4xwPHItDN4W+btYXhq
+2DeEuWYYiLGyiMhsL9lNSmnpS6VGMlYaSKBTIxSdLVv6bNKzJ5GYnbCZ6UNMFxtUOHOyNPLxYsw7
+lapCJRiJBkehQ8OKHUu2rNmzaNOqXcu2rdstEQAAOw==
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/i/c.gif
+
+R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/i/v14/t/cl-bullet.gif
+
+R0lGODlhAgAIAIAAAP///yk9ayH5BAEAAAAALAAAAAACAAgAAAIFhI8WGwUAOw==
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/i/v14/t/left-nav-corner.gif
+
+R0lGODlhiAATAIAAAMjX4////ywAAAAAiAATAAACPYSPqcvtD6OctNqLs968+w+G4kiW5omm6sq2
+7gvH8kzX9o3n+s73/g8MCoebAPGYCBiRSOWSOXQ+oUBpoAAAOw==
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/i/v14/t/rl-bullet.gif
+
+R0lGODlhAgAIAIAAAP///2ZmZiH5BAEAAAAALAAAAAACAAgAAAIFhI8WGwUAOw==
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/developerworks/cn/i/dw.gif
+
+R0lGODlhwAASANUAAAAAAP//////+v///P738Pzt5f/9/PjZyuNdKOBmNeZuP+BsPu95Sud1SO+S
+a+2XdfGvlPfDrfXFsvfRwvvo4OdRGOFRGeFRGuFhMOVoOOdpOeVoOeNsPuZxROd0R+d1Sed7Uel/
+VumEXeuLZuyRceuScO+ihPCni/GulPO5o/TArPLBrvjVyPnc0femjPCmjf308f77+v3z8P///wAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADMALAAAAADAABIAAAb/wEDH
+Qiwaj8ikcslsOp/QqHRKrQZO1eXkkUWiUF2nxFTMTMhE8+jpmXjC8Hgg9okXA+j4ZGJXSihFJgGA
+RA8Bb04hASF9jVIBASwKfXh9e45HghlEEpCbFhIyUIqMmKZLkAEkXSYyATKCaB6dAS1vY0UIE2uz
+kLZElxa9tWvCZxSvKAhECCmuFFwWDxMosB4B0TIolRYyEsK0LcXT1SakRCgTm9WvKcundqkwiFOx
+FiGuZAgyLRnNMhmcBQrgj58/Z5su7evXbNE9SGQEpQAmg5GgNYJkPNgkY+K1EC2+XXuw8KDDjBtJ
+/WNkiIyiPPDCpAqgYgOVjkVaWtDEzFqA/2IhdxLsSeYSTyIUvimaiC6AMGxFjELlBKjVTlGajlpI
+KjSaohEtZCAS9O5LTDkzRUz5mqvSBFgm4lLgw/Xamrdx5fK5FIyIoIfFHoYQhCLvBKd/cxKcoPTQ
+Hwt9hUomosjVtzSDUJQ6C2fmoCFRzt0pSiFvXC5kqwErbZoLXz4DBRchFct0RKdl8HDDgzPy38QP
+tf0sk+5VNM5ZPAd4ISXD1KdkUhDyywUBbzAWpBsx4ZqP9iKPXyrOYOiThRG3j1BAhigU1O9UJwOG
+LGOZB0QIwhKpwKBCBeRRKGcACFJQ0MI7nZCh00PR0PLJgop0dx4317g0yDIIGGiBc5ftM/cRcESk
+8MpAASwzAoWVAHdOBt5YsM0n2xDhggsR/AfgE8oFcAAHUXggQ2lvcSNiCtW0UMSJsIUYAJH8AAPb
+kEUuU1lpFIhVSADHACTflUw9ZaSSTB4on2gXsViaiNg5EEEEGtyIo3IDlNDcaQiEYN5gJgRGmXmU
+xRXYfUV44OdsPz0QF58Z0JnGZszYaUQI9Agz6KK5hPDOPZsgYKgJ9PDXn5tO5BgAAQ2AmoVopqZ6
+lqgDrJCAqlKgCuusjYgagABq0epEnZfq6msXtgZQwAJKXGDsscgmq+yyzDbr7LPQRivttNQ6S0mw
+EGBQ7bbcduvtt+CGO20QADs=
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/i/v14/rules/blue_rule.gif
+
+R0lGODlhAQABAIAAAJixxAAAACwAAAAAAQABAAACAkQBADs=
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/i/v14/icons/u_bold.gif
+
+R0lGODlhEAAQAIABAFyBp////yH5BAEAAAEALAAAAAAQABAAAAIXjI+py+2fADSgwood3i9f+0nT
+SJbmUwAAOw==
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://stats.www.ibm.com/rc/images/uc.GIF?R=noscript
+
+R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ibm.com/i/v14/t/cn/zh/search.gif
+
+R0lGODlhRwASAOYAAAQDBA0MDRUUFRkYGR0cHSMiIzMyMysqKz8+Pzk4OUpJSkRDRAwMDRAQERQU
+FRgYGRwcHSIiIycnKDIyMy0tLioqKz4+Pzg4OUNDRAMEBAwNDRARERgZGRwdHSIjIycoKDIzMyor
+Kz4/Pzg5OUlKSkNERAMEAwwNDBAREBQVFBgZGCIjIicoJzIzMi0uLSorKj4/Pjg5ODM0M0lKSUNE
+QwQEAw0NDBkZGB0dHCMjIisrKj8/Pjk5OEpKSUREQ/7+/Q0MDBEQEBUUFBkYGB0cHCMiIignJy4t
+LSsqKj8+Pjk4OEpJSURDQ1VVVVJSUk9PT0xMTEpKSklJSUZGRkRERENDQ0BAQD8/Pz4+Pjs7Ozk5
+OTg4ODY2NjMzMzIyMjExMS8vLy4uLi0tLSwsLCsrKyoqKicnJyMjIyIiIh0dHRkZGRgYGBUVFRQU
+FBERERAQEA0NDQwMDAkJCQYGBgQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwA
+AAAARwASAAAH/4B1TYOEhYaHiImKi4yEdU49M1FLS1GWMySXmVGYmpuYm5acoqSinZwkoaWVCpWd
+PQpOTws0GAtVVDQlu7olGLW3ubslvba4vcS7GMrByMULCz4lTD5Mv1TYTNgLVE9QWCIIMAjkMFcW
+4lc75eTp6D8/4gjw5ujmO+bw7fXp+FgwWBAkgZEEiwWAFrAEtABFypYtF0ZsUaJkxIWJFnkoiTix
+4kUl8EKK/FFx5MiPGRNsifGwpcSWWh7ykDJlghebXlqAyDlhZ4suIHDqzGnSCzyjP3x2Ifojp8+e
+OZd6uWmzxVQvIFoYmGDVy5QqYcSIcSH2iFgXZsuOVTv2iEmRbv/fikQrVswRsnbrUqi7VmwVK2Yk
+fDDDwoxhI4bNIDYzuPBhwyJZwDMzeTLlH5czPzbCYnFiwxJYfJBw2AqWHB7QRECDxkMO1q7RrEi9
+uvVrNHJDxjZpG/brFWeAoylSZAXqAh4iRDgToUgBLFk6EEgzPQ0O6kSuT9eexjp1kdTTwMPO/fsP
+8ecJZA+fRjoBAtetd+jevQMOCFm2qFizhsOQByrcsAaAAg6xn38EDqhCbgTm9oOCBa4xxBD9Cdjf
+AwP4p8aAQyjBhQMOpCCAEG0IwUYbJZ7ogBAikmgiikLAkwI8bdCYYhsOmPTijSviSGKIKDqAI4wo
+ctEFCkEgGcTqG0y60UCTSyrJ5BtOvgEPkiFR+SSV8LgBTxDwaAklk0ki+cYGS0b5BgpMyvAFEDYw
+AAQcGjDAgA1x3pnnnHXe+ZYGIjEQkqDw0AkPnnbiecKcNtAZhwYaNHqCDQEEAOkXYMih6aacdurp
+p6CGKuqom4IRxhyopqrqqqy26uqrsMaaahhj0GGrrTXYmkEGut66a6++2gpArjWYcCuxdBSrK690
+MEvHsMkaS4e0tlJLxxh1kHGADmQgEUIFSOhwALjckjtuuNqSm+4BZFRAxgshkPEtu+6aq+64FdAr
+Lxk6uBvCC2SUUYG4dQQCADs=
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/common/v14/table.css
+
+TABLE.data-table-1 TD {
+	PADDING-RIGHT: 4px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 5px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 4px
+}
+TABLE.data-table-1 TH {
+	PADDING-RIGHT: 4px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 5px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 4px
+}
+TABLE.data-table-1 TH {
+	BACKGROUND: #efefef
+}
+TABLE.data-table-2 {
+	MARGIN-TOP: 1px
+}
+TABLE.data-table-2 TD {
+	BORDER-BOTTOM: #ccc 1px solid
+}
+TABLE.data-table-2 TH.tb-row {
+	BORDER-BOTTOM: #ccc 1px solid
+}
+TABLE.data-table-2 TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; VERTICAL-ALIGN: top; =
+PADDING-TOP: 4px
+}
+TABLE.data-table-2 TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; VERTICAL-ALIGN: top; =
+PADDING-TOP: 4px
+}
+TABLE.data-table-2 TH {
+	BACKGROUND: #c8d7e3
+}
+TABLE TH.tb-row {
+	FONT-WEIGHT: normal; BACKGROUND: #fff
+}
+TABLE.data-table-1 {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 0px solid; BORDER-LEFT: =
+#ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+TABLE.data-table-1 CAPTION {
+	PADDING-LEFT: 6px; BACKGROUND: #3c5f84; PADDING-BOTTOM: 4px; =
+PADDING-TOP: 3px; TEXT-ALIGN: left
+}
+TABLE.data-table-2 CAPTION {
+	PADDING-LEFT: 6px; BACKGROUND: #3c5f84; PADDING-BOTTOM: 4px; =
+PADDING-TOP: 3px; TEXT-ALIGN: left
+}
+TABLE.data-table-3 CAPTION {
+	PADDING-LEFT: 6px; BACKGROUND: #3c5f84; PADDING-BOTTOM: 4px; =
+PADDING-TOP: 3px; TEXT-ALIGN: left
+}
+TABLE.data-table-2 CAPTION {
+	BORDER-BOTTOM: #fff 1px solid
+}
+TABLE.data-table-1 CAPTION EM {
+	COLOR: #fff
+}
+TABLE.data-table-2 CAPTION EM {
+	COLOR: #fff
+}
+TABLE.data-table-3 CAPTION EM {
+	COLOR: #fff
+}
+TABLE.v14-gray-table-border TABLE.data-table-1 {
+	BORDER-RIGHT: #ccc 0px solid; BORDER-TOP: #ccc 0px solid; BORDER-LEFT: =
+#ccc 0px solid; BORDER-BOTTOM: #ccc 0px solid
+}
+TABLE.data-table-1 TD.no-padding {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px
+}
+TABLE.data-table-1 TD.ntb {
+	BORDER-TOP-WIDTH: 0px
+}
+TABLE TR.alt-row TD {
+	BACKGROUND: #eee
+}
+TABLE TR.alt-row TH.tb-row {
+	BACKGROUND: #eee
+}
+TABLE.data-table-3 TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; VERTICAL-ALIGN: top; =
+PADDING-TOP: 4px
+}
+TABLE.data-table-3 TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; VERTICAL-ALIGN: top; =
+PADDING-TOP: 4px
+}
+TABLE.data-table-3 TH {
+	FONT-WEIGHT: bold
+}
+TABLE.data-table-3 TD {
+	PADDING-RIGHT: 5px
+}
+TABLE.data-table-3 {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 0px solid; BORDER-LEFT: =
+#ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+TABLE.data-table-1 .imgleft {
+	PADDING-LEFT: 5px; MARGIN-RIGHT: 5px
+}
+P.dtnf {
+	FONT-SIZE: 11px; FONT-FAMILY: verdana,arial,sans-serif
+}
+TH.numeric {
+	TEXT-ALIGN: right
+}
+TD.numeric {
+	TEXT-ALIGN: right
+}
+TABLE.data-table-1 CAPTION.header-1 {
+	BACKGROUND: #98b1c4
+}
+TABLE.data-table-2 CAPTION.header-1 {
+	BACKGROUND: #98b1c4
+}
+TABLE.data-table-3 CAPTION.header-1 {
+	BACKGROUND: #98b1c4
+}
+TABLE.data-table-1 CAPTION.header-2 {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: =
+#eee; BORDER-LEFT: #ccc 1px solid
+}
+TABLE.data-table-2 CAPTION.header-2 {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: =
+#eee; BORDER-LEFT: #ccc 1px solid
+}
+TABLE.data-table-1 CAPTION.header-2 EM {
+	COLOR: #000
+}
+TABLE.data-table-2 CAPTION.header-2 EM {
+	COLOR: #000
+}
+TABLE.data-table-3 CAPTION.header-2 EM {
+	COLOR: #000
+}
+A.dtable-alink {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 15px; FONT-WEIGHT: bold; BACKGROUND: =
+url(//www.ibm.com/i/v14/icons/fw_bold.gif) no-repeat 0px 4px; =
+PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px
+}
+A.dtable-alink:link {
+	TEXT-DECORATION: none
+}
+A.dtable-alink:visited {
+	TEXT-DECORATION: none
+}
+A.dtable-alink:hover {
+	TEXT-DECORATION: underline
+}
+DIV.dtable-bullet-list UL {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; MARGIN: 0px
+}
+DIV.dtable-bullet-list LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 7px; BACKGROUND: =
+url(//www.ibm.com/i/v14/bullets/bk-bullet.gif) no-repeat; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/developerworks/css/r1ss.css
+
+.dwo1 {
+	BACKGROUND-COLOR: #ffffff
+}
+.dwbg {
+	BACKGROUND-COLOR: #ffcc66
+}
+.dwg3 {
+	BACKGROUND-COLOR: #333333
+}
+.dwg6 {
+	BACKGROUND-COLOR: #666666
+}
+.pgray {
+	BACKGROUND-COLOR: #eeeeee
+}
+.ortext {
+	COLOR: #e15119
+}
+.title2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; FONT-FAMILY: Arial, sans-serif
+}
+.dwsmall {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, sans-serif
+}
+.dwinput {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, sans-serif
+}
+A.feature:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #000000; FONT-FAMILY: Arial, =
+sans-serif; TEXT-DECORATION: none
+}
+A.feature:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #000000; FONT-FAMILY: Arial, =
+sans-serif; TEXT-DECORATION: none
+}
+A.feature:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #000000; FONT-FAMILY: Arial, =
+sans-serif; TEXT-DECORATION: none
+}
+A.dwbctl:link {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif; =
+TEXT-DECORATION: none
+}
+A.dwbctl:visited {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif; =
+TEXT-DECORATION: none
+}
+A.dwbctl:hover {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif; =
+TEXT-DECORATION: underline
+}
+.dwbct1 {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif
+}
+A.smalltitle:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 15px; FONT-FAMILY: Arial, san-serif; =
+TEXT-DECORATION: none
+}
+A.smalltitle:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 15px; FONT-FAMILY: Arial, san-serif; =
+TEXT-DECORATION: none
+}
+A.smalltitle:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 15px; FONT-FAMILY: Arial, san-serif; =
+TEXT-DECORATION: none
+}
+.bluebullet {
+	FONT-WEIGHT: bold; COLOR: #006699
+}
+.tdgold {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #ffcc66; COLOR: =
+#000000; FONT-FAMILY: Arial, sans-serif
+}
+.tdgray9 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #999999; COLOR: =
+#ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.tdblueb {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #b5c9db; COLOR: =
+#000000; FONT-FAMILY: Arial, sans-serif
+}
+.tddmbg {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #40a629; COLOR: =
+#000000; FONT-FAMILY: Arial, sans-serif
+}
+.tdesbg {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #333333; COLOR: =
+#000000; FONT-FAMILY: Arial, sans-serif
+}
+.tdlsbg {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #ffd100; COLOR: =
+#000000; FONT-FAMILY: Arial, sans-serif
+}
+.tdrbg {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #009ece; COLOR: =
+#000000; FONT-FAMILY: Arial, sans-serif
+}
+.tdtvbg {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #fd1b14; COLOR: =
+#000000; FONT-FAMILY: Arial, sans-serif
+}
+.tdwbg {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #6a3d9a; COLOR: =
+#000000; FONT-FAMILY: Arial, sans-serif
+}
+.astitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 25px; COLOR: #cc6633; FONT-FAMILY: Arial, =
+sans-serif
+}
+.atitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 25px; FONT-FAMILY: Arial, sans-serif
+}
+.atitle2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; FONT-FAMILY: Arial, sans-serif
+}
+.atitle3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif
+}
+.code {
+	FONT-SIZE: 14px; FONT-FAMILY: monospace
+}
+.boldcode {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: monospace
+}
+.rboldcode {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ff0000; FONT-FAMILY: =
+monospace
+}
+.gboldcode {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #009966; FONT-FAMILY: =
+monospace
+}
+.bboldcode {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #0000ff; FONT-FAMILY: =
+monospace
+}
+.tdgoldvw {
+	BACKGROUND: #ffcc66; COLOR: #000000; FONT-FAMILY: Arial, sans-serif
+}
+.sort {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; FONT-FAMILY: Helvetica, sans-serif
+}
+.sortg6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #666666; FONT-FAMILY: =
+Helvetica, sans-serif
+}
+A.cvred:link {
+	COLOR: #cc6633; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: =
+underline
+}
+A.cvred:visited {
+	COLOR: #cc6633; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: =
+underline
+}
+A.cvred:hover {
+	COLOR: #cc6633; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: =
+underline
+}
+.tbgdw {
+	BACKGROUND-IMAGE: url(http://www-136.ibm.com/i/gr100.gif); =
+BACKGROUND-COLOR: #006699
+}
+.dwsmallwh {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Verdana, sans-serif
+}
+.dwsearch24 {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.dwsearch {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, sans-serif
+}
+.tdosm {
+	FONT-SIZE: 11px; COLOR: #e15119; FONT-FAMILY: Verdana, sans-serif
+}
+A.searchtabnavss:link {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: none
+}
+A.searchtabnavss:visited {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: none
+}
+A.searchtabnavss:hover {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: underline
+}
+.searchtabhiss {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Arial, =
+sans-serif; TEXT-DECORATION: none
+}
+.smallarialgr9 {
+	FONT-SIZE: 11px; COLOR: #999999; FONT-FAMILY: Arial, sans-serif
+}
+.bbg {
+	WHITE-SPACE: nowrap; BACKGROUND-COLOR: #000
+}
+.mbbg {
+	BACKGROUND: url(//www.ibm.com/i/v14/t/masthead-bg.gif) #000 repeat-x
+}
+.cty-tou {
+	BACKGROUND: #2f4e6f; WHITE-SPACE: nowrap
+}
+.upper-masthead-corner {
+	BACKGROUND-POSITION: 100% 100%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/upper-nav-cnr.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+.spacer {
+	FONT-SIZE: 10px; COLOR: #98b1c4; FONT-FAMILY: verdana,arial,sans-serif; =
+WHITE-SPACE: nowrap
+}
+.country {
+	FONT-SIZE: 10px; COLOR: #c8d7e3
+}
+A.ur-link:link {
+	FONT-SIZE: 10px; COLOR: #c8d7e3; FONT-FAMILY: verdana,arial,sans-serif; =
+WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.ur-link:visited {
+	FONT-SIZE: 10px; COLOR: #c8d7e3; FONT-FAMILY: verdana,arial,sans-serif; =
+WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.ur-link:hover {
+	FONT-SIZE: 10px; COLOR: #c8d7e3; FONT-FAMILY: verdana,arial,sans-serif; =
+WHITE-SPACE: nowrap; TEXT-DECORATION: underline
+}
+TD.upper-masthead-divider {
+	BACKGROUND-POSITION: 50% 50%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/upper-masthead-divider.gif); =
+BACKGROUND-REPEAT: no-repeat; HEIGHT: 17px
+}
+.cty-tou-border {
+	BACKGROUND: #3c5f84
+}
+.input {
+	FONT-SIZE: 10px; BACKGROUND: #eee; WIDTH: 130px; FONT-FAMILY: =
+verdana,arial,sans-serif; HEIGHT: 16px
+}
+.input-scope {
+	FONT-SIZE: 10px; BACKGROUND: #eee; WIDTH: 150px; FONT-FAMILY: =
+verdana,arial,sans-serif; HEIGHT: 16px
+}
+TD.blbg {
+	BORDER-TOP: #99afc4 2px solid; BACKGROUND: #c8d7e3; BORDER-BOTTOM: =
+#99afc4 1px solid; WHITE-SPACE: nowrap; HEIGHT: 22px
+}
+A.masthead-mainlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: =
+verdana,arial,sans-serif; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.masthead-mainlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: =
+verdana,arial,sans-serif; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.masthead-mainlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: =
+verdana,arial,sans-serif; WHITE-SPACE: nowrap; TEXT-DECORATION: =
+underline
+}
+TD.masthead-divider {
+	BACKGROUND-POSITION: 50% 60%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/masthead-divider.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+.dbg {
+	BACKGROUND-COLOR: #fff
+}
+TD.left-nav-spacer {
+	HEIGHT: 22px; TEXT-ALIGN: right
+}
+.left-nav-child-highlight IMG {
+	FLOAT: right; MARGIN-RIGHT: 0px
+}
+.left-nav-child IMG {
+	FLOAT: right; MARGIN-RIGHT: 0px
+}
+.rlinks IMG {
+	FLOAT: right; MARGIN-RIGHT: 0px
+}
+TH.left-nav-overview {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 4px; BACKGROUND: #98b1c4; =
+PADDING-BOTTOM: 4px; PADDING-TOP: 3px; TEXT-ALIGN: left
+}
+A.left-nav-overview:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #fff; FONT-FAMILY: =
+verdana,arial,sans-serif; TEXT-DECORATION: none
+}
+A.left-nav-overview:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #fff; FONT-FAMILY: =
+verdana,arial,sans-serif; TEXT-DECORATION: none
+}
+A.left-nav-overview:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #fff; FONT-FAMILY: =
+verdana,arial,sans-serif; TEXT-DECORATION: underline
+}
+TD.left-nav {
+	PADDING-RIGHT: 5px; BORDER-TOP: white 1px solid; PADDING-LEFT: 4px; =
+PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 3px; =
+BACKGROUND-COLOR: #c8d7e3
+}
+A.left-nav:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: =
+verdana,arial,sans-serif; TEXT-DECORATION: none
+}
+A.left-nav:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: =
+verdana,arial,sans-serif; TEXT-DECORATION: none
+}
+A.left-nav:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: =
+verdana,arial,sans-serif; TEXT-DECORATION: underline
+}
+TD.dw-left-nav-separator {
+	BACKGROUND: #98b1c4
+}
+TD.dw-left-nav {
+	BACKGROUND: #c8d7e3; PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+TR.left-nav-child TD {
+	PADDING-RIGHT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; =
+PADDING-TOP: 3px; BACKGROUND-COLOR: #c8d7e3
+}
+A.left-nav-child:link {
+	FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: none
+}
+A.left-nav-child:visited {
+	FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: none
+}
+A.left-nav-child:hover {
+	FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: underline
+}
+TD.left-nav-highlight {
+	PADDING-RIGHT: 5px; BORDER-TOP: white 1px solid; PADDING-LEFT: 4px; =
+BACKGROUND: #fff; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: =
+3px
+}
+TR.left-nav-child-highlight TD {
+	PADDING-RIGHT: 4px; BACKGROUND: #fff; PADDING-BOTTOM: 4px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 3px
+}
+TR.left-nav-last TD {
+	BORDER-TOP: white 1px solid
+}
+TR.left-nav-last {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #c8d7e3
+}
+TD.related {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 4px; PADDING-BOTTOM: 3px
+}
+B.related {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #666; FONT-FAMILY: =
+verdana,arial,sans-serif
+}
+TR.rlinks TD {
+	PADDING-RIGHT: 4px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: top
+}
+A.rlinks:link {
+	FONT-SIZE: 10px; COLOR: #666; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: none
+}
+A.rlinks:visited {
+	FONT-SIZE: 10px; COLOR: #666; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: none
+}
+A.rlinks:hover {
+	FONT-SIZE: 10px; COLOR: #666; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: underline
+}
+.left-nav-corner {
+	BACKGROUND-POSITION: 100% 100%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/left-nav-corner.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+A.nav:link {
+	FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: none
+}
+A.nav:visited {
+	FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: none
+}
+A.nav:hover {
+	FONT-SIZE: 10px; COLOR: #293d6b; FONT-FAMILY: verdana,arial,sans-serif; =
+TEXT-DECORATION: underline
+}
+UNKNOWN {
+	DISPLAY: block
+}
+IMG.display-img {
+	DISPLAY: block
+}
+A.mainlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #fff; FONT-FAMILY: =
+verdana,arial,sans-serif; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.mainlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #fff; FONT-FAMILY: =
+verdana,arial,sans-serif; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.mainlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #fff; FONT-FAMILY: =
+verdana,arial,sans-serif; WHITE-SPACE: nowrap; TEXT-DECORATION: =
+underline
+}
+TD.footer-divider {
+	BACKGROUND-POSITION: 50% 50%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/footer-divider.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+.hbg {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/m/en/lines.gif); =
+BACKGROUND-REPEAT: repeat; BACKGROUND-COLOR: #006699
+}
+.tbg {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/m/en/gr760.gif); =
+BACKGROUND-COLOR: #006699
+}
+.tbgl {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/m/en/gr160.gif); =
+BACKGROUND-COLOR: #006699
+}
+.tbgc {
+	BACKGROUND-COLOR: #006699
+}
+.mbg {
+	BACKGROUND-COLOR: #99ccff
+}
+.lbg {
+	BACKGROUND-COLOR: #cce5ff
+}
+.hil {
+	BACKGROUND-COLOR: #ffffff
+}
+.lgray {
+	BACKGROUND-COLOR: #cccccc
+}
+.tbgray {
+	BACKGROUND-COLOR: #dddddd
+}
+.greytext {
+	COLOR: #666666
+}
+.related {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, =
+sans-serif
+}
+A:link {
+	COLOR: #006699
+}
+A:visited {
+	COLOR: #996699
+}
+A:hover {
+	COLOR: #006699
+}
+A.highlight:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: =
+Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.highlight:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: =
+Verdana, Arial, sans-serif; TEXT-DECORATION: none
+}
+A.highlight:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc00; FONT-FAMILY: =
+Verdana, Arial, sans-serif; TEXT-DECORATION: underline
+}
+A.parent:link {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, =
+sans-serif; TEXT-DECORATION: none
+}
+A.parent:visited {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, =
+sans-serif; TEXT-DECORATION: none
+}
+A.parent:hover {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, =
+sans-serif; TEXT-DECORATION: underline
+}
+A.nav:link {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: none
+}
+A.nav:visited {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: none
+}
+A.nav:hover {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: underline
+}
+A.fbox:link {
+	FONT-SIZE: 12px; COLOR: #006699; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: none
+}
+A.fbox:visited {
+	FONT-SIZE: 12px; COLOR: #996699; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: none
+}
+A.fbox:hover {
+	FONT-SIZE: 12px; COLOR: #006699; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: underline
+}
+A.bctl:link {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: none
+}
+A.bctl:visited {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: none
+}
+A.bctl:hover {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, sans-serif; =
+TEXT-DECORATION: underline
+}
+.divider {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #999999; FONT-FAMILY: =
+Verdana, Arial, sans-serif
+}
+.input {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; WIDTH: 150px; COLOR: #000000
+}
+.iform {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; BACKGROUND: #eeeeee; COLOR: =
+#000000; FONT-FAMILY: Arial
+}
+BODY {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+P {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+B {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+I {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+STRONG {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+EM {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DD {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DL {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+sl {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+CAPTION {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TH {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+TR {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+U {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+BLINK {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+OPTION {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+FORM {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+DIV {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+FONT {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+LI {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif
+}
+.title {
+	FONT-WEIGHT: normal; FONT-SIZE: 24px; FONT-FAMILY: Arial, sans-serif
+}
+.subtitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 15px; FONT-FAMILY: Arial, sans-serif
+}
+.boldtitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 24px; FONT-FAMILY: "Arial Black", =
+Arial, sans-serif
+}
+.pagesubtitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 15px; LINE-HEIGHT: 18px; FONT-FAMILY: =
+Arial, sans-serif
+}
+.pagetitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 24px; LINE-HEIGHT: 24px; FONT-FAMILY: =
+"Arial Black", Arial, sans-serif
+}
+UL {
+	MARGIN-TOP: 2px; FONT-SIZE: 12px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: =
+2px; PADDING-TOP: 2px; FONT-FAMILY: Arial, sans-serif
+}
+OL {
+	MARGIN-TOP: 2px; FONT-SIZE: 12px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: =
+2px; PADDING-TOP: 2px; FONT-FAMILY: Arial, sans-serif
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 35px; FONT-FAMILY: Arial, sans-serif
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 25px; FONT-FAMILY: Arial, sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; FONT-FAMILY: Arial, sans-serif
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 18px; FONT-FAMILY: Arial, sans-serif
+}
+.small {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, sans-serif
+}
+.title1 {
+	FONT-SIZE: 25px; FONT-FAMILY: Arial, sans-serif
+}
+.tbdark {
+	BACKGROUND: #a3aab0
+}
+.tbwhite {
+	BACKGROUND: #ffffff
+}
+.tbimage1 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/tabs/tbimage1.gif)
+}
+.tbimage2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/tabs/tbimage2.gif)
+}
+A.tbmainlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: =
+Verdana, Arial; TEXT-DECORATION: none
+}
+A.tbmainlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: =
+Verdana, Arial; TEXT-DECORATION: none
+}
+A.tbmainlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: =
+Verdana, Arial; TEXT-DECORATION: underline
+}
+A.tablink:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: =
+Verdana, Arial; TEXT-DECORATION: none
+}
+A.tablink:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: =
+Verdana, Arial; TEXT-DECORATION: none
+}
+A.tablink:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: =
+Verdana, Arial; TEXT-DECORATION: underline
+}
+A.tablinkblue:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial; =
+TEXT-DECORATION: none
+}
+A.tablinkblue:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial; =
+TEXT-DECORATION: none
+}
+A.tablinkblue:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; FONT-FAMILY: Verdana, Arial; =
+TEXT-DECORATION: underline
+}
+.tblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #6699cc; COLOR: =
+#ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.tdblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #006699; COLOR: =
+#ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.tgray {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #666666; COLOR: =
+#ffffff; FONT-FAMILY: Arial, sans-serif
+}
+.bct {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: =
+Arial, sans-serif
+}
+.fnt {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana, sans-serif
+}
+.ast {
+	COLOR: #cc6600
+}
+.bs:link {
+	COLOR: #006699; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.bs:visited {
+	COLOR: #996699; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.bs:hover {
+	COLOR: #006699; FONT-FAMILY: Verdana; TEXT-DECORATION: underline
+}
+IMG.pbl {
+	MARGIN-TOP: 7px; MARGIN-BOTTOM: 10px
+}
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/common/v14/main.css
+
+#print-masthead {
+	DISPLAY: none
+}
+.ibm-access {
+	LEFT: -3000px; WIDTH: 1px; POSITION: absolute
+}
+.cty-tou {
+	BACKGROUND: #2f4e6f; WHITE-SPACE: nowrap
+}
+.cty-tou-div {
+	COLOR: #293d6b; WHITE-SPACE: nowrap
+}
+.masthead-phone {
+	COLOR: #293d6b; WHITE-SPACE: nowrap
+}
+.spacer {
+	COLOR: #98b1c4; WHITE-SPACE: nowrap
+}
+.cty-tou-border {
+	BACKGROUND: #3c5f84
+}
+.mbbg {
+	BACKGROUND: #000
+}
+.country {
+	COLOR: #c8d7e3; WHITE-SPACE: nowrap
+}
+.upper-masthead-corner {
+	BACKGROUND-POSITION: 100% 100%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/upper-nav-cnr.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+EM.caution {
+	FONT-WEIGHT: bold; TEXT-TRANSFORM: uppercase; FONT-STYLE: normal
+}
+A.ur-link:link {
+	COLOR: #c8d7e3; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.ur-link:visited {
+	COLOR: #c8d7e3; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.ur-link:hover {
+	COLOR: #c8d7e3; WHITE-SPACE: nowrap; TEXT-DECORATION: underline
+}
+.input {
+	BACKGROUND: #eee
+}
+.input-local {
+	BACKGROUND: #eee
+}
+TD.blbg {
+	BORDER-TOP: #99afc4 2px solid; BACKGROUND: #c8d7e3; BORDER-BOTTOM: =
+#99afc4 1px solid; WHITE-SPACE: nowrap
+}
+A.masthead-mainlink:link {
+	COLOR: #293d6b; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.masthead-mainlink:visited {
+	COLOR: #293d6b; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.masthead-mainlink:hover {
+	COLOR: #293d6b; WHITE-SPACE: nowrap; TEXT-DECORATION: underline
+}
+#left-nav-angle {
+	BACKGROUND-POSITION: 100% 100%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/left-nav-angle.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+.bbg {
+	WHITE-SPACE: nowrap; BACKGROUND-COLOR: #000
+}
+.dbg {
+	BACKGROUND-COLOR: #fff
+}
+.mbg {
+	PADDING-LEFT: 4px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: =
+#c8d7e3
+}
+TH.mbg {
+	PADDING-LEFT: 4px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: =
+#98b1c4
+}
+TH.mbg A.nav:link {
+	COLOR: #fff
+}
+TD.hil {
+	BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: #fff
+}
+TH.hil {
+	PADDING-LEFT: 4px; BORDER-BOTTOM: white 1px solid; BACKGROUND-COLOR: =
+#98b1c4
+}
+TH.hil A.nav:link {
+	COLOR: #fff
+}
+.hil {
+	PADDING-LEFT: 4px; BACKGROUND-COLOR: #fff
+}
+.lbg {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #c8d7e3
+}
+TD.left-nav {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #c8d7e3
+}
+TR.left-nav-child TD {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #c8d7e3
+}
+TR.left-nav-last {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #c8d7e3
+}
+.v14-graphic-tab-lblue-table {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #c8d7e3
+}
+TH.left-nav-overview {
+	BACKGROUND: #98b1c4
+}
+TD.left-nav-overview {
+	BACKGROUND: #98b1c4
+}
+.v14-graphic-tab-dblue-table {
+	BACKGROUND: #98b1c4
+}
+TD.left-nav-highlight {
+	BACKGROUND: #fff; VERTICAL-ALIGN: top
+}
+TR.left-nav-child-highlight TD {
+	BACKGROUND: #fff; VERTICAL-ALIGN: top
+}
+TD.left-nav {
+	BORDER-TOP: white 1px solid
+}
+TD.left-nav-highlight {
+	BORDER-TOP: white 1px solid
+}
+TR.left-nav-last TD {
+	BORDER-TOP: white 1px solid
+}
+TR.rlinks TD {
+	VERTICAL-ALIGN: top
+}
+A.rlinks:link {
+	COLOR: #666; TEXT-DECORATION: none
+}
+A.rlinks:visited {
+	COLOR: #666; TEXT-DECORATION: none
+}
+A.rlinks:hover {
+	COLOR: #666; TEXT-DECORATION: underline
+}
+A.rlinks-red:link {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+A.rlinks-red:visited {
+	COLOR: #f00; TEXT-DECORATION: none
+}
+A.rlinks-red:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+A.mainlink:link {
+	COLOR: #fff; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.mainlink:visited {
+	COLOR: #fff; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.mainlink:hover {
+	COLOR: #fff; WHITE-SPACE: nowrap; TEXT-DECORATION: underline
+}
+A.parent:link {
+	COLOR: #666; TEXT-DECORATION: none
+}
+A.parent:visited {
+	COLOR: #666; TEXT-DECORATION: none
+}
+A.parent:hover {
+	COLOR: #666; TEXT-DECORATION: underline
+}
+.left-nav-corner {
+	BACKGROUND-POSITION: 100% 100%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/left-nav-corner.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+A.left-nav-overview:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A.left-nav-overview:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A.left-nav-overview:hover {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+A.left-nav:link {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+A.left-nav:visited {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+A.left-nav:hover {
+	COLOR: #293d6b; TEXT-DECORATION: underline
+}
+A.nav:link {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+A.nav:visited {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+A.nav:hover {
+	COLOR: #293d6b; TEXT-DECORATION: underline
+}
+A.left-nav-child:link {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+A.left-nav-child:visited {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+A.left-nav-child:hover {
+	COLOR: #293d6b; TEXT-DECORATION: underline
+}
+TD.upper-masthead-divider {
+	BACKGROUND-POSITION: 50% 50%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/upper-masthead-divider.gif); =
+BACKGROUND-REPEAT: no-repeat
+}
+TD.masthead-divider {
+	BACKGROUND-POSITION: 50% 60%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/masthead-divider.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+TD.footer-divider {
+	BACKGROUND-POSITION: 50% 50%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/t/footer-divider.gif); BACKGROUND-REPEAT: =
+no-repeat
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #fff; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; PADDING-TOP: 0px
+}
+TH {
+	TEXT-ALIGN: left
+}
+FIELDSET {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; BORDER-RIGHT-WIDTH: 0px
+}
+.nowrap {
+	WHITE-SPACE: nowrap
+}
+H2 {
+	COLOR: #666
+}
+B.related {
+	COLOR: #666
+}
+B.rlinks {
+	COLOR: #666
+}
+.fnt {
+	COLOR: #666
+}
+.greytextbld {
+	COLOR: #666
+}
+.greytext {
+	COLOR: #666
+}
+#v14-body-table P#subtitle {
+	COLOR: #666
+}
+#v14-pop-mast H1 {
+	BACKGROUND: #000; COLOR: #fff; WHITE-SPACE: nowrap
+}
+A:link {
+	COLOR: #5c81a7
+}
+A:visited {
+	COLOR: #969
+}
+A:hover {
+	COLOR: #5c81a7
+}
+.tbgc {
+	BACKGROUND-COLOR: #069
+}
+.gbg {
+	BACKGROUND-COLOR: #ccc
+}
+.lgray {
+	BACKGROUND-COLOR: #ccc
+}
+.bluebullet {
+	COLOR: #069
+}
+TD.bbl {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/bullets/bl-bullet.gif); =
+WIDTH: 6px; BACKGROUND-REPEAT: no-repeat
+}
+TD.dbl {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/bullets/dbl-bullet.gif); =
+WIDTH: 6px; BACKGROUND-REPEAT: no-repeat
+}
+TD.bkl {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/bullets/bk-bullet.gif); =
+WIDTH: 6px; BACKGROUND-REPEAT: no-repeat
+}
+.dkgd {
+	BACKGROUND-COLOR: #996
+}
+.hdgd {
+	COLOR: #fff
+}
+.sth {
+	COLOR: #fff
+}
+.popup_title {
+	COLOR: #fff
+}
+.mdgd {
+	BACKGROUND: #cc9; COLOR: #663
+}
+.flgd {
+	BACKGROUND: #f7f7e7
+}
+.dgbg {
+	BACKGROUND-COLOR: #999
+}
+A.fbox:link {
+	COLOR: #5c81a7; TEXT-DECORATION: none
+}
+A.fbox:visited {
+	COLOR: #969; TEXT-DECORATION: none
+}
+A.fbox:hover {
+	COLOR: #5c81a7; TEXT-DECORATION: underline
+}
+A.bctl:link {
+	COLOR: #999; TEXT-DECORATION: none
+}
+A.bctl:visited {
+	COLOR: #999; TEXT-DECORATION: none
+}
+A.bctl:hover {
+	COLOR: #999; TEXT-DECORATION: underline
+}
+.tbdark {
+	BACKGROUND: #a3aab0
+}
+.tbwhite {
+	BACKGROUND: #fff; WHITE-SPACE: nowrap
+}
+.tbimage1 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/tabs/tbimage1.gif); =
+WHITE-SPACE: nowrap
+}
+.tbimage2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v11/tabs/tbimage2.gif)
+}
+A.tbmainlink:link {
+	COLOR: #333; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.tbmainlink:visited {
+	COLOR: #333; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+A.tbmainlink:hover {
+	COLOR: #333; WHITE-SPACE: nowrap; TEXT-DECORATION: underline
+}
+A.tablink:link {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A.tablink:visited {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A.tablink:hover {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+A.tablinkblue:link {
+	TEXT-DECORATION: none
+}
+A.tablinkblue:visited {
+	TEXT-DECORATION: none
+}
+A.tablinkblue:hover {
+	TEXT-DECORATION: underline
+}
+A.texttabselectlink:link {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A.texttabselectlink:visited {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A.texttabselectlink:hover {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+A.toclink:link {
+	TEXT-DECORATION: none
+}
+A.toclink:visited {
+	TEXT-DECORATION: none
+}
+A.toclink:hover {
+	TEXT-DECORATION: underline
+}
+A.tocselectlink:link {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A.tocselectlink:visited {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A.tocselectlink:hover {
+	COLOR: #333; TEXT-DECORATION: underline
+}
+.v14-graphic-tab-selected {
+	WHITE-SPACE: nowrap; BACKGROUND-COLOR: #c8d7e3
+}
+.v14-graphic-tab-unselected {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_dmpttn.gif); =
+WHITE-SPACE: nowrap
+}
+TD.v14-tab-hlrt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_hlrt.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #c8d7e3
+}
+TD.v14-tab-hlrt-end {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_hlrt_end.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #c8d7e3
+}
+TD.v14-tab-hllt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_hllt.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #c8d7e3
+}
+TD.v14-tab-dmrt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_dmrt.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #5c81a7
+}
+TD.v14-tab-dmrt-end {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_dmrt_end.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #5c81a7
+}
+.v14-graphic-tab-selected2 {
+	WHITE-SPACE: nowrap; BACKGROUND-COLOR: #c8d7e3
+}
+.v14-graphic-tab-unselected2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_dmpttn2.gif); =
+WHITE-SPACE: nowrap
+}
+TD.v14-tab-hlrt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_hlrt2.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #c8d7e3
+}
+TD.v14-tab-hlrt-end2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_hlrt_end2.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #c8d7e3
+}
+TD.v14-tab-hllt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_hllt2.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #c8d7e3
+}
+TD.v14-tab-dmrt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_dmrt2.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #5c81a7
+}
+TD.v14-tab-dmrt-end2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/tab_dmrt_end2.gif); =
+BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #5c81a7
+}
+.v14-ttd {
+	COLOR: #98b1c4
+}
+A.v14-tab-link-selected:link {
+	COLOR: #005077; BACKGROUND-COLOR: #c8d7e3; TEXT-DECORATION: none
+}
+A.v14-tab-link-selected:visited {
+	COLOR: #005077; BACKGROUND-COLOR: #c8d7e3; TEXT-DECORATION: none
+}
+A.v14-tab-link-selected:hover {
+	COLOR: #000; BACKGROUND-COLOR: #c8d7e3; TEXT-DECORATION: none
+}
+A.v14-tab-link-unselected:link {
+	COLOR: #fff; BACKGROUND-COLOR: #5c81a7; TEXT-DECORATION: none
+}
+A.v14-tab-link-unselected:visited {
+	COLOR: #fff; BACKGROUND-COLOR: #5c81a7; TEXT-DECORATION: none
+}
+A.v14-tab-link-unselected:hover {
+	COLOR: #dce8f2; BACKGROUND-COLOR: #5c81a7; TEXT-DECORATION: none
+}
+A.v14-text-tab-select-link:link {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A.v14-text-tab-select-link:visited {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A.v14-text-tab-select-link:hover {
+	COLOR: #000; TEXT-DECORATION: underline
+}
+A.v14-text-tab-unselect-link:link {
+	COLOR: #5c81a7; TEXT-DECORATION: none
+}
+A.v14-text-tab-unselect-link:visited {
+	COLOR: #5c81a7; TEXT-DECORATION: none
+}
+A.v14-text-tab-unselect-link:hover {
+	COLOR: #5c81a7; TEXT-DECORATION: underline
+}
+TD.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:link {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+TR.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:link {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+TD.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:visited {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+TR.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:visited {
+	COLOR: #293d6b; TEXT-DECORATION: none
+}
+TD.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:hover {
+	COLOR: #293d6b; TEXT-DECORATION: underline
+}
+TR.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:hover {
+	COLOR: #293d6b; TEXT-DECORATION: underline
+}
+.tblue {
+	BACKGROUND: #98b1c4; COLOR: #fff
+}
+.tdblue {
+	BACKGROUND: #3c5f84; COLOR: #fff
+}
+.tgray {
+	BACKGROUND: #999; COLOR: #fff
+}
+.tgreen {
+	BACKGROUND: #ccc; COLOR: #333
+}
+.medbluetitlebar {
+	COLOR: #fff; BACKGROUND-COLOR: #69c
+}
+.medgraytitlebar {
+	COLOR: #fff; BACKGROUND-COLOR: #999
+}
+.lightgraytitlebar {
+	COLOR: #666; BACKGROUND-COLOR: #eee
+}
+.whitetitlebar {
+	COLOR: #666; BACKGROUND-COLOR: #fff
+}
+.subtitle {
+	COLOR: #666
+}
+TD.v14-header-1 {
+	BACKGROUND: #3c5f84; COLOR: #fff
+}
+TH.v14-header-1 {
+	BACKGROUND: #3c5f84; COLOR: #fff
+}
+TD.v14-header-2 {
+	BACKGROUND: #98b1c4; COLOR: #fff
+}
+TH.v14-header-2 {
+	BACKGROUND: #98b1c4; COLOR: #fff
+}
+TD.v14-header-1-small {
+	BACKGROUND: #98b1c4; COLOR: #fff
+}
+TH.v14-header-1-small {
+	BACKGROUND: #98b1c4; COLOR: #fff
+}
+TD.v14-header-2-small {
+	BACKGROUND: #ccc; COLOR: #333
+}
+TH.v14-header-2-small {
+	BACKGROUND: #ccc; COLOR: #333
+}
+TD.v14-header-3 {
+	BACKGROUND: #999; COLOR: #fff
+}
+TH.v14-header-3 {
+	BACKGROUND: #999; COLOR: #fff
+}
+TD.v14-header-3-small {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: =
+#ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+TH.v14-header-3-small {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: =
+#ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+TD.v14-header-4 {
+	BACKGROUND: #ccc; COLOR: #333
+}
+TH.v14-header-4 {
+	BACKGROUND: #ccc; COLOR: #333
+}
+TD.v14-header-4-small {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: =
+#eee; BORDER-LEFT: #ccc 1px solid; COLOR: #000; BORDER-BOTTOM: #ccc 1px =
+solid
+}
+TH.v14-header-4-small {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: =
+#eee; BORDER-LEFT: #ccc 1px solid; COLOR: #000; BORDER-BOTTOM: #ccc 1px =
+solid
+}
+TD.v14-header-5 {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: =
+#eee; BORDER-LEFT: #ccc 1px solid; COLOR: #000; BORDER-BOTTOM: #ccc 1px =
+solid
+}
+TH.v14-header-5 {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: =
+#eee; BORDER-LEFT: #ccc 1px solid; COLOR: #000; BORDER-BOTTOM: #ccc 1px =
+solid
+}
+TD.gradient_bar {
+	BACKGROUND-POSITION: 100% 100%; BACKGROUND-IMAGE: =
+url(//www.ibm.com/i/v14/rules/gradient_bar.gif); BACKGROUND-REPEAT: =
+repeat-y
+}
+.small-price {
+	COLOR: #f60
+}
+.price {
+	COLOR: #f60
+}
+.error {
+	COLOR: #f00
+}
+EM.error {
+	FONT-STYLE: normal
+}
+EM.caution {
+	FONT-STYLE: normal
+}
+.graytext {
+	COLOR: #666
+}
+.smgraytext {
+	COLOR: #666
+}
+.lggraytitle {
+	COLOR: #666
+}
+.divider {
+	COLOR: #666
+}
+.bct {
+	COLOR: #ccc
+}
+.ast {
+	COLOR: #f30
+}
+.dgray {
+	BACKGROUND-COLOR: #999
+}
+.vlgray {
+	BACKGROUND-COLOR: #eee
+}
+.tvgray {
+	BACKGROUND: #eee; COLOR: #000
+}
+A.bs:link {
+	COLOR: #069; TEXT-DECORATION: none
+}
+A.bs:visited {
+	COLOR: #969; TEXT-DECORATION: none
+}
+A.bs:hover {
+	COLOR: #069; TEXT-DECORATION: underline
+}
+A.close:link {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+A.close:visited {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+A.close:hover {
+	COLOR: #fff; TEXT-DECORATION: underline
+}
+A.smallplainlink:link {
+	COLOR: #5c81a7; TEXT-DECORATION: none
+}
+A.smallplainlink:visited {
+	COLOR: #969; TEXT-DECORATION: none
+}
+A.smallplainlink:hover {
+	COLOR: #5c81a7; TEXT-DECORATION: underline
+}
+.dotted {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/dotted.gif); BACKGROUND-COLOR: =
+#fff
+}
+.ibmSurveyCVM .v14-header-2-small {
+	BACKGROUND: #999; COLOR: #fff! important
+}
+.ibmSurveyCVM .no-padding {
+	BACKGROUND-COLOR: #ffc! important
+}
+.ibmSurveyCVM .smallplainlink {
+	COLOR: #666! important
+}
+.flashtext {
+	LEFT: -3000px; WIDTH: 500px; POSITION: absolute
+}
+TD.why-ibm {
+	BACKGROUND: url(//www.ibm.com/i/v14/mod/bg-why-ibm.gif) #fff repeat-y =
+100% 0%; BORDER-BOTTOM: #e8e8e8 1px solid
+}
+#v14-body-table TD.why-ibm P {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 10px; MARGIN: =
+0px; PADDING-TOP: 5px
+}
+#v14-body-table TD.why-ibm-rv P {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 10px; MARGIN: =
+0px; PADDING-TOP: 5px
+}
+#v14-body-table TD.why-ibm P.is-branding {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 8px; =
+LINE-HEIGHT: 1.4em; PADDING-TOP: 5px
+}
+#v14-body-table TD.why-ibm-rv P.is-branding {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 8px; =
+LINE-HEIGHT: 1.4em; PADDING-TOP: 5px
+}
+TD.why-ibm-rv {
+	BACKGROUND: #4b4b4b; BORDER-BOTTOM: #454545 1px solid
+}
+TD.why-ibm-rv P {
+	COLOR: #fff
+}
+TD.why-ibm-rv P A:link {
+	COLOR: #fff
+}
+TD.why-ibm-rv P A:visited {
+	COLOR: #fff
+}
+TD.why-ibm-rv P A:hover {
+	COLOR: #fff
+}
+TD.why-ibm H2 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; FONT-WEIGHT: bold; FONT-SIZE: =
+small; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000; PADDING-TOP: 4px
+}
+TD.why-ibm-rv H2 {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; FONT-WEIGHT: bold; FONT-SIZE: =
+small; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000; PADDING-TOP: 4px
+}
+TD.why-ibm-rv H2 {
+	COLOR: #fff
+}
+TD.v14-header-1-small H2 {
+	COLOR: #fff
+}
+TD.scm-bg {
+	BACKGROUND: url(//www.ibm.com/i/v14/t/add-website-bg.gif) repeat-x
+}
+.gen-intfce-nvyblue {
+	COLOR: #293d6b
+}
+.gen-intfce-drkblue {
+	COLOR: #3c5f84
+}
+.gen-intfce-blue {
+	COLOR: #5c81a7
+}
+.gen-intfce-violet {
+	COLOR: #996699
+}
+.gen-intfce-mdblue {
+	COLOR: #98b1c4
+}
+.gen-intfce-plblue {
+	COLOR: #c8d7e3
+}
+.gen-intfce-blk {
+	COLOR: #000
+}
+.gen-intfce-drkestgry {
+	COLOR: #333
+}
+.gen-intfce-drkgry {
+	COLOR: #666
+}
+.gen-intfce-mdgry {
+	COLOR: #999
+}
+.gen-intfce-gry {
+	COLOR: #ccc
+}
+.gen-intfce-ltgry {
+	COLOR: #eee
+}
+.gen-intfce-white {
+	COLOR: #fff
+}
+.lu-red {
+	COLOR: #ff0000
+}
+.lu-brtorng {
+	COLOR: #ff3300
+}
+.lu-orng {
+	COLOR: #ff6600
+}
+TD.tbl-plblue {
+	COLOR: #c8d7e3
+}
+TD.tbl-ltblue {
+	COLOR: #dfe8ef
+}
+TD.tbl-smkwhite {
+	COLOR: #ebebeb
+}
+TD.tbl-ghstwhite {
+	COLOR: #f6f6f6
+}
+TD P.last-updated {
+	TEXT-ALIGN: right
+}
+FORM.ibm-column-form LABEL {
+	CLEAR: left; DISPLAY: block; FONT-WEIGHT: bold; FLOAT: left; WIDTH: =
+150px
+}
+FORM.ibm-column-form P SPAN {
+	DISPLAY: block; MARGIN-LEFT: 157px
+}
+FORM.ibm-column-form P SPAN.ast {
+	DISPLAY: inline; MARGIN-LEFT: 0px
+}
+FORM.ibm-column-form LABEL SPAN {
+	DISPLAY: inline; MARGIN: 0px
+}
+FORM.ibm-column-form .ibm-buttons-row P {
+	PADDING-LEFT: 157px; FLOAT: none
+}
+FORM.ibm-column-form .ibm-buttons-row P.ibm-first {
+	PADDING-LEFT: 157px
+}
+.ibm-buttons-row P.ibm-first {
+	FLOAT: left! important; WIDTH: 140px
+}
+.ibm-buttons-row P.ibm-second {
+	MARGIN-LEFT: 160px
+}
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/common/v14/cn/zh/screen.css
+
+BODY {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,sans-serif
+}
+TD {
+	LINE-HEIGHT: 19px
+}
+TH {
+	LINE-HEIGHT: 19px
+}
+UL {
+	MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: =
+2px
+}
+OL {
+	MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: =
+2px
+}
+TR.cty-tou TD {
+	VERTICAL-ALIGN: bottom
+}
+TR.cty-tou SPAN.spacer {
+	FONT-SIZE: 13px; LINE-HEIGHT: 17px; FONT-FAMILY: =
+nsimsun,verdana,sans-serif
+}
+.country {
+	FONT-SIZE: 13px; LINE-HEIGHT: 17px; FONT-FAMILY: =
+nsimsun,verdana,sans-serif
+}
+A.ur-link:link {
+	FONT-SIZE: 13px; LINE-HEIGHT: 17px; FONT-FAMILY: =
+nsimsun,verdana,sans-serif
+}
+A.ur-link:visited {
+	FONT-SIZE: 13px; LINE-HEIGHT: 17px; FONT-FAMILY: =
+nsimsun,verdana,sans-serif
+}
+A.ur-link:hover {
+	FONT-SIZE: 13px; LINE-HEIGHT: 17px; FONT-FAMILY: =
+nsimsun,verdana,sans-serif
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 25px; MARGIN: 0px; LINE-HEIGHT: 35px; =
+FONT-FAMILY: arial,nsimsun,sans-serif
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 14px; MARGIN: 0px; LINE-HEIGHT: 16px; =
+FONT-FAMILY: arial,nsimsun,sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; LINE-HEIGHT: 24px; FONT-FAMILY: =
+arial,nsimsun,sans-serif
+}
+H4 {
+	FONT-SIZE: 18px; LINE-HEIGHT: 19px; FONT-FAMILY: =
+arial,nsimsun,sans-serif
+}
+TD.blbg {
+	HEIGHT: 23px
+}
+TD.upper-masthead-divider {
+	HEIGHT: 17px
+}
+#v14-body-table P#subtitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: =
+12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 2px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+#v14-body-table P#subtitle EM {
+	FONT-STYLE: normal
+}
+TABLE.data-table-1 TD {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 4px
+}
+TABLE.data-table-1 TH {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 4px
+}
+TABLE.data-table-2 TD {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 4px
+}
+TABLE.data-table-2 TH {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 4px
+}
+#v14-pop-mast H1 {
+	PADDING-RIGHT: 6px; FONT-WEIGHT: normal; FONT-SIZE: 16px; MARGIN: 0px; =
+LINE-HEIGHT: 1.1em; FONT-FAMILY: arial,nsimsun,sans-serif
+}
+.left-nav-child-highlight IMG {
+	MARGIN-TOP: 2px; FLOAT: right; MARGIN-RIGHT: 0px
+}
+.left-nav-child IMG {
+	MARGIN-TOP: 2px; FLOAT: right; MARGIN-RIGHT: 0px
+}
+.rlinks IMG {
+	MARGIN-TOP: 2px; FLOAT: right; MARGIN-RIGHT: 0px
+}
+TD.left-nav {
+	PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+TD.left-nav-overview {
+	PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+TH.left-nav-overview {
+	PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+TR.left-nav-child TD {
+	PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+TD.left-nav-highlight {
+	PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+TR.left-nav-child-highlight TD {
+	PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+TD.left-nav {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 4px
+}
+TD.left-nav-overview {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 4px
+}
+TH.left-nav-overview {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 4px
+}
+TD.left-nav-highlight {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 4px
+}
+TR.left-nav-child TD {
+	PADDING-RIGHT: 4px
+}
+TR.left-nav-child-highlight TD {
+	PADDING-RIGHT: 4px
+}
+TD.related {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 4px; PADDING-BOTTOM: 3px
+}
+TR.rlinks TD {
+	PADDING-RIGHT: 4px; PADDING-BOTTOM: 2px
+}
+.bullet-spacer {
+	PADDING-RIGHT: 4px
+}
+IMG.pbl {
+	MARGIN-TOP: 7px; MARGIN-BOTTOM: 10px
+}
+TR.bullet-list TD {
+	PADDING-RIGHT: 0px; VERTICAL-ALIGN: top
+}
+TR.bullet-list TD IMG {
+	PADDING-RIGHT: 4px; FLOAT: right
+}
+TR.no-padding TD IMG {
+	PADDING-RIGHT: 0px
+}
+.mbbg {
+	BACKGROUND: url(//www.ibm.com/i/v14/t/masthead-bg.gif) #000 repeat-x
+}
+.masthead-phone {
+	FONT-WEIGHT: bold
+}
+TD.lbg {
+	FONT-WEIGHT: bold
+}
+TD.hil {
+	FONT-WEIGHT: bold
+}
+.mbg {
+	FONT-WEIGHT: bold
+}
+.input {
+	WIDTH: 130px
+}
+A.rlinks:link {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+A.rlinks:visited {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+A.rlinks:hover {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+A.rlinks-red:link {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+A.rlinks-red:visited {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+A.rlinks-red:hover {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+A.fbox:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.fbox:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.fbox:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.bs:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.bs:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.bs:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.bct {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.bctl {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.smgraytext {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.small {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.cty-tou-div {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.masthead-phone {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.highlight:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.highlight:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.highlight:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.nav:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.nav:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.nav:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.left-nav-child:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.left-nav-child:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.left-nav-child:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.divider {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.smallplainlink:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.smallplainlink:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.smallplainlink:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.close:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.close:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.close:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.fnt {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+.sth {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.v14-text-tab-unselect-link:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.v14-text-tab-unselect-link:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.v14-text-tab-unselect-link:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.tablink:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.tablink:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.tablink:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.tablinkblue:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.tablinkblue:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.tablinkblue:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.toclink:link {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.toclink:visited {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.toclink:hover {
+	FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimSun,arial,sans-serif
+}
+A.left-nav:link {
+	VERTICAL-ALIGN: bottom
+}
+A.left-nav:visited {
+	VERTICAL-ALIGN: bottom
+}
+A.left-nav:hover {
+	VERTICAL-ALIGN: bottom
+}
+A.left-nav-overview:link {
+	VERTICAL-ALIGN: bottom
+}
+A.left-nav-overview:visited {
+	VERTICAL-ALIGN: bottom
+}
+A.left-nav-overview:hover {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-text-tab-unselect-link:link {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-text-tab-unselect-link:visited {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-text-tab-unselect-link:hover {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-tab-link-selected:link {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-tab-link-selected:visited {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-tab-link-selected:hover {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-tab-link-unselected:link {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-tab-link-unselected:visited {
+	VERTICAL-ALIGN: bottom
+}
+A.v14-tab-link-unselected:hover {
+	VERTICAL-ALIGN: bottom
+}
+TD.v14-header-1-small {
+	VERTICAL-ALIGN: bottom
+}
+TH.v14-header-1-small {
+	VERTICAL-ALIGN: bottom
+}
+TD.v14-header-2-small {
+	VERTICAL-ALIGN: bottom
+}
+TH.v14-header-2-small {
+	VERTICAL-ALIGN: bottom
+}
+TD.v14-header-3-small {
+	VERTICAL-ALIGN: bottom
+}
+TH.v14-header-3-small {
+	VERTICAL-ALIGN: bottom
+}
+TD.v14-header-4-small {
+	VERTICAL-ALIGN: bottom
+}
+TH.v14-header-4-small {
+	VERTICAL-ALIGN: bottom
+}
+.masthead-phone {
+	VERTICAL-ALIGN: bottom
+}
+A.left-nav-child:link {
+	VERTICAL-ALIGN: bottom
+}
+A.left-nav-child:visited {
+	VERTICAL-ALIGN: bottom
+}
+A.left-nav-child:hover {
+	VERTICAL-ALIGN: bottom
+}
+A.masthead-mainlink:link {
+	VERTICAL-ALIGN: bottom
+}
+A.masthead-mainlink:visited {
+	VERTICAL-ALIGN: bottom
+}
+A.masthead-mainlink:hover {
+	VERTICAL-ALIGN: bottom
+}
+.iform {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+.iformwh {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+.input {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+.input-local {
+	FONT-SIZE: 12px; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+.input {
+	PADDING-RIGHT: 0px; MARGIN-TOP: -2px; PADDING-LEFT: 0px; MARGIN-BOTTOM: =
+1px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+A.masthead-mainlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.masthead-mainlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.masthead-mainlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+B.related {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.left-nav:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.left-nav:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.left-nav:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.left-nav-overview:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.left-nav-overview:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.left-nav-overview:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-tab-link-selected:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-tab-link-selected:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-tab-link-selected:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-tab-link-unselected:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-tab-link-unselected:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-tab-link-unselected:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TD.v14-header-1-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TH.v14-header-1-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TD.v14-header-2-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TH.v14-header-2-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TD.v14-header-3-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TH.v14-header-3-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TD.v14-header-4-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TH.v14-header-4-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.medbluetitlebar {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.medgraytitlebar {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.lightgraytitlebar {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.whitetitlebar {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.tbmainlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.tbmainlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.tbmainlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.texttabselectlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.texttabselectlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.texttabselectlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.tocselectlink:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.tocselectlink:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.tocselectlink:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.tblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.tdblue {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.tgray {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.tgreen {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.price {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TD.v14-header-1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TH.v14-header-1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TD.v14-header-2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TH.v14-header-2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TD.v14-header-3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TH.v14-header-3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TD.v14-header-4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TH.v14-header-4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-text-tab-select-link:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-text-tab-select-link:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.v14-text-tab-select-link:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+TABLE.data-table-1 CAPTION EM {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-STYLE: =
+normal; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+TABLE.data-table-2 CAPTION EM {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-STYLE: =
+normal; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+A.mainlink:link {
+	FONT-WEIGHT: bold; LINE-HEIGHT: 21px; FONT-FAMILY: =
+verdana,nsimsun,sans-serif
+}
+A.mainlink:visited {
+	FONT-WEIGHT: bold; LINE-HEIGHT: 21px; FONT-FAMILY: =
+verdana,nsimsun,sans-serif
+}
+A.mainlink:hover {
+	FONT-WEIGHT: bold; LINE-HEIGHT: 21px; FONT-FAMILY: =
+verdana,nsimsun,sans-serif
+}
+.greytextbld {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.hdgd {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.mdgd {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; LINE-HEIGHT: 13px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+.mstagline {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; LINE-HEIGHT: 14px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif
+}
+A.parent:link {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: top; LINE-HEIGHT: 21px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif; HEIGHT: 22px
+}
+A.parent:visited {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: top; LINE-HEIGHT: 21px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif; HEIGHT: 22px
+}
+A.parent:hover {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: top; LINE-HEIGHT: 21px; FONT-FAMILY: =
+verdana,nsimsun,arial,sans-serif; HEIGHT: 22px
+}
+UNKNOWN {
+	DISPLAY: block
+}
+IMG.display-img {
+	DISPLAY: block
+}
+.title1 {
+	FONT-SIZE: 25px; LINE-HEIGHT: 27px; FONT-FAMILY: =
+arial,nsimsun,sans-serif
+}
+.lggraytitle {
+	FONT-SIZE: 25px; LINE-HEIGHT: 27px
+}
+.tvgray {
+	FONT-WEIGHT: bold; FONT-FAMILY: verdana,nsimsun,arial,sans-serif
+}
+.title {
+	FONT-SIZE: 25px; LINE-HEIGHT: 27px; FONT-FAMILY: =
+arial,nsimsun,sans-serif
+}
+.subtitle {
+	FONT-SIZE: 15px; FONT-FAMILY: arial,nsimsun,sans-serif
+}
+.boldtitle {
+	FONT-SIZE: 24px; LINE-HEIGHT: 26px; FONT-FAMILY: "Arial =
+Black",arial,sans-serif
+}
+.smalltitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; FONT-FAMILY: =
+arial,nsimsun,sans-serif
+}
+#v14-body-table P#newstitle EM {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; FONT-FAMILY: =
+arial,nsimsun,sans-serif
+}
+.pagesubtitle {
+	FONT-SIZE: 15px; LINE-HEIGHT: 18px; FONT-FAMILY: =
+arial,nsimsun,sans-serif
+}
+.pagetitle {
+	FONT-SIZE: 24px; LINE-HEIGHT: 26px; FONT-FAMILY: "Arial =
+Black",arial,sans-serif
+}
+.popup_title {
+	FONT-SIZE: 16px; FONT-FAMILY: arial,nsimsun,sans-serif
+}
+TD.v14-header-1-small {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 4px
+}
+TH.v14-header-1-small {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 4px
+}
+TD.v14-header-2-small {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 4px
+}
+TH.v14-header-2-small {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 4px
+}
+TD.v14-header-3-small {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TH.v14-header-3-small {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TD.v14-header-4-small {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TH.v14-header-4-small {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TD.v14-header-1 {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TH.v14-header-1 {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TD.v14-header-2 {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TH.v14-header-2 {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TD.v14-header-3 {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TH.v14-header-3 {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TD.v14-header-4 {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TH.v14-header-4 {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 13px; PADDING-TOP: 3px
+}
+TD.v14-header-1 {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TH.v14-header-1 {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TD.v14-header-1-small {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TH.v14-header-1-small {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TD.v14-header-2 {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TH.v14-header-2 {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TD.v14-header-2-small {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TH.v14-header-2-small {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TD.v14-header-3 {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TH.v14-header-3 {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TD.v14-header-4 {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TH.v14-header-4 {
+	PADDING-LEFT: 6px; LINE-HEIGHT: 13px
+}
+TD.v14-header-3-small {
+	PADDING-LEFT: 5px; LINE-HEIGHT: 13px
+}
+TH.v14-header-3-small {
+	PADDING-LEFT: 5px; LINE-HEIGHT: 13px
+}
+TD.v14-header-4-small {
+	PADDING-LEFT: 5px; LINE-HEIGHT: 13px
+}
+TH.v14-header-4-small {
+	PADDING-LEFT: 5px; LINE-HEIGHT: 13px
+}
+TD.gradient_bar {
+	PADDING-LEFT: 6px; PADDING-BOTTOM: 3px; PADDING-TOP: 2px
+}
+.imgpaddingright {
+	PADDING-RIGHT: 6px
+}
+.imgpaddingtop {
+	PADDING-TOP: 6px
+}
+#v14-body-table P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 8px; PADDING-TOP: =
+5px
+}
+TABLE.v14-gray-table-border {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 0px solid; BORDER-LEFT: =
+#ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+TABLE.v14-gray-table-border P {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+TABLE.v14-gray-table-border TABLE {
+	MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px
+}
+TD.no-padding TABLE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; PADDING-TOP: 0px
+}
+TD.no-padding TABLE TD P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; PADDING-TOP: 0px
+}
+TD.left-nav-spacer {
+	HEIGHT: 22px; TEXT-ALIGN: right
+}
+TABLE.v14-list-spac-wbg-no TD {
+	PADDING-TOP: 3px
+}
+TD.v14-graphic-tab-lblue-table TD {
+	PADDING-TOP: 3px
+}
+TABLE.v14-list-spac-wbg-toc TR.bullet-list TD {
+	PADDING-BOTTOM: 6px; PADDING-TOP: 0px
+}
+TABLE.v14-list-spac-wbg-no TR.bullet-list TD {
+	PADDING-BOTTOM: 6px; PADDING-TOP: 0px
+}
+TABLE.v14-list-spacing TR.bullet-list TD {
+	PADDING-BOTTOM: 6px; PADDING-TOP: 0px
+}
+.esbp {
+	PADDING-BOTTOM: 8px
+}
+.ipt {
+	PADDING-TOP: 4px
+}
+.gbp {
+	PADDING-BOTTOM: 9px; PADDING-TOP: 5px
+}
+.spl {
+	PADDING-LEFT: 5px
+}
+TD.npl P {
+	PADDING-LEFT: 0px
+}
+TD.espl P {
+	PADDING-LEFT: 9px! important
+}
+TD.npb P {
+	PADDING-BOTTOM: 0px! important
+}
+TD.nlbp P {
+	PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important
+}
+TD.iltbp {
+	PADDING-LEFT: 7px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+TD.ntb P {
+	FONT-SIZE: 12px
+}
+TABLE.parent {
+	MARGIN-TOP: 3px
+}
+.v14-graphic-tab-unselected {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_dmpttn.gif)
+}
+TD.v14-tab-hlrt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_hlrt.gif)
+}
+TD.v14-tab-hlrt-end {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_hlrt_end.gif)
+}
+TD.v14-tab-hllt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_hllt.gif)
+}
+TD.v14-tab-dmrt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_dmrt.gif)
+}
+TD.v14-tab-dmrt-end {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_dmrt_end.gif)
+}
+.v14-graphic-tab-unselected2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_dmpttn2.gif)
+}
+TD.v14-tab-hlrt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_hlrt2.gif)
+}
+TD.v14-tab-hlrt-end2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_hlrt_end2.gif)
+}
+TD.v14-tab-hllt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_hllt2.gif)
+}
+TD.v14-tab-dmrt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_dmrt2.gif)
+}
+TD.v14-tab-dmrt-end2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/v14/tabs/cn/zh/tab_dmrt_end2.gif)
+}
+TD.v14-graphic-tab-unselected {
+	HEIGHT: 22px
+}
+TD.v14-graphic-tab-selected {
+	HEIGHT: 22px
+}
+.imgleft {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: =
+0px; PADDING-TOP: 7px
+}
+TABLE.v14-gray-table-border .imgleft {
+	PADDING-LEFT: 5px
+}
+TD.text-tab-link-section {
+	LINE-HEIGHT: 1.6em
+}
+.shrinky {
+	BORDER-RIGHT: #666 1px solid; BORDER-TOP: #666 1px solid; DISPLAY: =
+none; Z-INDEX: 9; BORDER-LEFT: #666 1px solid; BORDER-BOTTOM: #666 1px =
+solid; POSITION: absolute
+}
+.displaycode {
+	MARGIN-TOP: 0px; FONT-SIZE: 11px; MARGIN-BOTTOM: 0px; FONT-FAMILY: =
+Andale Mono, Lucida Console, Monaco, fixed, monospace
+}
+.boldcode {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: Andale Mono, Lucida =
+Console, Monaco, fixed, monospace
+}
+.code-outline {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ccc 1px =
+solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #ccc 1px =
+solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; =
+BACKGROUND-COLOR: #eeeeee
+}
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/common/v14/cn/zh/print.css
+
+#print-masthead {
+	DISPLAY: block
+}
+.bbg {
+	DISPLAY: none! important
+}
+.mbbg {
+	DISPLAY: none! important
+}
+.blbg-border {
+	DISPLAY: none! important
+}
+.blbg {
+	DISPLAY: none! important
+}
+#navigation {
+	DISPLAY: none! important
+}
+#right-nav {
+	DISPLAY: none! important
+}
+.bctl {
+	DISPLAY: none! important
+}
+.bct {
+	DISPLAY: none! important
+}
+.lgray {
+	DISPLAY: none! important
+}
+.no-print {
+	DISPLAY: none! important
+}
+TD.v14-graphic-tab-lblue-table {
+	DISPLAY: none! important
+}
+TR.v14-graphic-tab-lblue-table TD {
+	BACKGROUND-COLOR: #fff
+}
+TD.v14-graphic-tab-dblue-table {
+	BORDER-TOP: #000 1px solid; BACKGROUND-COLOR: #fff
+}
+.v14-graphic-tab-selected {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+.v14-graphic-tab-selected2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+.v14-graphic-tab-unselected {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+.v14-graphic-tab-unselected2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-hlrt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-dmrt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-hllt {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-dmrt-end {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-hlrt-end {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-hlrt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-dmrt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-hllt2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-dmrt-end2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+TD.v14-tab-hlrt-end2 {
+	BACKGROUND-IMAGE: url(//www.ibm.com/i/c.gif); BACKGROUND-COLOR: #fff
+}
+A.v14-tab-link-selected:link {
+	FONT-WEIGHT: bold; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff; =
+TEXT-DECORATION: none
+}
+A.v14-tab-link-selected:visited {
+	FONT-WEIGHT: bold; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff; =
+TEXT-DECORATION: none
+}
+A.v14-tab-link-selected:hover {
+	FONT-WEIGHT: bold; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff; =
+TEXT-DECORATION: none
+}
+A.v14-tab-link-unselected:link {
+	FONT-WEIGHT: normal; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff; =
+TEXT-DECORATION: underline
+}
+A.v14-tab-link-unselected:visited {
+	FONT-WEIGHT: normal; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff; =
+TEXT-DECORATION: underline
+}
+A.v14-tab-link-unselected:hover {
+	FONT-WEIGHT: normal; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff; =
+TEXT-DECORATION: underline
+}
+BODY {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+P {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+B {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+.tdblue {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+.tdblue {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+.tgray {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+.small {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+.fnt {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+.price {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.why-ibm-rv P {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.why-ibm-rv P A:link {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.why-ibm-rv P A:visited {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.why-ibm-rv P A:hover {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.why-ibm-rv H2 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.v14-header-1 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TH.v14-header-1 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.v14-header-2 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TH.v14-header-2 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.v14-header-3 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TH.v14-header-3 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TD.v14-header-4 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+TH.v14-header-4 {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+BACKGROUND-COLOR: #fff
+}
+#content-table {
+	WIDTH: 510px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-3-1 P {
+	WIDTH: 218px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-3-2 P {
+	WIDTH: 218px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-4-1 P {
+	WIDTH: 143px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-4-2 P {
+	WIDTH: 143px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-4-3 P {
+	WIDTH: 143px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-3-1 {
+	WIDTH: 218px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-3-2 {
+	WIDTH: 218px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-4-1 {
+	WIDTH: 143px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-4-2 {
+	WIDTH: 143px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+#content-4-3 {
+	WIDTH: 143px; COLOR: #000; FONT-FAMILY: =
+Arial,Nsimsun,Garamond,sans-serif; BACKGROUND-COLOR: #fff
+}
+TD {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif
+}
+TD.v14-header-1 {
+	MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: =
+10px; PADDING-TOP: 10px
+}
+TH.v14-header-1 {
+	MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: =
+10px; PADDING-TOP: 10px
+}
+TD.v14-header-2 {
+	MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: =
+10px; PADDING-TOP: 10px
+}
+TH.v14-header-2 {
+	MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: =
+10px; PADDING-TOP: 10px
+}
+TD.v14-header-3 {
+	MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: =
+10px; PADDING-TOP: 10px
+}
+TH.v14-header-3 {
+	MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: =
+10px; PADDING-TOP: 10px
+}
+TD.v14-header-4 {
+	MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: =
+10px; PADDING-TOP: 10px
+}
+TH.v14-header-4 {
+	MARGIN-TOP: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: =
+10px; PADDING-TOP: 10px
+}
+A.v14-text-tab-select-link:link {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: none
+}
+A.v14-text-tab-select-link:visited {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: none
+}
+A.v14-text-tab-select-link:hover {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: none
+}
+TR.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:link {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: underline
+}
+TR.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:visited {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: underline
+}
+TR.v14-graphic-tab-lblue-table A.v14-text-tab-unselect-link:hover {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: underline
+}
+A.v14-text-tab-unselect-link:link {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: underline
+}
+A.v14-text-tab-unselect-link:visited {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: underline
+}
+A.v14-text-tab-unselect-link:hover {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,serif; =
+TEXT-DECORATION: underline
+}
+A.smallplainlink:link {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+A.smallplainlink:visited {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+A.smallplainlink:hover {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+A:link {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+A.fbox:link {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+A.fbox:visited {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+A.fbox:hover {
+	COLOR: #000; FONT-FAMILY: Arial,Nsimsun,Garamond,sans-serif; =
+TEXT-DECORATION: underline
+}
+TABLE.v14-gray-table-border {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.v14-gray-table-border P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+TABLE.v14-gray-table-border TABLE {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+BODY {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+#content {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+#content-3-1 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+#content-3-2 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+#content-4-1 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+#content-4-2 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+#content-4-3 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+P {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+B {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+.tdblue {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+.tdblue {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+.tgray {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+.small {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+.fnt {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+.price {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TD {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TD.v14-header-1 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TH.v14-header-1 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TD.v14-header-2 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TH.v14-header-2 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TD.v14-header-3 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TH.v14-header-3 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TD.v14-header-4 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TH.v14-header-4 {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-tab-link-selected:link {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-tab-link-selected:visited {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-tab-link-selected:hover {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-tab-link-unselected:link {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-tab-link-unselected:visited {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-tab-link-unselected:hover {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-text-tab-select-link:link {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-text-tab-select-link:visited {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-text-tab-select-link:hover {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-text-tab-unselect-link:link {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-text-tab-unselect-link:visited {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.v14-text-tab-unselect-link:hover {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.smallplainlink:link {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.smallplainlink:visited {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A.smallplainlink:hover {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A:link {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A:visited {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+A:hover {
+	FONT-SIZE: 11pt; LINE-HEIGHT: 12pt
+}
+TABLE.data-table-1 TD {
+	FONT-SIZE: 10pt
+}
+TABLE.data-table-1 TH {
+	FONT-SIZE: 10pt
+}
+TABLE.data-table-2 TD {
+	FONT-SIZE: 10pt
+}
+TABLE.data-table-2 TH {
+	FONT-SIZE: 10pt
+}
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/developerworks/js/dwcss14.js
+
+if((navigator.appName =3D=3D "Microsoft Internet Explorer") && =
+(parseInt(navigator.appVersion) >=3D 4 =
+)){if((navigator.appVersion.indexOf("Macintosh"))!=3D =
+-1){document.write('<link rel=3D"stylesheet" =
+href=3D"/developerworks/css/r1v14.css" type=3D"text/css"/>');}else if =
+((navigator.userAgent.indexOf(" Opera ") !=3D -1) || =
+(navigator.userAgent.indexOf("Opera/") !=3D -1)){document.write('<link =
+rel=3D"stylesheet" href=3D"/developerworks/css/r1v14.css" =
+type=3D"text/css"/>');}else if ((navigator.appVersion.indexOf('MSIE 6')) =
+!=3D -1){document.write('<link rel=3D"stylesheet" =
+href=3D"/developerworks/css/ie6v14.css" =
+type=3D"text/css"/>');}else{document.write('<link rel=3D"stylesheet" =
+href=3D"/developerworks/css/ie1v14.css" type=3D"text/css"/>');}}=0A=
+else if ((navigator.appName =3D=3D "Netscape") && =
+(parseInt(navigator.appVersion) >=3D =
+4)){if((navigator.appVersion.indexOf("Macintosh"))!=3D =
+-1){document.write('<link rel=3D"stylesheet" =
+href=3D"/developerworks/css/r1v14.css" type=3D"text/css"/>');}else if =
+((navigator.appName =3D=3D "Netscape") && =
+(parseInt(navigator.appVersion) >=3D 5)){document.write('<link =
+rel=3D"stylesheet" href=3D"/developerworks/css/r1v14.css" =
+type=3D"text/css"/>');}else if ((navigator.appVersion.indexOf('X11')) =
+!=3D -1){document.write('<link rel=3D"stylesheet" =
+href=3D"/developerworks/css/r1v14.css" type=3D"text/css"/>');}else if =
+((navigator.userAgent.indexOf(" Opera ") !=3D -1) || =
+(navigator.userAgent.indexOf("Opera/") !=3D -1)){document.write('<link =
+rel=3D"stylesheet" href=3D"/developerworks/css/r1v14.css" =
+type=3D"text/css"/>');}else{document.write('<link rel=3D"stylesheet" =
+href=3D"/developerworks/css/ns1v14.css" type=3D"text/css"/>');}}=0A=
+else{document.write('<link rel=3D"stylesheet" =
+href=3D"/developerworks/css/r1v14.css" type=3D"text/css"/>');}
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/common/v14/cn/zh/detection.js
+
+if((navigator.appName =3D=3D "Microsoft Internet Explorer") && =
+(parseInt(navigator.appVersion) >=3D 4 ) && (navigator.platform =3D=3D =
+"Win32") && (navigator.userAgent.indexOf(" Opera ") =3D=3D -1) && =
+(navigator.userAgent.indexOf("Opera/") =3D=3D -1)){=0A=
+	if ((navigator.appVersion.indexOf('MSIE 6')) !=3D -1 || =
+(navigator.appVersion.indexOf('MSIE 7')) !=3D -1){=0A=
+	document.write('<link rel=3D"stylesheet" media=3D"screen" =
+href=3D"//www.ibm.com/common/v14/cn/zh/ie2_screen.css" =
+type=3D"text/css"/>');=0A=
+	}=0A=
+	else{=0A=
+	document.write('<link rel=3D"stylesheet" media=3D"screen" =
+href=3D"//www.ibm.com/common/v14/cn/zh/ie1_screen.css" =
+type=3D"text/css"/>');=0A=
+	}=0A=
+}=0A=
+// Surfaid dummy function for preloading=0A=
+function sa_onclick(p1, p2) { return true; }=0A=
+=0A=
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/developerworks/js/dropdown.js
+
+=0A=
+// Common redirect function=0A=
+// Dropdown field must be named "url"=0A=
+function ibmCommonDropdown(form) {=0A=
+var value;=0A=
+if (typeof(form) =3D=3D "object" && typeof(form.url) =3D=3D "object") {=0A=
+value =3D (form.url[form.url.selectedIndex]).value;=0A=
+if (value && value !=3D "#") {=0A=
+window.location.href =3D value;=0A=
+}=0A=
+return false;=0A=
+}=0A=
+else {=0A=
+return true;=0A=
+}=0A=
+}=0A=
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/developerworks/email/grabtitle.js
+
+// Used for dW e-mail to a friend function=0A=
+// Grab only the title from the entire document.title value=0A=
+function dWSplitChar(ch, str) {=0A=
+    var start =3D 0;=0A=
+    var splits =3D new Object;=0A=
+    var end;=0A=
+    var i =3D 0;=0A=
+    while (start < str.length) {=0A=
+        end =3D start;=0A=
+        while (end < str.length &&=0A=
+               ch.indexOf(str.charAt(end)) < 0) {=0A=
+            end++;=0A=
+        }=0A=
+        splits[i++] =3D str.substring(start,end);=0A=
+        start =3D end + 1;=0A=
+    }=0A=
+    splits.length =3D i;=0A=
+    return splits;=0A=
+}=0A=
+=0A=
+function getTitle(){=0A=
+    var j=3D0;=0A=
+    var titlestring=3D"";=0A=
+    var splitfields =3D dWSplitChar(':', document.title);=0A=
+    if (splitfields.length>2) {=0A=
+        for (j=3D2;j<splitfields.length;j++) {=0A=
+            if (j!=3D2) {=0A=
+                titlestring+=3D": ";=0A=
+            }=0A=
+            titlestring+=3Dsplitfields[j];=0A=
+        }=0A=
+    } else {=0A=
+        titlestring=3Ddocument.title;=0A=
+    }=0A=
+    return titlestring;=0A=
+}=0A=
+=0A=
+var justTitle =3D getTitle();=0A=
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/developerworks/email/emailfriend2.js
+
+// developerWorks e-mail to a friend JavaScript
+// Adapted from Danny Goodman's
+// "JavaScript Bible, 3rd Edition" (www.dannyg.com)
+// Initialize global var for new window object
+// so it can be accessed by all functions on the page
+var emailWindow=20
+// set flag to help out with special handling for window closing
+var isIE3 =3D (navigator.appVersion.indexOf("MSIE 3") !=3D -1) ? true : =
+false
+// make the new window and put some stuff in it
+function newWindow() {
+        //var output =3D ""
+        //emailWindow =3D =
+window.open('','subwindow','HEIGHT=3D530,WIDTH=3D600,resizable=3Dyes,scro=
+llbars=3Dyes')
+        // take care of Navigator 2
+        //if (emailWindow.opener =3D=3D null) {
+        //        emailWindow.opener =3D window
+        //}
+
+        //output +=3D "<html><BODY BGCOLOR=3D'#FFFFFF' =
+TEXT=3D'#000000'>"
+        //output +=3D "<form name=3D'emailIt' method=3D'post' =
+action=3D'/developerworks/secure/email-it.jsp'>"
+        //output +=3D "<input type=3Dhidden name=3Dsubject value=3D\"" + =
+justTitle + "\">"
+        //output +=3D "<input type=3Dhidden name=3Durl value=3D\"" + =
+document.location.href + '?e' + "\">"
+        //output +=3D "<input type=3Dhidden name=3Dbody value=3D\"" + =
+emailAbstract + "\">"
+        //output +=3D "</form>"
+        //output +=3D "</body>"
+        //output +=3D "</html>"
+
+        //this.document.write(output)
+        //this.document.emailIt.submit();
+        //emailWindow.document.close()
+       =20
+
+
+        =
+window.location.assign("https://www.ibm.com/developerworks/secure/email-i=
+t.jsp?subject=3D" + escape(justTitle) + "&url=3D" + =
+escape(document.location.href) + "&body=3D" + escape(emailAbstract));
+}                 =20
+// close subwindow, including ugly workaround for IE3
+function closeWindow() {
+        if (isIE3) {
+                // if window is already open, nothing appears to happen
+                // but if not, the subwindow flashes momentarily (yech!)
+                emailWindow =3D =
+window.open("","subwindow","HEIGHT=3D200,WIDTH=3D200")   =20
+        }         =20
+        if (emailWindow && !emailWindow.closed) {
+                emailWindow.close()
+        }         =20
+}                =20
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/developerworks/js/ajax1.js
+
+/*=0A=
+ * Returns an new XMLHttpRequest object, or false if the browser=0A=
+ * doesn't support it=0A=
+ */=0A=
+function newXMLHttpRequest() {=0A=
+=0A=
+  var xmlreq =3D false;=0A=
+=0A=
+  // Create XMLHttpRequest object in non-Microsoft browsers=0A=
+  if (window.XMLHttpRequest) {=0A=
+    xmlreq =3D new XMLHttpRequest();=0A=
+  } else if (window.ActiveXObject) {=0A=
+    =0A=
+    try {=0A=
+      // Try to create XMLHttpRequest in later versions=0A=
+      // of Internet Explorer=0A=
+=0A=
+      xmlreq =3D new ActiveXObject("Msxml2.XMLHTTP");=0A=
+    } catch (e1) {=0A=
+=0A=
+      // Failed to create required ActiveXObject=0A=
+      =0A=
+      try {=0A=
+        // Try version supported by older versions=0A=
+        // of Internet Explorer=0A=
+      =0A=
+        xmlreq =3D new ActiveXObject("Microsoft.XMLHTTP");=0A=
+=0A=
+      } catch (e2) {=0A=
+=0A=
+        // Unable to create an XMLHttpRequest by any means=0A=
+        xmlreq =3D false;=0A=
+      }=0A=
+    }=0A=
+  }=0A=
+=0A=
+return xmlreq;=0A=
+}=0A=
+=0A=
+ /*=0A=
+	* Returns a function that waits for the specified XMLHttpRequest=0A=
+	* to complete, then passes it XML response to the given handler =
+function.=0A=
+  * req - The XMLHttpRequest whose state is changing=0A=
+  * responseXmlHandler - Function to pass the XML response to=0A=
+  */=0A=
+ function getReadyStateHandler(req, responseXmlHandler) {=0A=
+   // Return an anonymous function that listens to the XMLHttpRequest =
+instance=0A=
+   return function () {=0A=
+//     alert("in getReadyStateHandler: " + req.readyState + " : " + =
+req.status);=0A=
+     // If the request's status is "complete"=0A=
+     if (req.readyState =3D=3D 4) {=0A=
+       =0A=
+       // Check that we received a successful response from the server=0A=
+       if (req.status =3D=3D 200) {=0A=
+=0A=
+         // Pass the XML payload of the response to the handler function.=0A=
+         //responseXmlHandler(req.responseXML);=0A=
+         responseXmlHandler(req.responseText); =0A=
+=0A=
+       } else {=0A=
+=0A=
+         // An HTTP problem has occurred=0A=
+         // alert("HTTP error "+req.status+": "+req.statusText);=0A=
+       }=0A=
+     }=0A=
+   }=0A=
+ }=0A=
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/developerworks/js/searchcount.js
+
+var globalQuery;=0A=
+=0A=
+/*=0A=
+ * Find out if there are any search results for the given query=0A=
+ */=0A=
+function searchQuery(query) {=0A=
+ globalQuery =3D query;           =0A=
+ var req =3D newXMLHttpRequest(); =0A=
+if (req) {=0A=
+   req.onreadystatechange =3D getReadyStateHandler(req, =
+processSearchResults);=0A=
+   req.open("GET", =
+"http://www-128.ibm.com/developerworks/search/SearchRouter.jsp?query=3D" =
++ query, true);=0A=
+   req.send("");=0A=
+ }=0A=
+}=0A=
+=0A=
+=0A=
+/*=0A=
+ * If there are results, print the <table> html=0A=
+ */=0A=
+function processSearchResults(result) {=0A=
+   var contents =3D document.getElementById("contents"); =0A=
+   if (result !=3D null && result > 0 && contents !=3D null) { =0A=
+      var displayQuery =3D globalQuery;=0A=
+      displayQuery =3D displayQuery.replace(/\+/g, " ");=0A=
+      displayQuery =3D unescape(displayQuery);=0A=
+      contents.innerHTML =3D "<table width=3D\"75%\" cellpadding=3D\"0\" =
+cellspacing=3D\"0\" border=3D\"0\"><tr valign=3D\"top\"><td =
+bgcolor=3D\"#f6f6f6\" width=3D\"16\"><img =
+src=3D\"//www.ibm.com/i/v14/icons/fw_bold.gif\" height=3D\"16\" =
+width=3D\"16\" border=3D\"0\" vspace=3D\"3\" alt=3D\"\" /></td><td =
+align=3D\"left\" bgcolor=3D\"#f6f6f6\" width=3D\"*\"><p><a =
+class=3D\"fbox\" width=3D\"70%\" =
+href=3D\"http://www.ibm.com/developerworks/search/searchResults.jsp?sourc=
+e=3Dgoogle&searchType=3D1&searchSite=3DdW&searchScope=3DdW&query=3D"+glob=
+alQuery+"\">More dW content related to: =
+<b>"+displayQuery+"</b></a></p></td><td bgcolor=3D\"#f6f6f6\" =
+width=3D\"3\"><img src=3D\"//www.ibm.com/i/c.gif\" height=3D\"1\" =
+width=3D\"3\" border=3D\"0\" alt=3D\"\" /></td></tr></table>";=0A=
+   }=0A=
+}=0A=
+=0A=
+=0A=
+
+------=_NextPart_000_0000_01C7BDCC.FA933D40
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ibm.com/common/stats/stats.js
+
+// Copyright (c) 2002-2004 by IBM Corporation=0A=
+sa_gif    =3D "//stats.surfaid.ihost.com/rc/images/uc.GIF";=0A=
+sa_3p_js  =3D "//redirect.www.ibm.com/rc/sa3p.sjs";=0A=
+sa_domain =3D "; domain=3D.ibm.com";=0A=
+sa_ver    =3D "1.39";=0A=
+//=0A=
+sa_click=3D"";function =
+sx(sy){if(!window.RegExp)return(sy);sz=3D/\?[Kk]rypto=3D[^&]+$/;if(!sz.te=
+st(sy)){sz=3D/[Kk]rypto=3D[^&]+&/;if(!sz.test(sy)){sz=3D/&[Kk]rypto=3D[^&=
+]+$/;if(!sz.test(sy))return(sy);}}return(sy.replace(sz,""));}=0A=
+s7=3Ddocument;sk=3D"undefined";function =
+sl(){s3=3D"ibmwm";sg=3D"ibmwm";s4=3D"w3ibmProfile";s5=3D"";si=3D"sauidp";=
+sd=3D"sasidp";te=3D"satst";if((typeof(SA_ID)!=3Dsk)&&(SA_ID!=3Dnull)){var=
+ =
+sm=3DSA_ID.split(';');s3=3Dsm[0];sg=3Dsm[1];if(sm.length>2){s4=3Dsm[2];}}=
+s6=3Dnew =
+Date();sc=3DMath.random().toString().substring(2,10)+s6.getTime().toStrin=
+g();s1=3Ds7.cookie;sa=3Ds1.indexOf(si);s9=3Ds1.indexOf(sd);st=3D'.npr.org=
+';sp=3D'www.npr.org';sq=3D'sa_uvc';so=3D(location.href.indexOf(st)!=3D-1)=
+;ss=3D'';sj=3D'';sf=3D'';if(so)sa_domain=3D';domain=3D'+st;if(sa>=3D0){sl=
+_fin();}else{s7.cookie=3Dte+"=3Dtest;path=3D/;expires=3D"+(new =
+Date(2010,0)).toGMTString()+sa_domain;if(s7.cookie.indexOf(te)=3D=3D-1){s=
+l_fin();}else{s7.cookie=3Dte+"=3D1;path=3D/;expires=3D"+(new =
+Date(2000,0)).toGMTString();document.writeln("<scr"+"ipt =
+type=3D'text/jav"+"ascr"+"ipt' "+"language=3D'Jav"+"aScr"+"ipt1.1' =
+src=3D'"+sa_3p_js+"'>"+"</scr"+"ipt>");}=0A=
+}}function =
+sl_fin(sa_3p){if(sa!=3D-1){sh=3Dsa+si.length+1;s8=3Ds1.indexOf(";",sh);if=
+(s8=3D=3D-1)s8=3Ds1.length;sj=3Ds1.substring(sh,s8);}else{sj=3Dsa_3p?sa_3=
+p:("U"+sc);s7.cookie=3Dsi+"=3D"+sj+";path=3D/;expires=3D"+(new =
+Date(2010,0)).toGMTString()+sa_domain;if(s7.cookie.indexOf(si)=3D=3D-1)sj=
+=3D"";}if(s9!=3D-1){sh=3Ds9+sd.length+1;s8=3Ds1.indexOf(";",sh);if(s8=3D=3D=
+-1)s8=3Ds1.length;sf=3Ds1.substring(sh,s8);}else{sf=3D"S"+sc;s7.cookie=3D=
+sd+"=3D"+sf+";path=3D/"+sa_domain;if(s7.cookie.indexOf(sd)=3D=3D-1)sf=3D"=
+";}if(so){lv_i_uvc=3Ds1.indexOf(sq);if(location.href.indexOf(sp)!=3D-1){i=
+f(sj){if(lv_i_uvc=3D=3D-1){s7.cookie=3Dsq+"=3D"+sj+";path=3D/"+sa_domain;=
+}}}else{if((sj)&&(lv_i_uvc!=3D-1)){sh=3Dlv_i_uvc+sq.length+1;s8=3Ds1.inde=
+xOf(";",sh);if(s8=3D=3D-1)s8=3Ds1.length;sr=3Ds1.substring(sh,s8);if(sr!=3D=
+sj){s7.cookie=3Dsi+"=3D"+sj+";path=3D/;expires=3D"+(new =
+Date(2000,0)).toGMTString();s7.cookie=3Dsi+"=3D"+sr+";path=3D/;expires=3D=
+"+(new =
+Date(2010,0)).toGMTString()+sa_domain;sj=3Dsr;}}}}if(s4){if((s9=3Ds1.inde=
+xOf(s4))!=3D-1){sh=3Ds9+s4.length+1;s8=3Ds1.indexOf(";",sh);if(s8=3D=3D-1=
+)s8=3Ds1.length;if(s5!=3D""){s5=3Ds5+'; =
+';}s5=3Ds5+s4+"=3D"+s1.substring(sh,s8);}}se=3D(typeof(screen)=3D=3Dsk||s=
+creen=3D=3Dnull)?'0x0x0':screen.colorDepth+"x"+screen.width+"x"+screen.he=
+ight;su=3D"?"+sa_ver+"&"+escape(s3)+"&"+escape(sg)+"&"+(sa_click?escape(s=
+a_click):escape(location))+"&"+(sa_click?escape(location):escape(s7.refer=
+rer))+"&"+s5+"&"+sf+"&"+sj+"&"+s6.getTimezoneOffset()+"&"+se+"&"+s7.image=
+s.length.toString()+"&"+((typeof(SA_Title)=3D=3Dsk||SA_Title=3D=3Dnull)?"=
+":escape(SA_Title))+"&"+((typeof(SA_Message)=3D=3Dsk||SA_Message=3D=3Dnul=
+l)?"":escape(SA_Message))+"&"+sc;if(typeof(s7.s2)=3D=3Dsk||s7.s2=3D=3Dnul=
+l){s7.s2=3Dnew Image();}s7.s2.src=3Dsa_gif+su;}=0A=
+function write_iframe(){document.writeln('<iframe =
+src=3D"//www.ibm.com/common/stats/sa_data.html?req=3D' + =
+escape(location) + '&ref=3D' + escape(document.referrer) +  '" =
+frameborder=3D"0" width=3D"0" height=3D"0"></iframe>');document.s2=3D1;}=0A=
+function =
+sa_onclick(sn){window.SA_Title=3D(typeof(SA_Title)=3D=3Dsk||SA_Title=3D=3D=
+null)?"media_file":escape(SA_Title);sa_click=3Dsn;if((navigator.appName.i=
+ndexOf("Netscape")!=3D-1)){setTimeout("sl()",0);}else{sl();}return(true);=
+}=0A=
+if(typeof(s7.s2)=3D=3Dsk||s7.s2=3D=3Dnull){var =
+tf=3Dlocation.hostname.toLowerCase();if(tf.indexOf(".ibm.com")=3D=3D-1&&!=
+(typeof(s7.body)=3D=3Dsk||!s7.body)){write_iframe();}else{sl();}}
+------=_NextPart_000_0000_01C7BDCC.FA933D40--

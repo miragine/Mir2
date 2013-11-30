@@ -1,0 +1,30 @@
+BODY {
+	FONT-SIZE: 12pt; BACKGROUND: white
+}
+#leftmenu {
+	DISPLAY: none
+}
+#top {
+	DISPLAY: none
+}
+#commentform {
+	DISPLAY: none
+}
+#footer {
+	DISPLAY: none
+}
+#LeftCell {
+	DISPLAY: none
+}
+#main {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: none! important; PADDING-BOTTOM: 0px; MARGIN: 0px 5%; BORDER-LEFT: 0px; WIDTH: auto; COLOR: black; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+DIV#content {
+	BORDER-TOP: #930 1px solid; MARGIN-LEFT: 10%; PADDING-TOP: 1em
+}
+A:link {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #520; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #520; TEXT-DECORATION: underline
+}

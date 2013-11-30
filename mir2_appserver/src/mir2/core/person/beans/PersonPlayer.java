@@ -104,10 +104,16 @@ public class PersonPlayer extends JpaEntityImpl {
 		this.createDate = createDate;
 	}
 
+	/**
+	 * @return the owner
+	 */
 	public User getOwner() {
 		return owner;
 	}
 
+	/**
+	 * @param owner the owner to set
+	 */
 	public void setOwner(User owner) {
 		this.owner = owner;
 	}

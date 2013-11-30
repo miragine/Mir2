@@ -1,0 +1,1184 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0066)http://blog.csdn.net/zhangjianying/archive/2006/10/18/1339628.aspx -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog</TITLE>
+<META content="MSHTML 6.00.2900.3020" name=GENERATOR>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<SCRIPT src="" type=text/javascript></SCRIPT>
+<LINK media=all href="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/style.css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/print.css" type=text/css 
+rel=stylesheet><LINK title=RSS 
+href="http://blog.csdn.net/zhangjianying/rss.aspx" type=application/rss+xml 
+rel=alternate>
+<SCRIPT language=javascript>
+    if(!window.attachEvent && window.addEventListener)
+    {
+          Window.prototype.attachEvent = HTMLDocument.prototype.attachEvent=
+          HTMLElement.prototype.attachEvent=function(en, func, cancelBubble)
+          {
+            var cb = cancelBubble ? true : false;
+            this.addEventListener(en.toLowerCase().substr(2), func, cb);
+          };
+    }
+  function scrollPosition()
+    {
+      var L, T, w=window, d=document, dd=d.documentElement;
+      if(w.pageXOffset) L=w.pageXOffset;
+      else if(dd&&dd.scrollLeft) L=dd.scrollLeft;
+      else if(d.body) L=d.body.scrollLeft;
+
+      if(w.pageYOffset) T=w.pageYOffset;
+      else if(dd&&dd.scrollTop) T=dd.scrollTop;
+      else if(d.body) T=d.body.scrollTop;
+
+      return {"left": L, "top": T};
+    }  
+		function CreateWaitElement() 
+		{
+		    var loading = document.getElementById('loading');
+            if (!loading)
+                {
+                var str = "<div id='loading' style='color: #000000; \
+                background-color: #FFFFAF; \
+                padding: 0 3px; font-size: 12px; \
+                font-weight: bold;   height: 30px;   width: 160px; \
+                position: absolute;  border: #cccccc 1px solid;\
+                '>正在处理您的请求...</div>";
+                var s = document.createElement("SPAN");
+                s.innerHTML = str;
+                loading = s.firstChild;
+    			document.body.insertBefore(loading, document.body.firstChild);
+		        }
+		   return loading;  
+		}
+		window.attachEvent("onload", function()
+		{
+		    var loading = CreateWaitElement();
+		   loading.style.display = "none"; 
+		   window.attachEvent("onscroll", function(e)
+		 {
+		    var xy = scrollPosition();
+		   loading.style.top = (xy.top + 10)  +"px";
+		   loading.style.left = (xy.left + document.body.offsetWidth - 200)  +"px";
+		 });   
+		});
+		function Anthem_PreCallBack() {CreateWaitElement().style.display = ""; }
+		function Anthem_PostCallBack() {document.getElementById("loading").style.display="none";}
+		</SCRIPT>
+</HEAD>
+<BODY>
+<SCRIPT language=javascript type=text/javascript>
+	<!--
+		function getObject(objectId)
+		{
+			if(document.getElementById)
+			{
+				return document.getElementById(objectId)
+			}
+			else if(document.all&&document.all(objectId))
+			{
+				return document.all(objectId)
+			}
+			else
+			{
+				return false
+			}
+		}
+		
+		function hideObject(objectId)
+		{
+			var obj=getObject(objectId);
+						
+			if(obj&&obj.style)
+			{
+				obj.style.display="none";					
+				return true
+			}
+			return false
+		}
+		
+		function showObject(objectId)
+		{
+			var obj=getObject(objectId);
+			if(obj&&obj.style)
+			{
+				obj.style.display="";
+				return true
+			}
+			return false
+		}
+		
+		function hideComment(){
+			hideObject("commentForm");
+			hideObject("commentform");
+			return;
+		}
+		
+		function showComment(){
+			return;
+		}
+	//-->
+    </SCRIPT>
+
+<FORM language=javascript id=Form1 name=Form1 
+onsubmit="javascript:return WebForm_OnSubmit();" action=1339628.aspx 
+method=post><INPUT id="&#13;&#10;__VIEWSTATE" type=hidden name=__VIEWSTATE>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+var Anthem_DefaultURL = "1339628.aspx?Anthem_CallBack=true";
+var Anthem_FormID = "Form1";
+//]]>
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[
+// Anthem.js
+// Updated Nov 13, 2006
+
+// Used by encodeURIComponentNew to mimic function encodeURIComponent in 
+// IE 5.5+, Netscape 6+, and Mozilla
+function utf8(wide) {
+  var c, s;
+  var enc = "";
+  var i = 0;
+  while(i<wide.length) {
+    c= wide.charCodeAt(i++);
+    // handle UTF-16 surrogates
+    if (c>=0xDC00 && c<0xE000) continue;
+    if (c>=0xD800 && c<0xDC00) {
+      if (i>=wide.length) continue;
+      s= wide.charCodeAt(i++);
+      if (s<0xDC00 || c>=0xDE00) continue;
+      c= ((c-0xD800)<<10)+(s-0xDC00)+0x10000;
+    }
+    // output value
+    if (c<0x80) enc += String.fromCharCode(c);
+    else if (c<0x800) enc += String.fromCharCode(0xC0+(c>>6),0x80+(c&0x3F));
+    else if (c<0x10000) enc += String.fromCharCode(0xE0+(c>>12),0x80+(c>>6&0x3F),0x80+(c&0x3F));
+    else enc += String.fromCharCode(0xF0+(c>>18),0x80+(c>>12&0x3F),0x80+(c>>6&0x3F),0x80+(c&0x3F));
+  }
+  return enc;
+}
+
+var hexchars = "0123456789ABCDEF";
+
+function toHex(n) {
+  return hexchars.charAt(n>>4)+hexchars.charAt(n & 0xF);
+}
+
+var okURIchars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-";
+
+// Mimics function encodeURIComponent in IE 5.5+, Netscape 6+, and Mozilla
+function encodeURIComponentNew(s) {
+  var s = utf8(s);
+  var c;
+  var enc = "";
+  for (var i= 0; i<s.length; i++) {
+    if (okURIchars.indexOf(s.charAt(i))==-1)
+      enc += "%"+toHex(s.charCodeAt(i));
+    else
+      enc += s.charAt(i);
+  }
+  return enc;
+}
+
+function Anthem_Encode(s){
+	if (typeof encodeURIComponent == "function") {
+		// Use JavaScript built-in function
+		// IE 5.5+ and Netscape 6+ and Mozilla
+		return encodeURIComponent(s);
+	} else {
+		// Need to mimic the JavaScript version
+		// Netscape 4 and IE 4 and IE 5.0
+		return encodeURIComponentNew(s);
+	}
+}
+
+// Primarily used by Anthem.Manager to add an onsubmit event handler
+// when validators are added to a page during a callback.
+function Anthem_AddEvent(control, eventType, functionPrefix) {
+    var ev;
+    eval("ev = control." + eventType + ";");
+    if (typeof(ev) == "function") {
+        ev = ev.toString();
+        ev = ev.substring(ev.indexOf("{") + 1, ev.lastIndexOf("}"));
+    }
+    else {
+        ev = "";
+    }
+    var func;
+    if (navigator.appName.toLowerCase().indexOf('explorer') > -1) {
+        func = new Function(functionPrefix + " " + ev);
+    }
+    else {
+        func = new Function("event", functionPrefix + " " + ev);
+    }
+    eval("control." + eventType + " = func;");
+}
+
+function Anthem_GetXMLHttpRequest() {
+	if (window.XMLHttpRequest) {
+		return new XMLHttpRequest();
+	} else {
+		if (window.Anthem_XMLHttpRequestProgID) {
+			return new ActiveXObject(window.Anthem_XMLHttpRequestProgID);
+		} else {
+			var progIDs = ["Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"];
+			for (var i = 0; i < progIDs.length; ++i) {
+				var progID = progIDs[i];
+				try {
+					var x = new ActiveXObject(progID);
+					window.Anthem_XMLHttpRequestProgID = progID;
+					return x;
+				} catch (e) {
+				}
+			}
+		}
+	}
+	return null;
+}
+
+function Anthem_CallBack(url, target, id, method, args, clientCallBack, clientCallBackArg, includeControlValuesWithCallBack, updatePageAfterCallBack) {
+	if (window.Anthem_PreCallBack) {
+		var preCallBackResult = Anthem_PreCallBack();
+		if (!(typeof preCallBackResult == "undefined" || preCallBackResult)) {
+			if (window.Anthem_CallBackCancelled) {
+				Anthem_CallBackCancelled();
+			}
+			return null;
+		}
+	}
+	var x = Anthem_GetXMLHttpRequest();
+	var result = null;
+	if (!x) {
+		result = { "value": null, "error": "NOXMLHTTP" };
+		Anthem_DebugError(result.error);
+		if (window.Anthem_Error) {
+			Anthem_Error(result);
+		}
+		if (clientCallBack) {
+			clientCallBack(result, clientCallBackArg);
+		}
+		return result;
+	}
+	x.open("POST", url ? url : Anthem_DefaultURL, clientCallBack ? true : false);
+	x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf-8");
+	x.setRequestHeader("Accept-Encoding", "gzip, deflate");
+	if (clientCallBack) {
+		x.onreadystatechange = function() {
+			if (x.readyState != 4) {
+				return;
+			}
+			Anthem_DebugResponseText(x.responseText);
+			result = Anthem_GetResult(x);
+			if (result.error) {
+				Anthem_DebugError(result.error);
+				if (window.Anthem_Error) {
+					Anthem_Error(result);
+				}
+			}
+			if (updatePageAfterCallBack) {
+				Anthem_UpdatePage(result);
+			}
+			Anthem_EvalClientSideScript(result);
+			clientCallBack(result, clientCallBackArg);
+			x = null;
+			if (window.Anthem_PostCallBack) {
+				Anthem_PostCallBack();
+			}
+		}
+	}
+    var encodedData = "";
+    if (target == "Page") {
+        encodedData += "&Anthem_PageMethod=" + method;
+    } else if (target == "MasterPage") {
+        encodedData += "&Anthem_MasterPageMethod=" + method;
+    } else if (target == "Control") {
+        encodedData += "&Anthem_ControlID=" + id.split(":").join("_");
+        encodedData += "&Anthem_ControlMethod=" + method;
+    }
+	if (args) {
+		for (var argsIndex = 0; argsIndex < args.length; ++argsIndex) {
+			if (args[argsIndex] instanceof Array) {
+				for (var i = 0; i < args[argsIndex].length; ++i) {
+					encodedData += "&Anthem_CallBackArgument" + argsIndex + "=" + Anthem_Encode(args[argsIndex][i]);
+				}
+			} else {
+				encodedData += "&Anthem_CallBackArgument" + argsIndex + "=" + Anthem_Encode(args[argsIndex]);
+			}
+		}
+	}
+	if (updatePageAfterCallBack) {
+		encodedData += "&Anthem_UpdatePage=true";
+	}
+	if (includeControlValuesWithCallBack) {
+		var form = document.getElementById(Anthem_FormID);
+		if (form != null) {
+			for (var elementIndex = 0; elementIndex < form.length; ++elementIndex) {
+				var element = form.elements[elementIndex];
+				if (element.name) {
+					var elementValue = null;
+					if (element.nodeName.toUpperCase() == "INPUT") {
+						var inputType = element.getAttribute("type").toUpperCase();
+						if (inputType == "TEXT" || inputType == "PASSWORD" || inputType == "HIDDEN") {
+							elementValue = element.value;
+						} else if (inputType == "CHECKBOX" || inputType == "RADIO") {
+							if (element.checked) {
+								elementValue = element.value;
+							}
+						}
+					} else if (element.nodeName.toUpperCase() == "SELECT") {
+						if (element.multiple) {
+							elementValue = [];
+							for (var i = 0; i < element.length; ++i) {
+								if (element.options[i].selected) {
+									elementValue.push(element.options[i].value);
+								}
+							}
+						} else if (element.length == 0) {
+						    elementValue = null;
+						} else {
+							elementValue = element.value;
+						}
+					} else if (element.nodeName.toUpperCase() == "TEXTAREA") {
+						elementValue = element.value;
+					}
+					if (elementValue instanceof Array) {
+						for (var i = 0; i < elementValue.length; ++i) {
+							encodedData += "&" + element.name + "=" + Anthem_Encode(elementValue[i]);
+						}
+					} else if (elementValue != null) {
+						encodedData += "&" + element.name + "=" + Anthem_Encode(elementValue);
+					}
+				}
+			}
+			// ASP.NET 1.1 won't fire any events if neither of the following
+			// two parameters are not in the request so make sure they're
+			// always in the request.
+			if (typeof form.__VIEWSTATE == "undefined") {
+				encodedData += "&__VIEWSTATE=";
+			}
+			if (typeof form.__EVENTTARGET == "undefined") {
+				encodedData += "&__EVENTTARGET=";
+			}
+		}
+	}
+	if (encodedData.length > 0) {
+	    encodedData = encodedData.substring(1);
+	}
+	Anthem_DebugRequestText(encodedData.split("&").join("\n&"));
+	x.send(encodedData);
+	if (!clientCallBack) {
+		Anthem_DebugResponseText(x.responseText);
+		result = Anthem_GetResult(x);
+		if (result.error) {
+			Anthem_DebugError(result.error);
+			if (window.Anthem_Error) {
+				Anthem_Error(result);
+			}
+		}
+		if (updatePageAfterCallBack) {
+			Anthem_UpdatePage(result);
+		}
+		Anthem_EvalClientSideScript(result);
+		if (window.Anthem_PostCallBack) {
+			Anthem_PostCallBack();
+		}
+	}
+	return result;
+}
+
+function Anthem_GetResult(x) {
+	var result = { "value": null, "error": null };
+	var responseText = x.responseText;
+	try {
+		result = eval("(" + responseText + ")");
+	} catch (e) {
+		if (responseText.length == 0) {
+			result.error = "NORESPONSE";
+		} else {
+			result.error = "BADRESPONSE";
+			result.responseText = responseText;
+		}
+	}
+	return result;
+}
+
+function Anthem_SetHiddenInputValue(form, name, value) {
+    var input = null;
+    if (form[name]) {
+        input = form[name];
+    } else {
+        input = document.createElement("input");
+        input.setAttribute("name", name);
+        input.setAttribute("type", "hidden");
+    }
+    input.setAttribute("value", value);
+    var parentElement = input.parentElement ? input.parentElement : input.parentNode;
+    if (parentElement == null) {
+        form.appendChild(input);
+        form[name] = input;
+    }
+}
+
+function Anthem_RemoveHiddenInput(form, name) {
+    var input = form[name];
+    if (input != null && typeof(input) != "undefined") {
+      var parentElement = input.parentElement ? input.parentElement : input.parentNode;
+      if (parentElement != null) {
+          form[name] = null;
+          parentElement.removeChild(input);
+      }
+    }
+}
+
+function Anthem_FireEvent(eventTarget, eventArgument, clientCallBack, clientCallBackArg, includeControlValuesWithCallBack, updatePageAfterCallBack) {
+	var form = document.getElementById(Anthem_FormID);
+	Anthem_SetHiddenInputValue(form, "__EVENTTARGET", eventTarget);
+	Anthem_SetHiddenInputValue(form, "__EVENTARGUMENT", eventArgument);
+	Anthem_CallBack(null, null, null, null, null, clientCallBack, clientCallBackArg, includeControlValuesWithCallBack, updatePageAfterCallBack);
+	form.__EVENTTARGET.value = "";
+	form.__EVENTARGUMENT.value = "";
+}
+
+function Anthem_UpdatePage(result) {
+	var form = document.getElementById(Anthem_FormID);
+	if (result.viewState) {
+		Anthem_SetHiddenInputValue(form, "__VIEWSTATE", result.viewState);
+	}
+	if (result.viewStateEncrypted) {
+		Anthem_SetHiddenInputValue(form, "__VIEWSTATEENCRYPTED", result.viewStateEncrypted);
+	}
+	if (result.eventValidation) {
+		Anthem_SetHiddenInputValue(form, "__EVENTVALIDATION", result.eventValidation);
+	}
+	if (result.controls) {
+		for (var controlID in result.controls) {
+			var containerID = "Anthem_" + controlID.split("$").join("_") + "__";
+			var control = document.getElementById(containerID);
+			if (control) {
+				control.innerHTML = result.controls[controlID];
+				if (result.controls[controlID] == "") {
+					control.style.display = "none";
+				} else {
+					control.style.display = "";
+				}
+			}
+		}
+	}
+	if (result.pagescript) {
+	    Anthem_LoadPageScript(result, 0);
+	}
+}
+
+// Load each script in order and wait for each one to load before proceeding
+function Anthem_LoadPageScript(result, index) {
+    if (index < result.pagescript.length) {
+		try {
+		    var script = document.createElement('script');
+		    script.type = 'text/javascript';
+		    if (result.pagescript[index].indexOf('src=') == 0) {
+		        script.src = result.pagescript[index].substring(4);
+		    } else {
+		        if (script.canHaveChildren ) {
+		            script.appendChild(document.createTextNode(result.pagescript[index]));
+		        } else {
+		            script.text = result.pagescript[index];
+		        }
+		    }
+		    var heads = document.getElementsByTagName('head');
+		    if (heads != null && typeof(heads) != "undefined" && heads.length > 0) {
+		        var head = heads[0];
+
+		        // The order that scripts appear is important since later scripts can
+		        // redefine a function. Therefore it is important to add every script
+		        // to the page and in the same order that they were added on the server.
+		        // On the other hand, if we just keep adding scripts the DOM will grow
+		        // unnecessarily. This code scans the <head> element block and removes 
+		        // previous instances of the identical script.
+		        var found = false;
+		        for (var child = 0; child < head.childNodes.length; child++) {
+		            var control = head.childNodes[child];
+		            if (control.tagName.toUpperCase() == "SCRIPT") {
+		                if (script.src.length > 0) {
+		                    if (script.src == control.src) {
+		                        found = true;
+		                        break;
+		                    }
+		                } else if (script.innerHTML.length > 0) {
+		                    if (script.innerHTML == control.innerHTML) {
+		                        found = true;
+		                        break;
+		                    }
+		                }
+		            }
+		        }
+		        if (found) {
+		            head.removeChild(control);
+		        }
+		        
+		        // Now we append the new script and move on to the next script.
+		        // Note that this is a recursive function. It stops when the
+		        // index grows larger than the number of scripts.
+                document.getElementsByTagName('head')[0].appendChild(script);
+                if (typeof script.readyState != "undefined") {
+                    script.onreadystatechange = function() {
+                        if (script.readyState != "complete" && script.readyState != "loaded") {
+                            return;
+                        } else {
+                            Anthem_LoadPageScript(result, index + 1);
+                        }
+                    }
+                } else {
+                    Anthem_LoadPageScript(result, index + 1);
+                }
+	        }
+		} catch (e) {
+		    Anthem_DebugError("Error adding page script to head. " + e.name + ": " + e.message);
+		}
+	}
+}
+
+function Anthem_EvalClientSideScript(result) {
+	if (result.script) {
+		for (var i = 0; i < result.script.length; ++i) {
+			try {
+				eval(result.script[i]);
+			} catch (e) {
+				alert("Error evaluating client-side script!\n\nScript: " + result.script[i] + "\n\nException: " + e);
+			}
+		}
+	}
+}
+
+function Anthem_DebugRequestText(text) {
+}
+
+function Anthem_DebugResponseText(text) {
+}
+
+function Anthem_DebugError(text) {
+}
+
+//Fix for bug #1429412, "Reponse callback returns previous response after file push".
+//see http://sourceforge.net/tracker/index.php?func=detail&aid=1429412&group_id=151897&atid=782464
+function Anthem_Clear__EVENTTARGET() {
+	var form = document.getElementById(Anthem_FormID);
+	Anthem_SetHiddenInputValue(form, "__EVENTTARGET", "");
+}
+
+function Anthem_InvokePageMethod(methodName, args, clientCallBack, clientCallBackArg) {
+	Anthem_Clear__EVENTTARGET(); // fix for bug #1429412
+    return Anthem_CallBack(null, "Page", null, methodName, args, clientCallBack, clientCallBackArg, true, true);
+}
+
+function Anthem_InvokeMasterPageMethod(methodName, args, clientCallBack, clientCallBackArg) {
+	Anthem_Clear__EVENTTARGET(); // fix for bug #1429412
+    return Anthem_CallBack(null, "MasterPage", null, methodName, args, clientCallBack, clientCallBackArg, true, true);
+}
+
+function Anthem_InvokeControlMethod(id, methodName, args, clientCallBack, clientCallBackArg) {
+	Anthem_Clear__EVENTTARGET(); // fix for bug #1429412
+    return Anthem_CallBack(null, "Control", id, methodName, args, clientCallBack, clientCallBackArg, true, true);
+}
+
+function Anthem_PreProcessCallBack(
+    control,
+    e,
+    eventTarget,
+    causesValidation, 
+    validationGroup, 
+    imageUrlDuringCallBack, 
+    textDuringCallBack, 
+    enabledDuringCallBack,
+    preCallBackFunction,
+    callBackCancelledFunction,
+    preProcessOut
+) {
+	preProcessOut.Enabled = !control.disabled;
+	var preCallBackResult = true;
+	if (preCallBackFunction) {
+		preCallBackResult = preCallBackFunction(control);
+	}
+	if (typeof(preCallBackResult) == "undefined" || preCallBackResult) {
+		var valid = true;
+		if (causesValidation && typeof(Page_ClientValidate) == "function") {
+			valid = Page_ClientValidate(validationGroup);
+		}
+		if (typeof(WebForm_OnSubmit) == "function") {
+		    valid = WebForm_OnSubmit();
+		}
+		if (valid) {
+			var inputType = control.getAttribute("type");
+			inputType = (inputType == null) ? '' : inputType.toUpperCase();
+			if (inputType == "IMAGE" && e != null) {
+                var form = document.getElementById(Anthem_FormID);
+                if (e.offsetX) {
+                    Anthem_SetHiddenInputValue(form, eventTarget + ".x", e.offsetX);
+                    Anthem_SetHiddenInputValue(form, eventTarget + ".y", e.offsetY);
+                } else {
+                    Anthem_SetHiddenInputValue(form, eventTarget + ".x", e.clientX - control.offsetLeft + 1);
+                    Anthem_SetHiddenInputValue(form, eventTarget + ".y", e.clientY - control.offsetTop + 1);
+                }
+			}
+			if (imageUrlDuringCallBack || textDuringCallBack) {
+			    if (control.nodeName.toUpperCase() == "INPUT") {
+			        if (inputType == "CHECKBOX" || inputType == "RADIO" || inputType == "TEXT") {
+			            preProcessOut.OriginalText = GetLabelText(control.id);
+			            SetLabelText(control.id, textDuringCallBack);
+			        } else if (inputType == "IMAGE") {
+			            if (imageUrlDuringCallBack) {
+			                preProcessOut.OriginalText = control.src;
+			                control.src = imageUrlDuringCallBack;
+			            } else {
+			                preProcessOut.ParentElement = control.parentElement ? control.parentElement : control.parentNode;
+			                if (preProcessOut.ParentElement) {
+			                    preProcessOut.OriginalText = preProcessOut.ParentElement.innerHTML;
+			                    preProcessOut.ParentElement.innerHTML = textDuringCallBack;
+			                }
+			            }
+			        } else if (inputType == "SUBMIT") {
+			            preProcessOut.OriginalText = control.value;
+			            control.value = textDuringCallBack;
+			        }
+			    } else if (control.nodeName.toUpperCase() == "SELECT") {
+			        preProcessOut.OriginalText = GetLabelText(control.id);
+			        SetLabelText(control.id, textDuringCallBack);
+			    } else {
+			        preProcessOut.OriginalText = control.innerHTML;
+				    control.innerHTML = textDuringCallBack;
+				}
+			}
+			control.disabled = (typeof enabledDuringCallBack == "undefined") ? false : !enabledDuringCallBack;
+			return true;
+        } else {
+            return false;
+        }
+	} else {
+	    if (callBackCancelledFunction) {
+		    callBackCancelledFunction(control);
+		}
+		return false;
+	}
+}
+
+function Anthem_PreProcessCallBackOut() {
+    // Fields
+    this.ParentElement = null;
+    this.OriginalText = '';
+    this.Enabled = true;
+}
+
+function Anthem_PostProcessCallBack(
+    result, 
+    control,
+    eventTarget, 
+    clientCallBack, 
+    clientCallBackArg, 
+    imageUrlDuringCallBack, 
+    textDuringCallBack, 
+    postCallBackFunction, 
+    preProcessOut
+) {
+    if (postCallBackFunction) {
+        postCallBackFunction(control);
+    }
+	control.disabled = !preProcessOut.Enabled;
+    var inputType = control.getAttribute("type");
+    inputType = (inputType == null) ? '' : inputType.toUpperCase();
+	if (inputType == "IMAGE") {
+	    var form = document.getElementById(Anthem_FormID);
+        Anthem_RemoveHiddenInput(form, eventTarget + ".x");
+        Anthem_RemoveHiddenInput(form, eventTarget + ".y");
+	}
+	if (imageUrlDuringCallBack || textDuringCallBack) {
+	    if (control.nodeName.toUpperCase() == "INPUT") {
+	        if (inputType == "CHECKBOX" || inputType == "RADIO" || inputType == "TEXT") {
+	            SetLabelText(control.id, preProcessOut.OriginalText);
+	        } else if (inputType == "IMAGE") {
+	            if (imageUrlDuringCallBack) {
+	                control.src = preProcessOut.OriginalText;
+	            } else {
+	                preProcessOut.ParentElement.innerHTML = preProcessOut.OriginalText;
+	            }
+	        } else if (inputType == "SUBMIT") {
+	            control.value = preProcessOut.OriginalText;
+	        }
+	    } else if (control.nodeName.toUpperCase() == "SELECT") {
+	        SetLabelText(control.id, preProcessOut.OriginalText);
+	    } else {
+	        control.innerHTML = preProcessOut.OriginalText;
+	    }
+	}
+	if (clientCallBack) {
+	    clientCallBack(result, clientCallBackArg);
+	}
+}
+
+function Anthem_FireCallBackEvent(
+	control,
+	e,
+	eventTarget,
+	eventArgument,
+	causesValidation,
+	validationGroup,
+	imageUrlDuringCallBack,
+	textDuringCallBack,
+	enabledDuringCallBack,
+	preCallBackFunction,
+	postCallBackFunction,
+	callBackCancelledFunction,
+	includeControlValuesWithCallBack,
+	updatePageAfterCallBack
+) {
+	var preProcessOut = new Anthem_PreProcessCallBackOut();
+	var preProcessResult = Anthem_PreProcessCallBack(
+	    control, 
+	    e, 
+	    eventTarget,
+	    causesValidation, 
+	    validationGroup, 
+	    imageUrlDuringCallBack, 
+	    textDuringCallBack, 
+	    enabledDuringCallBack, 
+	    preCallBackFunction, 
+	    callBackCancelledFunction, 
+	    preProcessOut
+	);
+    if (preProcessResult) {
+	    Anthem_FireEvent(
+		    eventTarget,
+		    eventArgument,
+		    function(result) {
+                Anthem_PostProcessCallBack(
+                    result, 
+                    control, 
+                    eventTarget,
+                    null, 
+                    null, 
+                    imageUrlDuringCallBack, 
+                    textDuringCallBack, 
+                    postCallBackFunction, 
+                    preProcessOut
+                );
+		    },
+		    null,
+		    includeControlValuesWithCallBack,
+		    updatePageAfterCallBack
+	    );
+    }
+}
+
+function AnthemListControl_OnClick(
+    e,
+	causesValidation,
+	validationGroup,
+	textDuringCallBack,
+	enabledDuringCallBack,
+	preCallBackFunction,
+	postCallBackFunction,
+	callBackCancelledFunction,
+	includeControlValuesWithCallBack,
+	updatePageAfterCallBack
+) {
+	var target = e.target || e.srcElement;
+	if (target.nodeName.toUpperCase() == "LABEL" && target.htmlFor != '')
+	    return;
+	var eventTarget = target.id.split("_").join("$");
+	Anthem_FireCallBackEvent(
+	    target, 
+	    e,
+	    eventTarget, 
+	    '', 
+	    causesValidation, 
+	    validationGroup, 
+	    '',
+	    textDuringCallBack, 
+	    enabledDuringCallBack, 
+	    preCallBackFunction, 
+	    postCallBackFunction, 
+	    callBackCancelledFunction, 
+	    true, 
+	    true
+	);
+}
+
+function GetLabelText(id) {
+    var labels = document.getElementsByTagName('label');
+    for (var i = 0; i < labels.length; i++) {
+        if (labels[i].htmlFor == id) {
+            return labels[i].innerHTML;
+        }
+    }
+    return null;
+}
+
+function SetLabelText(id, text) {
+    var labels = document.getElementsByTagName('label');
+    for (var i = 0; i < labels.length; i++) {
+        if (labels[i].htmlFor == id) {
+            labels[i].innerHTML = text;
+            return;
+        }
+    }
+}
+
+//]]>
+</SCRIPT>
+
+<SCRIPT src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/WebResource.axd" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+// -->
+</SCRIPT>
+ 
+<TABLE class=Framework cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD colSpan=2>
+      <DIV id=top>
+      <TABLE cellSpacing=0 cellPadding=8 width="100%">
+        <TBODY>
+        <TR>
+          <TD>
+            <H1><A class=headermaintitle id=Header1_HeaderTitle 
+            href="http://blog.csdn.net/zhangjianying/">不是程序员</A></H1>当你明白你正在说什么,并用文字表达它时,你就知道一些关于它的事情;但是,当你还不明白它时,当你不能用文字表达它时,你对它的了解就属于缺乏和不满意的那一类.这也许就是知识的起源. 
+          </TD></TR></TBODY></TABLE></DIV>
+      <DIV id=sub>
+      <DIV class=BlogStats>原创 - 129,翻译 - 1,转载 - 14, 点击 - 24815, 评论 - 21, 
+      trackbacks - 0</DIV></DIV></TD></TR>
+  <TR>
+    <TD id=LeftCell rowSpan=2>
+      <DIV id=leftmenu>
+      <H3>导航</H3>
+      <UL>
+        <LI><A href="http://www.csdn.net/" target=_blank>CSDN首页</A> 
+        <LI><A href="http://community.csdn.net/" target=_blank>CSDN社区</A> 
+        <LI><A href="http://dev.csdn.net/" target=_blank>CSDN技术中心</A> 
+        <LI><A id=MyLinks1_HomeLink title=到聚合站点 
+        href="http://blog.csdn.net/">BLOG首页</A> 
+        <LI><A id=MyLinks1_PersonalHome title="访问 不是程序员" 
+        href="http://blog.csdn.net/zhangjianying/">我的首页</A> 
+        <LI><A id=MyLinks1_PersonalResume 
+        href="http://job.csdn.net/resumes/zhangjianying.aspx">个人档案</A> 
+        <LI><A id=MyLinks1_ContactLink accessKey=9 
+        href="http://blog.csdn.net/zhangjianying/contact.aspx">联系作者</A> 
+        <LI><A id=MyLinks1_XMLLink 
+        href="http://blog.csdn.net/zhangjianying/Rss.aspx"><IMG 
+        alt="RSS 2.0 Feed" 
+        src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/xml.gif" border=0></A> 
+        <LI><A id=MyLinks1_HyperLink1 
+        href="http://search.csdn.net/search_blog.asp" target=_blank>搜索</A> 
+        <LI><A id=MyLinks1_Admin href="http://writeblog.csdn.net/">登录</A> 
+      </LI></UL>
+      <H3>公告</H3>
+      <P>最近在读的书</P><IMG title=最近在读的书! height=120 
+      src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/lastTS00110287__.jpg" 
+      width=120></IMG> <EMBED 
+      src=" http://free.idcce.com/USERS/COOLAIR/naxiehuaer.wma" width=183 
+      height=46 type=audio/mpeg loop="infinite" autostart="true"></EMBED> 
+      <IFRAME 
+      style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; WIDTH: 180px; BORDER-BOTTOM: black 1px solid; HEIGHT: 210px" 
+      src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/blogmap.htm" frameBorder=0 
+      scrolling=no></IFRAME>
+      <H3 class=listtitle>文章</H3>
+      <UL class=list>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/156155.aspx">.Net</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/156155.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/155328.aspx">ASP/ASP.net</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/155328.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/165081.aspx">Atlas</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/165081.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/155327.aspx">Html小技巧</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/155327.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/150422.aspx">JAVA学习</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/150422.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/197743.aspx">Linux</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/197743.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/158325.aspx">Mono</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/158325.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/156156.aspx">Oracle</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/156156.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/151111.aspx">SQL 
+        Server</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/151111.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/151667.aspx">windows技巧</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/151667.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/150421.aspx">社团管理</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/150421.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/163663.aspx">生活记录</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/163663.aspx/rss">(RSS)</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/150983.aspx">算法与模式</A><A 
+        href="http://blog.csdn.net/zhangjianying/category/150983.aspx/rss">(RSS)</A></LI></UL>
+      <H3 class=listtitle>收藏</H3>
+      <UL class=list>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/162475.aspx">求职</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/161684.aspx">杂七杂八</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/category/158679.aspx">职场</A></LI></UL>
+      <H3 class=listtitle>相册</H3><!--category title-->
+      <UL class=list>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/Gallery/149785.aspx">帅气的我</A>
+        <LI class=listitem><A 
+        href="http://blog.csdn.net/zhangjianying/Gallery/247042.aspx">西藏-纳木错</A></LI></UL>
+      <H3 class=listtitle>.Net</H3>
+      <UL class=list></UL>
+      <H3 class=listtitle>Mono</H3>
+      <UL class=list>
+        <LI class=listitem><A href="http://www.go-mono.com/monologue/" 
+        target=_blank>Mono Team</A></LI></UL>
+      <H3 class=listtitle>老师</H3>
+      <UL class=list>
+        <LI class=listitem><A href="http://oaichinese.blogone.net/" 
+        target=_blank>黄宁老师</A></LI></UL>
+      <H3 class=listtitle>朋友</H3>
+      <UL class=list>
+        <LI class=listitem><A 
+        href="http://www.blogcn.com/u/30/59/memorylunary/index.html" 
+        target=_self>乖乖的BLOG</A>
+        <LI class=listitem><A href="http://tanyu216.cnblogs.com/" 
+        target=_self>体验.net精神</A></LI></UL>
+      <H3 class=listtitle>存档</H3>
+      <UL class=list>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/12.aspx">2006年12月(2)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/11.aspx">2006年11月(3)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/10.aspx">2006年10月(9)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/09.aspx">2006年09月(9)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/08.aspx">2006年08月(2)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/07.aspx">2006年07月(6)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/06.aspx">2006年06月(8)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/05.aspx">2006年05月(6)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/04.aspx">2006年04月(4)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/03.aspx">2006年03月(8)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/02.aspx">2006年02月(7)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/01.aspx">2006年01月(10)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2005/12.aspx">2005年12月(28)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2005/11.aspx">2005年11月(16)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2005/10.aspx">2005年10月(11)</A>
+        <LI><A 
+        href="http://blog.csdn.net/zhangjianying/archive/2005/09.aspx">2005年09月(1)</A></LI></UL><SPAN 
+      id=Anthem_RecentComments1_ltlComments__><SPAN 
+      id=RecentComments1_ltlComments>
+      <H3 class=listtitle>最近评论</H3>
+      <UL class=list>
+        <LI class=listitem>VeryDxZ：<A title=点击查看《回复：RichTextBox实现关键字自定义颜色显示(C#)》 
+        href="http://blog.csdn.net/zhangjianying/archive/2005/12/12/549896.aspx#512248">Well 
+        Done~@</A>
+        <LI class=listitem>Dah：<A title=点击查看《回复：RichTextBox实现关键字自定义颜色显示(C#)》 
+        href="http://blog.csdn.net/zhangjianying/archive/2005/12/12/549896.aspx#482771">我原来也想自己写个简单的C#编辑器..就是着色这块搞了半天没出来..看了你的解决方案茅塞顿开了~</A>
+        <LI class=listitem>春春：<A title=点击查看《回复：我在离天空最近的城市》 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/06/11/789244.aspx#454413">在那边加油站哦!我们这些朋友永远都支持你哦!希望你在那边多注意身体了!在那边多拍点相片给我们看了!呵呵..... 
+        <BR>对那边还真有点渴望了!</A>
+        <LI class=listitem>zill：<A title=点击查看《回复：我在离天空最近的城市》 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/06/11/789244.aspx#453880">呵呵 
+        舒服啊</A>
+        <LI class=listitem>贺仁峰：<A title=点击查看《回复：我在离天空最近的城市》 
+        href="http://blog.csdn.net/zhangjianying/archive/2006/06/11/789244.aspx#453582">呵呵。一定很好玩哦。</A></LI></UL></SPAN></SPAN></DIV></TD>
+    <TD class=MainCell>
+      <DIV id=main>
+      <DIV class=Tag>
+      <SCRIPT language=javascript 
+      src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/urltag.aspx"></SCRIPT>
+
+      <DIV style="CLEAR: both"></DIV></DIV>
+      <SCRIPT>function StorePage(){d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(keyit=window.open('http://www.365key.com/storeit.aspx?t='+escape(d.title)+'&u='+escape(d.location.href)+'&c='+escape(t),'keyit','scrollbars=no,width=475,height=575,left=75,top=20,status=no,resizable=yes'));keyit.focus();}</SCRIPT>
+
+      <DIV class=post>
+      <DIV class=postTitle><A 
+      href="http://blog.csdn.net/zhangjianying/archive/2006/10/18/1339628.aspx"><IMG 
+      height=13 src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/authorship.gif" 
+      width=15 border=0>&nbsp;同步线程--生产者与消费者模式</A> </DIV>
+      <DIV class=postText>
+      <P><BR>同步线程的一种经典设计模式。</P>
+      <P>public class Test {<BR>&nbsp;public static void main(String[] args) 
+      {<BR>&nbsp;&nbsp;Quene q = new Quene();<BR>&nbsp;&nbsp;Producter producter 
+      = new Producter(q);<BR>&nbsp;&nbsp;Customer customer = new 
+Customer(q);</P>
+      <P>&nbsp;&nbsp;producter.start();<BR>&nbsp;&nbsp;customer.start();<BR>&nbsp;}<BR>}</P>
+      <P>//生产者<BR>public class Producter extends Thread {<BR>&nbsp;private Quene 
+      quene;<BR>&nbsp;public Producter(Quene quene) {<BR>&nbsp;&nbsp;this.quene 
+      = quene;<BR>&nbsp;}</P>
+      <P>&nbsp;@Override<BR>&nbsp;public void run() {<BR>&nbsp;&nbsp;for (int i 
+      = 0; i &lt; 10; i++) 
+      {<BR>&nbsp;&nbsp;&nbsp;quene.setItem(i);<BR>&nbsp;&nbsp;&nbsp;System.out.println("生产者:生产产品" 
+      + i);<BR>&nbsp;&nbsp;}<BR>&nbsp;}<BR>}</P>
+      <P><BR>//消费者<BR>public class Customer extends Thread {<BR>&nbsp;private 
+      Quene quene;</P>
+      <P>&nbsp;public Customer(Quene quene) {<BR>&nbsp;&nbsp;this.quene = 
+      quene;<BR>&nbsp;}</P>
+      <P>&nbsp;@Override<BR>&nbsp;public void run() {<BR>&nbsp;&nbsp;for (int i 
+      = 0; i &lt; 10; i++) {</P>
+      <P>&nbsp;&nbsp;&nbsp;System.out.println("消费者:获得产品" + 
+      quene.getItem());<BR>&nbsp;&nbsp;}<BR>&nbsp;}<BR>}</P>
+      <P>//销售列队<BR>public class Quene {<BR>&nbsp;private int 
+      item;<BR>&nbsp;private boolean isFull = false;<BR>&nbsp;<BR>&nbsp;public 
+      synchronized int getItem() {<BR>&nbsp;&nbsp;if (!isFull) 
+      {<BR>&nbsp;&nbsp;&nbsp;try 
+      {<BR>&nbsp;&nbsp;&nbsp;&nbsp;wait();<BR>&nbsp;&nbsp;&nbsp;} catch 
+      (InterruptedException e) 
+      {<BR>&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();<BR>&nbsp;&nbsp;&nbsp;}<BR>&nbsp;&nbsp;}<BR>&nbsp;&nbsp;isFull 
+      = false;<BR>&nbsp;&nbsp;this.notify();<BR>&nbsp;&nbsp;return 
+      item;<BR>&nbsp;}<BR>&nbsp;<BR>&nbsp;//因为使用notify()所有要加上 synchronized 
+      <BR>&nbsp;//synchronized 对方法修饰的时候等同与<BR>&nbsp;// synchronized(this){&nbsp; 
+      ......&nbsp; }<BR>&nbsp;public synchronized void setItem(int item) 
+      {<BR>&nbsp;&nbsp;if (!isFull) {<BR>&nbsp;&nbsp;&nbsp;this.item = 
+      item;<BR>&nbsp;&nbsp;&nbsp;isFull = 
+      true;<BR>&nbsp;&nbsp;&nbsp;this.notify();<BR>&nbsp;&nbsp;}<BR>&nbsp;&nbsp;try 
+      {<BR>&nbsp;&nbsp;&nbsp;this.wait();<BR>&nbsp;&nbsp;} catch 
+      (InterruptedException e) 
+      {<BR>&nbsp;&nbsp;&nbsp;e.printStackTrace();<BR>&nbsp;&nbsp;}<BR>&nbsp;}<BR>}</P><BR><BR>
+      <P id=TBPingURL>Trackback: 
+      http://tb.blog.csdn.net/TrackBack.aspx?PostId=1339628</P><BR></DIV>
+      <DIV class=postFoot>
+      <SCRIPT src=""></SCRIPT>
+      [<A title=功能强大的网络收藏夹，一秒钟操作就可以轻松实现保存带来的价值、分享带来的快乐 
+      href="javascript:d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(saveit=window.open('http://wz.csdn.net/storeit.aspx?t='+escape(d.title)+'&amp;u='+escape(d.location.href)+'&amp;c='+escape(t),'keyit','scrollbars=no,width=590,height=300,left=75,top=20,status=no,resizable=yes'));saveit.focus();">收藏到我的网摘</A>]&nbsp;&nbsp; 
+      张健滢发表于 2006年10月18日 14:51:00 </DIV></DIV><LINK 
+      href="http://blog.csdn.net/zhangjianying/Services/Pingback.aspx" 
+      rel=pingback><!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"xmlns:dc="http://purl.org/dc/elements/1.1/"xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"><rdf:Descriptionrdf:about="http://blog.csdn.net/zhangjianying/archive/2006/10/18/1339628.aspx"dc:identifier="http://blog.csdn.net/zhangjianying/archive/2006/10/18/1339628.aspx"dc:title="同步线程--生产者与消费者模式"trackback:ping="http://tb.blog.csdn.net/TrackBack.aspx?PostId=1339628" /></rdf:RDF>-->
+      <SCRIPT>function hide(){showComment();}</SCRIPT>
+      <BR><BR>
+      <DIV class=post id=csdn_zhaig_ad_yahoo></DIV><SPAN 
+      id=Anthem_Comments.ascx_ltlComments__><SPAN 
+      id=Comments.ascx_ltlComments><BR>
+      <DIV id=comments>
+      <H3></H3>没有评论。 </DIV></SPAN></SPAN>
+      <SCRIPT language=javascript>
+ad_width=468;
+ad_height=60;
+adcss=2;
+unionuser=19;
+ad_type='j';
+count=5; 
+</SCRIPT>
+
+      <SCRIPT language=javascript 
+      src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/showads.js" 
+      type=text/javascript></SCRIPT>
+
+      <SCRIPT language=javascript 
+      src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/showgm.js" 
+      type=text/javascript></SCRIPT>
+
+      <SCRIPT type=text/javascript>document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</SCRIPT>
+
+      <DIV id=commentform>
+      <H3>发表评论</H3>
+      <TABLE cellSpacing=1 cellPadding=1 border=0>
+        <TBODY>
+        <TR>
+          <TD></TD>
+          <TD></TD>
+          <TD></TD></TR>
+        <TR>
+          <TD>大名</TD>
+          <TD><INPUT class=Textbox id=PostComment.ascx_tbName 
+            style="WIDTH: 300px" disabled size=40 
+          name=PostComment.ascx:tbName></TD>
+          <TD><SPAN id=PostComment.ascx_RequiredFieldValidator2 
+            style="VISIBILITY: hidden; COLOR: red" initialvalue="" 
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid" 
+            errormessage="请输入名字" 
+            controltovalidate="PostComment.ascx_tbName">请输入名字</SPAN></TD></TR>
+        <TR>
+          <TD>网址</TD>
+          <TD><INPUT class=Textbox id=PostComment.ascx_tbUrl 
+            style="WIDTH: 300px" disabled size=40 
+name=PostComment.ascx:tbUrl></TD>
+          <TD></TD></TR>
+        <TR>
+          <TD colSpan=3>评论&nbsp; <SPAN 
+            id=PostComment.ascx_RequiredFieldValidator3 
+            style="VISIBILITY: hidden; COLOR: red" initialvalue="" 
+            evaluationfunction="RequiredFieldValidatorEvaluateIsValid" 
+            errormessage="请输入评论" 
+            controltovalidate="PostComment.ascx_tbComment">请输入评论</SPAN><BR><TEXTAREA id=PostComment.ascx_tbComment style="WIDTH: 100%; HEIGHT: 193px" disabled name=PostComment.ascx:tbComment rows=10 cols=50></TEXTAREA></TD></TR>
+        <TR>
+          <TD><SPAN id=Anthem_PostComment.ascx_btnSubmit__></SPAN></TD>
+          <TD colSpan=2><SPAN id=PostComment.ascx_Message 
+            style="COLOR: red">注册用户才能发表评论。如果你没有登录，请点击<A 
+            href="http://passport.csdn.net/member/UserLogin.aspx?from=http://blog.csdn.net/zhangjianying/archive/2006/10/18/1339628.aspx">登录</A></SPAN></TD></TR></TBODY></TABLE></DIV></DIV></TD></TR>
+  <TR>
+    <TD class=FooterCell>
+      <DIV class=footer>Powered by: <BR><A id=Footer1_Hyperlink2 
+      href="http://scottwater.com/blog" name=Hyperlink1><IMG 
+      src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/100x30_Logo.gif" 
+      border=0></A> <A id=Footer1_Hyperlink3 href="http://asp.net/" 
+      name=Hyperlink1><IMG 
+      src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/PoweredByAsp.Net.gif" 
+      border=0></A> <BR>Copyright © 张健滢 </DIV></TD></TR></TBODY></TABLE>
+<SCRIPT src="同步线程--生产者与消费者模式 - 不是程序员 - CSDNBlog.files/counter.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+var Page_Validators =  new Array(document.getElementById("PostComment.ascx_RequiredFieldValidator2"), document.getElementById("PostComment.ascx_RequiredFieldValidator3"));
+// -->
+</SCRIPT>
+<INPUT id=__EVENTVALIDATION type=hidden 
+value=/wEWBAL+raDpAgKqtOi0AwLAsuLbDAKi687YCaEdUuRgIvhS8PYPDsd5LslVNRL0 
+name=__EVENTVALIDATION>
+<SCRIPT type=text/javascript>
+<!--
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+// -->
+</SCRIPT>
+ </FORM>
+<SCRIPT language=javascript type=text/javascript>
+	<!--
+	try{
+		hide();
+		}
+		catch(e){
+		}
+	//-->
+    </SCRIPT>
+</BODY></HTML>

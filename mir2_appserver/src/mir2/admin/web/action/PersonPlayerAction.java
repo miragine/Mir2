@@ -69,7 +69,7 @@ public class PersonPlayerAction extends SpringMvcAction {
 		User user = userManager.get(userId);
 		PersonPlayer personPlayer = new PersonPlayer();
 		personPlayer.setName(name);
-		personPlayer.setOwner(user);
+		personPlayer.setUser(user);
 		ProfessionInitData data = ProfessionInitData.valueOfType(type);
 		Fighter fighter = fighterManager.get(data.getClassType(), level);
 		personPlayer.setFighter(fighter);

@@ -23,8 +23,6 @@
 	<classpathentry kind="lib" path="lib/dom4j/dom4j-1.4.jar"/>
 	<classpathentry kind="lib" path="lib/ehcache/ehcache-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/freemarker/freemarker-2.3.8.jar"/>
-	<classpathentry kind="lib" path="lib/hibernate/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
-	<classpathentry kind="lib" path="lib/hibernate/hibernate3.jar"/>
 	<classpathentry kind="lib" path="lib/j2ee/jstl.jar"/>
 	<classpathentry kind="lib" path="lib/j2ee/jta.jar"/>
 	<classpathentry kind="lib" path="lib/j2ee/mail.jar"/>
@@ -62,7 +60,21 @@
 	<classpathentry kind="lib" path="lib/struts/xwork-2.0.4.jar"/>
 	<classpathentry kind="lib" path="lib/webjvm/webjvm-core.jar"/>
 	<classpathentry kind="lib" path="lib/webjvm/webjvm-remote.jar"/>
-	<classpathentry kind="lib" path="lib/javassist/javassist-3.11.0.GA.jar"/>
 	<classpathentry kind="lib" path="lib/log4j/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/j2ee/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-commons-annotations-4.0.2.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-core-4.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="lib/javassist/javassist-3.18.1-GA.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-entitymanager-4.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="lib/jboss/jboss-logging-3.1.1.GA.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-c3p0-4.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-ehcache-4.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-envers-4.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-infinispan-4.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-osgi-4.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-proxool-4.2.7.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-validator-4.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate/hibernate-validator-annotation-processor-4.2.0.Final.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

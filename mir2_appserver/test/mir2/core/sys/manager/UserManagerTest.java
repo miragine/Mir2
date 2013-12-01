@@ -4,9 +4,6 @@
 package mir2.core.sys.manager;
 
 import static org.junit.Assert.fail;
-
-import java.util.Date;
-
 import mir2.core.sys.beans.User;
 
 import org.junit.Test;
@@ -31,7 +28,6 @@ public class UserManagerTest {
 		User user = new User();
 		user.setUsername("test1");
 		user.setPassword("test1");
-		user.setCreateDate(new Date());
 		userManager.save(user);
 	}
 
